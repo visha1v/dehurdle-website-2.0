@@ -204,6 +204,115 @@
     font-family: 'Fraunces', sans-serif;
 }
 
+.wreckers-section{
+    background-color: #E84C8D;
+    width: 100%;  
+    min-height:100%; 
+    max-height: 100%; 
+    height: auto;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+    overflow: hidden;  
+    gap:20px;
+}
+
+.wreckers-section .wreckers-title{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    margin-top:75px;
+    position: relative;
+    z-index: 1;
+}
+.wreckers-section .wreckers-subtitle{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.wreckers-card .title{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 31px;
+    line-height: 1.35;
+    color:#5B717F;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top:0;
+}
+.wreckers-card .subtitle{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.54;
+    color:#5B717F;
+    margin-top:0;
+    padding-top: 15px;
+    text-align:left;
+}
+.wreckers-card .wrecker-link{
+    color: #178A86;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+}
+.wreckers-card .wrecker-link:hover,
+.wreckers-card .wrecker-link:visited,
+.wreckers-card .wrecker-link:active {
+    color: #178A86;
+}
+
+.wreckers-card .wrecker-image{
+    width:58%;
+    height: 58%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.wreckers-grid {
+    width: 90%;  /* Increased width for better spacing */
+    margin: 0 auto;  /* Center the grid */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 40px;  /* Increased gap between cards */
+    padding: 40px;
+}
+
+.wreckers-card {
+    width: 100%;
+    height: auto;  /* Changed from fixed height to auto */
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px; 
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    box-sizing: border-box;  /* Include padding in width calculation */
+}
+
 .homePage {
   width: 100%;
   margin: 0;

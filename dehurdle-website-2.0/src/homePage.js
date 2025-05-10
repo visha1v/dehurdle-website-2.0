@@ -39,6 +39,17 @@ const Counter = ({ end, suffix = '+' ,color}) => {
     );
 };
 
+const Wreckers = ({ title, subtitle, link}) => {
+    return (
+        <div className="wreckers-card">
+            <p className='title'>{title}</p>
+            <p className='subtitle'>{subtitle}</p>
+            <a href={link} className="wrecker-link">LEARN MORE &rarr;</a>
+            <img src={`/${title}.svg`}  alt={title} className="wrecker-image" />
+            </div>
+    )
+};
+
 
 const HomePage = () => {
     return ( 
@@ -78,6 +89,20 @@ const HomePage = () => {
                         <p>Countries</p>
                         <p>Served</p>
                     </div>
+                </div>
+            </div>
+            <div className="wreckers-section">
+                <p className='wreckers-title'>Key Use Cases Where Dehurdle Creates Impact</p>
+                <p className='wreckers-subtitle'>Dehurdle Helps Executives Break Through:</p>
+                <div className='wreckers-grid'>
+                    <Wreckers title="OVERTHINKER" subtitle="Drowning in a sea of endless thoughts, often paralyzed by over-analysis, and missing out on the beauty of the present." link="" />
+                    <Wreckers title="PROCASTINATOR" subtitle="Drowning in a sea of endless thoughts, often paralyzed by over-analysis, and missing out on the beauty of the present." link="" />
+                    <Wreckers title="DISTRACTOR" subtitle="Easily lost in constant distractions, weakening your focus and diluting the achievement of your goals." link="" />
+                    <Wreckers title="PLEASER" subtitle="Constantly seeking external validation, often at the expense of self-worth and inner happiness." link="" />
+                    <Wreckers title="PESSIMIST" subtitle="Seeing the glass as perpetually half empty, draining your energy and stifling your personal growth." link="" />
+                    <Wreckers title="COMPARER" subtitle="Continuously measuring yourself against others, breeding feelings of inadequacy and overshadowing your unique strengths." link="" />
+                    <Wreckers title="FEARFUL" subtitle="Dominated by fear, imprisoned in comfort zones, and held back from pursuing your dreams." link="" />
+                    <Wreckers title="HYPER-EMOTIONAL" subtitle="Intense emotions leading to impulsiveness, often challenging your ability to maintain balance and harmony." link="" />
                 </div>
             </div>
 
