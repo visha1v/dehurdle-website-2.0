@@ -15,6 +15,9 @@ const HomePage = () => {
                     <a href="#" className="demo-link">GET A CUSTOMIZED DEMO &rarr;</a>
                 </div>
             </div>
+            <div className='counter-section'>
+                
+            </div>
 
         </div>
      );
