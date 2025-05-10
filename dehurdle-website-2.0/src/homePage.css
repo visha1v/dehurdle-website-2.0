@@ -117,11 +117,101 @@
     z-index: -1;
 }
 
+.counter-section{
+    background-color: white;
+    width: 100%;  
+    min-height: 800px; 
+    max-height: 800px; 
+    height: auto;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+    overflow: hidden;  
+    gap:50px;
+}
+
+.counter-section .top-line{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+}
+.counter-section .company-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.counter-section .company-logos .image-container{
+    background-color: #ECECEC;
+    border-radius: 15px;
+    padding:20px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 15%;
+}
+
+.stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.counter {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Fraunces', sans-serif;
+}
+.counter.pink {
+    color: #D72B6A;
+}
+
+.counter.teal {
+    color: #176E6D;
+}
+
+.counter-suffix {
+    font-size: 36px;
+    margin-left: 2px;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.stat-item p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+    color:#292F36;
+    margin: 0;
+    font-family: 'Fraunces', sans-serif;
+}
+
 .homePage {
   width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;  
+  display: flex;
+  flex-direction: column;
+justify-content: center;
 }
 
 body, html {
