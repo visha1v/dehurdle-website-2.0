@@ -105,6 +105,11 @@ const HomePage = () => {
                     <Wreckers title="HYPER-EMOTIONAL" subtitle="Intense emotions leading to impulsiveness, often challenging your ability to maintain balance and harmony." link="" />
                 </div>
             </div>
+            <div className="work-section">
+                <p className='work-title'>How Dehurdle Works</p>
+                <p className='work-subtitle'>Continuous. Personalized. Research-Backed. Behavior-Changing. </p>
+                <img src="working-flow.svg" alt="How Dehurdle Works" className="work-image" />
+            </div>
 
         </div>
      );
