@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import "./homePage.css";
 import ExperienceSection from './ExperienceSection.js';
+import Plans from './Plans.js';
 
 const Counter = ({ end, suffix = '+' ,color}) => {
     const [count, setCount] = useState(0);
@@ -113,6 +114,10 @@ const HomePage = () => {
             </div>
             <div className="experience-section">
                 <ExperienceSection />
+            </div>
+            <div className="reviews-section"></div>
+            <div className="plans-section">
+                <Plans />
             </div>
 
         </div>

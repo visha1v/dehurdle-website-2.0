@@ -100,6 +100,9 @@ const ExperienceSection = () => {
                     progress={scrollProgress}
                 />
             </div>
+            <div className='timeline-button'>
+                <button className='timeline-button'>SEE DEHURDLE IN ACTION</button>
+            </div>
         </div>
     );
 }
