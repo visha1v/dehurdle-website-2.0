@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import "./homePage.css";
+import ExperienceSection from './ExperienceSection.js';
 
 const Counter = ({ end, suffix = '+' ,color}) => {
     const [count, setCount] = useState(0);
@@ -109,6 +110,9 @@ const HomePage = () => {
                 <p className='work-title'>How Dehurdle Works</p>
                 <p className='work-subtitle'>Continuous. Personalized. Research-Backed. Behavior-Changing. </p>
                 <img src="working-flow.svg" alt="How Dehurdle Works" className="work-image" />
+            </div>
+            <div className="experience-section">
+                <ExperienceSection />
             </div>
 
         </div>
