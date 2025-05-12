@@ -1,16 +1,26 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import HomePage from './homePage.js';
+
+// Pages
+import Home from './screens/home/Home';
+//import About from './pages/About';
+//import Plans from './pages/Plans';
+//import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <div className="App">
-      <div className='header'></div>
-      <div className='main'>
-        <HomePage />  
+    <BrowserRouter>
+      <div className="App">
+        <main className="main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/about" element={<About />} />
+            <Route path="/plans" element={<Plans />} />
+            <Route path="*" element={<NotFound />} />*/}
+          </Routes>
+        </main>
       </div>
-      <div className='footer'> </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
