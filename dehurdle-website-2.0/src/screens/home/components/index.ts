@@ -7,3 +7,4 @@ export { default as Overview } from './overview/Overview';
 export { default as LeadingOrg } from './leading-org/LeadingOrg';
 export {default as HomeLanding} from './home-landing/HomeLanding';
 export { default as Wreckers } from './wrecker-cards/Wreckers';
+export { default as DehurdleWorking } from './dehurdle-working/DehurdleWorking';

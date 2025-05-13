@@ -1,0 +1,67 @@
+@import '../../../../theme';
+
+// Variables
+$font-fraunces: 'Fraunces', serif;
+$font-quicksand: 'Quicksand', sans-serif;
+$color-pink: #D72B6A;
+$color-teal: #178A86;
+$color-text: #5B717F;
+$color-white: #FFFFFF;
+$color-grey-light: #ECECEC;
+$color-bg-pink: #E84C8D;
+
+// Breakpoints
+$mobile-breakpoint: 480px; 
+
+.dehurdle-working{
+    background-color: white;
+    width:100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:5% ;
+
+    .work-title{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 0 40px;
+    padding-top:5%;
+    position: relative;
+    z-index: 1;
+    }
+    .work-subtitle{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #4E5E6C;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    }
+    .flow-chart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        position: relative;
+        z-index: 1;
+        margin-left: auto;
+        margin-right: auto;
+
+        svg{
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }}

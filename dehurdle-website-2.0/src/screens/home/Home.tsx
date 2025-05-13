@@ -5,7 +5,8 @@ import { CustomAppWrapper } from 'components';
 import {
   LeadingOrg,
   HomeLanding,
-  Wreckers
+  Wreckers,
+  DehurdleWorking
 } from './components';
 
 // Add error boundary to catch issues
@@ -22,6 +23,9 @@ const Home: FC = memo(() => {
       </ErrorBoundary>
       <ErrorBoundary fallback={<div>Something went wrong</div>}>
         <Wreckers />
+      </ErrorBoundary>
+      <ErrorBoundary fallback={<div>Something went wrong</div>}>
+        <DehurdleWorking />
       </ErrorBoundary>
     </CustomAppWrapper>
   );

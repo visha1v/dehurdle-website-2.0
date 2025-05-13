@@ -92,6 +92,7 @@ export { default as RightYellowCloudImage } from './images/right-yellow-cloud.sv
 export { default as SelfRealisation } from './images/self-realisation.svg';
 export { default as ThinkingImage } from './images/thinking.svg';
 export { default as LetsConnectImage } from './images/lets-connect.svg';
+export { default as WorkFlowChart } from './images/dehurdle-work-flow-chart.svg'
 
 
 // PNG Images

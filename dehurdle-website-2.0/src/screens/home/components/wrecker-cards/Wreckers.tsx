@@ -17,7 +17,7 @@ const getLottieAnimation = (title: string) => {
     case 'OVERTHINKER':
       return OverthinkerLottie;
     case 'PROCASTINATOR':
-    case 'PROCRASTINATOR': // Fixed spelling to match your asset export
+    case 'PROCRASTINATOR': 
       return ProcrastinatorLottie;
     case 'DISTRACTOR':
       return DistractorLottie;
