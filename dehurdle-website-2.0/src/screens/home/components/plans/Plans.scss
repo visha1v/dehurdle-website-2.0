@@ -47,6 +47,11 @@ $tablet-breakpoint: 768px;
   padding: 32px;
   height: auto;
   
+  &.mobile {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  
   .title {
     font-family: $font-fraunces;
     font-size: 40px;
@@ -57,6 +62,10 @@ $tablet-breakpoint: 768px;
     margin: 0;
     position: relative;
     z-index: 1;
+    
+    @media (max-width: $mobile-breakpoint) {
+      font-size: 30px;
+    }
   }
 }
 
@@ -64,15 +73,20 @@ $tablet-breakpoint: 768px;
   padding: 32px;
   position: relative;
   
-  &.mobile-view {
-    padding: 20px 0;
+  @media (max-width: $mobile-breakpoint) {
+    padding: 20px 10px;
   }
 }
 
 .carousel-track {
   position: relative;
-  height: 500px;
+  height: 550px;
   overflow: hidden;
+  
+  @media (max-width: $mobile-breakpoint) {
+    height: 380px;
+    touch-action: pan-y; // Enable vertical scrolling but use JS for horizontal
+  }
 }
 
 .carousel-card {
@@ -94,21 +108,31 @@ $tablet-breakpoint: 768px;
   @include transition;
   border: 2px solid transparent;
   
-  
   // Generate card color classes
   @each $id, $color in $card-colors {
     &-#{$id} {
       background-color: $color;
     }
   }
-  
+  // Mobile specific adjustment
+  @media (max-width: $mobile-breakpoint) {
+    width: 260px;
+    height: 320px; // Increase height for mobile
+    top: 30px; // Position from top to avoid being cut off
+    // Remove bottom positioning that could be causing overflow
+  }
+
+
   .card-title {
     font-family: $font-fraunces;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 8px;
     @include transition(color, 0.5s);
-
+    
+    @media (max-width: $mobile-breakpoint) {
+      font-size: 24px;
+    }
   }
   
   .card-subtitle {
@@ -117,34 +141,25 @@ $tablet-breakpoint: 768px;
     font-size: 26px;
     margin-top: 8px;
     @include transition(color, 0.5s);
+    
+    @media (max-width: $mobile-breakpoint) {
+      font-size: 20px;
+    }
   }
-}
-@media (max-width: $mobile-breakpoint) {
-  .carousel-card {
-    position: absolute;
-    top: 50%;  
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1); // Center properly using translate
+  
+  @media (max-width: $mobile-breakpoint) {
     width: 260px;
     height: 280px;
+    top: 25px; // Position from the top rather than center for mobile
+    padding: 16px;
+    max-width: 85%;
     
     &.active {
       opacity: 1;
-      z-index: 10;
-      visibility: visible;
-    }
-    
-    &:not(.active) {
-      opacity: 0;
-      z-index: 0;
-      visibility: hidden;
-      transform: translate(-50%, -50%) scale(0.85); // Keep the scale effect
+      z-index: 2;
     }
   }
 }
-
-
-
 
 .indicator-dots {
   @include flex-center;
@@ -163,7 +178,11 @@ $tablet-breakpoint: 768px;
     &.active {
       background-color: $color-pink;
     }
-
+    
+    @media (max-width: $mobile-breakpoint) {
+      width: 10px;
+      height: 10px;
+    }
   }
 }
 
@@ -194,13 +213,15 @@ $tablet-breakpoint: 768px;
   &-next {
     right: 16px;
   }
-
+  
+  @media (max-width: $mobile-breakpoint) {
+    display: none; // Hidden on mobile
+  }
 }
 
 .explore-button-container {
   @include flex-center;
   margin-top: 32px;
-  
   
   .explore-button {
     background-color: $color-teal;
@@ -218,6 +239,13 @@ $tablet-breakpoint: 768px;
     
     &:hover {
       background-color: $color-teal-hover;
+    }
+    
+    @media (max-width: $mobile-breakpoint) {
+      padding: 16px 20px;
+      width: 90%;
+      max-width: 260px;
+      font-size: 14px;
     }
   }
 }
