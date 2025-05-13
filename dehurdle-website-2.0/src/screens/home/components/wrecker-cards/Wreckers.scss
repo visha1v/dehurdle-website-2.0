@@ -1,0 +1,290 @@
+@import '../../../../theme';
+
+// Variables
+$font-fraunces: 'Fraunces', serif;
+$font-quicksand: 'Quicksand', sans-serif;
+$color-pink: #D72B6A;
+$color-teal: #178A86;
+$color-text: #5B717F;
+$color-white: #FFFFFF;
+$color-grey-light: #ECECEC;
+$color-bg-pink: #E84C8D;
+
+// Breakpoints
+$mobile-breakpoint: 480px; // Only mobile gets single column layout
+
+.wrecker-section {
+  width: 100%;
+  height: auto;
+}
+
+.wreckers-section {
+  background-color: #FBE8F2;
+  width: 100%;  
+  min-height: 100%; 
+  height: auto;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+  overflow: hidden;  
+  gap: 20px;
+  
+  .wreckers-title {
+    font-family: $font-fraunces;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #292F36;
+    text-align: center;
+    margin: 0;
+    margin-top: 75px;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+  }
+  
+  .wreckers-subtitle {
+    font-family: $font-quicksand;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #4E5E6C;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.wreckers-grid {
+  width: 90%;  
+  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;  
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.wreckers-card {
+  width: 100%;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  box-sizing: border-box;
+  border: solid 2px #E84C8D;
+  position: relative;
+
+  .card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 100%;
+
+    .title {
+      font-family: $font-fraunces;
+      font-weight: 900;
+      font-size: 31px;
+      line-height: 1.35;
+      color: $color-text;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+  
+    .subtitle {
+      font-family: $font-quicksand;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.54;
+      color: $color-text;
+      margin-top: 0;
+      padding-top: 15px;
+      text-align: left;
+    }
+  
+    .wrecker-link {
+      color: $color-teal;
+      text-decoration: none;
+      font-family: $font-quicksand;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+      margin-top: 0;
+      position: relative;
+      z-index: 1;
+      
+      &:hover,
+      &:visited,
+      &:active {
+        color: $color-teal;
+      }
+    }
+  }
+  
+  .lottie-container {
+    width: 100%;
+    margin-top: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    min-height: 120px;
+    padding-bottom: 0;
+    margin-bottom: -40px;
+  }
+  
+  .wrecker-animation {
+    width: 70%;
+    height: auto;
+  }
+}
+
+.wreckers-card:hover {
+  .wrecker-animation {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+}
+
+// Tablet adjustments - keep 2-column layout but reduce font and spacing
+@media (max-width: 992px) and (min-width: 481px) {
+  .wreckers-section {
+    .wreckers-title {
+      font-size: 32px;
+      margin-top: 50px;
+      padding: 0 20px;
+    }
+    
+    .wreckers-subtitle {
+      font-size: 24px;
+      padding: 0 20px;
+    }
+  }
+  
+  .wreckers-grid {
+    width: 95%;
+    gap: 25px; // Less gap on tablet
+    padding: 30px 20px;
+  }
+  
+  .wreckers-card {
+    padding: 25px 25px 15px;
+    min-height: 280px;
+    
+    .card-content {
+      .title {
+        font-size: 24px;
+      }
+      
+      .subtitle {
+        font-size: 18px;
+        padding-top: 10px;
+      }
+      
+      .wrecker-link {
+        font-size: 16px;
+      }
+    }
+    
+    .lottie-container {
+      min-height: 100px;
+    }
+    
+    .wrecker-animation {
+      width: 65%;
+      max-height: 130px;
+    }
+  }
+}
+// Only mobile gets single column
+@media (max-width: $mobile-breakpoint) {
+  // Fix for the entire section
+  .wrecker-section {
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .wreckers-section {
+    width: 100vw; // Use viewport width
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+    .wreckers-title {
+      font-size: 24px;
+      margin-top: 40px;
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    
+    .wreckers-subtitle {
+      font-size: 18px;
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+  }
+  
+  .wreckers-grid {
+    width: 100vw;
+    max-width: 100%;
+    padding: 15px;
+    gap: 20px;
+    margin: 0;
+    grid-template-columns: 1fr; // Single column ONLY on mobile
+    box-sizing: border-box;
+  }
+  
+  .wreckers-card {
+    padding: 20px 20px 15px;
+    min-height: 350px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    
+    .card-content {
+      .title {
+        font-size: 20px;
+      }
+      
+      .subtitle {
+        font-size: 16px;
+        line-height: 1.4;
+        padding-top: 10px;
+      }
+      
+      .wrecker-link {
+        font-size: 14px;
+      }
+    }
+    
+    .lottie-container {
+      min-height: 250px;
+    }
+    
+    .wrecker-animation {
+      width: 60%;
+      max-height: 120px;
+    }
+  }
+}
