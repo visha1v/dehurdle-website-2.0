@@ -1,0 +1,223 @@
+@import '../../../../theme';
+
+// Font imports
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Quicksand:wght@300..700&display=swap');
+
+// Variables
+$font-fraunces: 'Fraunces', serif;
+$font-quicksand: 'Quicksand', sans-serif;
+$color-pink: #E84C8D;
+$color-pink-hover: #db2777;
+$color-teal: #0d9488;
+$color-teal-hover: #0f766e;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-grey: #9ca3af;
+
+// Card colors
+$card-colors: (
+  'sea': #F1FCFA,
+  'lite': #FDFCEC,
+  'free': #FDF2F7,
+  'membership': #F1FCFA,
+  'custom': #FDFCEC
+);
+
+// Breakpoints
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($property: all, $duration: 0.3s) {
+  transition: $property $duration ease-in-out;
+}
+
+// Main styles
+.carousel-container {
+  position: relative;
+  width: 90%;
+  border: none;
+  margin: 0 auto;
+  padding: 32px;
+  height: auto;
+  
+  .title {
+    font-family: $font-fraunces;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: $color-black;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.carousel-border {
+  padding: 32px;
+  position: relative;
+  
+  &.mobile-view {
+    padding: 20px 0;
+  }
+}
+
+.carousel-track {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-card {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 296px;
+  height: 305px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  @include transition;
+  border: 2px solid transparent;
+  
+  
+  // Generate card color classes
+  @each $id, $color in $card-colors {
+    &-#{$id} {
+      background-color: $color;
+    }
+  }
+  
+  .card-title {
+    font-family: $font-fraunces;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 8px;
+    @include transition(color, 0.5s);
+
+  }
+  
+  .card-subtitle {
+    font-family: $font-quicksand;
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 8px;
+    @include transition(color, 0.5s);
+  }
+}
+@media (max-width: $mobile-breakpoint) {
+  .carousel-card {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); // Center properly using translate
+    width: 260px;
+    height: 280px;
+    
+    &.active {
+      opacity: 1;
+      z-index: 10;
+      visibility: visible;
+    }
+    
+    &:not(.active) {
+      opacity: 0;
+      z-index: 0;
+      visibility: hidden;
+      transform: translate(-50%, -50%) scale(0.85); // Keep the scale effect
+    }
+  }
+}
+
+
+
+
+.indicator-dots {
+  @include flex-center;
+  margin-top: 24px;
+  gap: 8px;
+  
+  .indicator-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $color-grey;
+    border: none;
+    cursor: pointer;
+    @include transition(background-color);
+    
+    &.active {
+      background-color: $color-pink;
+    }
+
+  }
+}
+
+.nav-button {
+  position: absolute;
+  top: 245px; // Adjusted to middle of carousel
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #F175AC;
+  border-radius: 50%;
+  @include flex-center;
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  @include transition(background-color);
+  z-index: 20;
+  
+  &:hover {
+    background-color: $color-pink-hover;
+  }
+  
+  &-prev {
+    left: 16px;
+  }
+  
+  &-next {
+    right: 16px;
+  }
+
+}
+
+.explore-button-container {
+  @include flex-center;
+  margin-top: 32px;
+  
+  
+  .explore-button {
+    background-color: $color-teal;
+    color: $color-white;
+    padding: 24px 32px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    @include transition(background-color);
+    font-family: $font-quicksand;
+    width: 300px;
+    
+    &:hover {
+      background-color: $color-teal-hover;
+    }
+  }
+}
