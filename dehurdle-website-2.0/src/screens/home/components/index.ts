@@ -1,0 +1,8 @@
+export { default as Assessment } from './assessment/assessment';
+export { default as ChallengeCompass } from './challenge-compass/ChallengeCompass';
+export { default as HomeDescription } from './home-description/HomeDescription';
+export { default as DiscoveryCard } from './discovery-card/DiscoveryCard';
+export { default as ExploreDehurdle } from './explore-dehurdle/ExploreDehurdle';
+export { default as Overview } from './overview/Overview';
+export { default as LeadingOrg } from './leading-org/LeadingOrg';
+export {default as HomeLanding} from './home-landing/HomeLanding';

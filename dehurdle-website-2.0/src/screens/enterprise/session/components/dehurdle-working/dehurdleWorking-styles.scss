@@ -1,0 +1,45 @@
+@import '../../../../../theme';
+
+.dehurdle-working {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-40;
+    padding: $spacing-80 $spacing-48;
+  }
+  &__title.MuiTypography-root {
+    align-self: center;
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-52;
+    text-transform: uppercase;
+  }
+}
+
+@include md {
+  .dehurdle-working {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-40;
+      padding: $spacing-80 $spacing-48;
+    }
+  }
+}
+
+@include sm {
+  .dehurdle-working {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-24;
+      padding: $spacing-48 $spacing-20;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+  }
+}

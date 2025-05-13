@@ -1,0 +1,84 @@
+@import '../../../../theme';
+
+.hero-section {
+  &__container {
+    align-items: center;
+    background: url('../../../../assets/images/wreckers-header.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-16;
+    justify-content: center;
+    padding: $spacing-132 $spacing-296;
+  }
+
+  &__sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-16;
+    justify-content: center;
+    @include textGlowEffect;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-52;
+    text-align: center;
+    white-space: pre-line;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-38;
+    text-align: center;
+  }
+}
+
+@include md {
+  .hero-section {
+    &__container {
+      background: url('../../../../assets/images/wreckers-header-tablet.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      padding: $spacing-294 $spacing-52 $spacing-228 $spacing-52;
+    }
+  }
+}
+
+@include sm {
+  .hero-section {
+    &__container {
+      background: url('../../../../assets/images/wreckers-header-mobile.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: $spacing-134 $spacing-20 $spacing-78 $spacing-20;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+@import '../../../../../../theme/';
+
+.audio-screen {
+  &__container {
+    background-color: get-color($green, 50);
+    border-radius: $spacing-34;
+    padding-left: $spacing-10;
+    padding-right: $spacing-10;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__meditation {
+    background-color: get-color($pink, 50);
+  }
+
+  &__status-bar {
+    width: 100%;
+  }
+
+  &__sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__thumbnail {
+    border-radius: $spacing-16;
+    height: fit-content;
+    margin-bottom: $spacing-20;
+    margin-top: $spacing-24;
+    width: 100%;
+  }
+  &__meditation {
+    -moz-box-shadow: $spacing-4 $spacing-4 $spacing-20 $fandangoPink52;
+    -webkit-box-shadow: $spacing-4 $spacing-4 $spacing-20 $fandangoPink52;
+    box-shadow: $spacing-4 $spacing-4 $spacing-20 $fandangoPink52;
+  }
+  &__mastery {
+    -moz-box-shadow: $spacing-8 $spacing-8 $spacing-64 $easternBlue52;
+    -webkit-box-shadow: $spacing-8 $spacing-8 $spacing-64 $easternBlue52;
+    box-shadow: $spacing-8 $spacing-8 $spacing-64 $easternBlue52;
+  }
+
+  &__title {
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    line-height: $spacing-32;
+    text-align: center;
+    font-weight: $font-weight-bold;
+    color: get-color($neutral, 700);
+    margin-bottom: $spacing-24;
+    margin-top: $spacing-20;
+  }
+
+  &__progress-container {
+    height: $spacing-12;
+    position: relative;
+    border-radius: $spacing-12;
+    border: $spacing-1-5 solid get-color($yellow, 500);
+    overflow: hidden;
+    margin-left: $spacing-16;
+    margin-right: $spacing-16;
+  }
+
+  &__progress {
+    position: absolute;
+    left: $spacing-0;
+    bottom: $spacing-0;
+    top: $spacing-0;
+    background-color: get-color($yellow, 500);
+    transition: width 0.1s ease-in-out;
+  }
+
+  &__time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: $spacing-16;
+    margin-right: $spacing-16;
+  }
+
+  &__time {
+    font-family: $primary-font;
+    font-weight: $font-weight-bold;
+    font-size: $spacing-12;
+    line-height: $spacing-18;
+    letter-spacing: 2%;
+    color: get-color($neutral, 700);
+  }
+
+  &__control-container {
+    display: flex;
+    justify-content: center;
+    margin-top: $spacing-32;
+  }
+
+  &__control {
+    cursor: pointer;
+    width: $spacing-74;
+    height: $spacing-74;
+  }
+
+  &__control-replay {
+    align-self: center;
+    color: get-color($green, 600);
+    cursor: pointer;
+    margin-right: $spacing-16;
+  }
+
+  &__breakpoint {
+    position: absolute;
+    top: $spacing-0;
+    bottom: $spacing-0;
+    border-left: $spacing-1-5 solid get-color($yellow, 500);
+    background: transparent;
+  }
+
+  &__breakpoints-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+
+  &__game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: $spacing-0;
+    width: 100%;
+  }
+
+  &__result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__game-container-blur {
+    @extend .audio-screen__game-container;
+    backdrop-filter: blur(10px);
+    height: 100%;
+  }
+}

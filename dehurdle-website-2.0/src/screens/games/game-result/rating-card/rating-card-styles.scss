@@ -1,0 +1,57 @@
+@import '../../../../theme/';
+
+.rating-card {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($pink, 600);
+    font-family: $secondary-font;
+    font-weight: $font-weight-bold;
+    font-size: $spacing-18;
+    line-height: $spacing-25;
+    text-align: center;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-21;
+    margin-bottom: $spacing-6;
+    text-align: center;
+  }
+
+  &__sub-container {
+    display: flex;
+    gap: $spacing-8;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    height: $spacing-42;
+    width: $spacing-42;
+  }
+}
+
+@include landscape-md {
+  .rating-card {
+    &__title.MuiTypography-root {
+      font-size: $spacing-14;
+      line-height: $spacing-20;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-12;
+      line-height: $spacing-18;
+    }
+
+    &__icon {
+      height: $spacing-35;
+      width: $spacing-35;
+    }
+  }
+}

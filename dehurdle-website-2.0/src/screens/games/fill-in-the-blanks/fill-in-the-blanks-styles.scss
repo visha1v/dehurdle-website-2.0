@@ -1,0 +1,62 @@
+@import '../../../theme/';
+
+.fill-in-the-blanks {
+  &__container {
+    align-items: center;
+    background-color: get-color($neutral, default);
+    border-radius: $spacing-20;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-20;
+    padding: $spacing-20 $spacing-16;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $secondary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+    margin-bottom: $spacing-16;
+  }
+
+  &__option-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-12;
+  }
+
+  &__option-sub-container {
+    align-items: center;
+    border-radius: $spacing-88;
+    border: $spacing-1 solid get-color($neutral, 300);
+    justify-content: center;
+    padding: $spacing-8 $spacing-16;
+  }
+
+  &__option-title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-21;
+  }
+
+  &__sub-title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+    margin-bottom: $spacing-26;
+  }
+
+  &__placeholder {
+    color: get-color($pink, 600);
+  }
+
+  &__button.MuiButton-root {
+    height: $spacing-59;
+    width: 100%;
+  }
+}

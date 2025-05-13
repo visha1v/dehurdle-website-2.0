@@ -1,0 +1,158 @@
+@import '../../../../theme';
+
+.overview {
+  &__container {
+    align-items: center;
+    background: url('../../../../assets/images//overview-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: $spacing-32;
+    justify-content: space-around;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: $spacing-0 $spacing-80;
+  }
+
+  &__sub-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  &__main-container {
+    display: flex;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-56;
+    margin-bottom: $spacing-4;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-30;
+    text-align: left;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: column;
+    height: $spacing-500;
+    left: $spacing-0;
+    position: relative;
+    top: $spacing-0;
+    width: $spacing-400;
+  }
+
+  &__card {
+    position: absolute;
+    background-color: #fff;
+    top: $spacing-60;
+    left: $spacing-0;
+    width: 100%;
+    z-index: $spacing-70;
+  }
+
+  &__card:nth-child(2) {
+    @extend .overview__card;
+    z-index: 80;
+    top: $spacing-45;
+  }
+
+  &__card:nth-child(3) {
+    @extend .overview__card;
+    z-index: 90;
+    top: $spacing-30;
+  }
+
+  &__card:nth-child(4) {
+    @extend .overview__card;
+    z-index: 100;
+    top: $spacing-15;
+  }
+}
+
+@include landscape-md {
+  .overview {
+    &__container {
+      background: url('../../../../assets/images/overview-bg-mobile.png');
+      background-size: 100% 100%;
+      padding: $spacing-60 $spacing-46 $spacing-0 $spacing-46;
+      flex-direction: column;
+      gap: $spacing-38;
+    }
+
+    &__sub-container {
+      display: block;
+      width: 100%;
+      margin-top: $spacing-120;
+    }
+
+    &__main-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      margin-bottom: $spacing-140;
+    }
+
+    &__overview-card-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-40;
+      line-height: $spacing-52;
+      text-align: center;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-20;
+      line-height: $spacing-32;
+      text-align: center;
+    }
+  }
+}
+
+@include sm {
+  .overview {
+    &__container {
+      padding: $spacing-0 $spacing-20;
+    }
+
+    &__sub-container {
+      display: block;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+
+    &__main-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $spacing-48;
+    }
+  }
+}

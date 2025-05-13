@@ -1,0 +1,35 @@
+@import '../../theme';
+
+ul.bullet-container {
+  align-items: center;
+  color: get-color($neutral, 600);
+  display: flex;
+  font-family: $primary-font;
+  font-size: $spacing-14;
+  font-weight: $font-weight-medium;
+  line-height: $spacing-25;
+  margin-bottom: $spacing-4;
+  margin-top: $spacing-0;
+  padding-left: $spacing-8;
+}
+
+//Tablet
+@media screen and (min-width: $breakpoint-tablet-portrait) {
+  ul.bullet-container {
+    font-size: $spacing-16;
+    line-height: $spacing-24;
+    margin-bottom: $spacing-6;
+    padding-left: $spacing-10;
+  }
+}
+
+//Desktop
+@media screen and (min-width: $breakpoint-desktop) {
+  ul.bullet-container {
+    font-size: $spacing-18;
+    line-height: $spacing-17;
+    margin-bottom: $spacing-8;
+    max-width: $spacing-380;
+    padding-left: $spacing-12;
+  }
+}

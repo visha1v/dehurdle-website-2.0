@@ -1,0 +1,46 @@
+@import '../../theme';
+
+.custom-toast {
+  align-items: center;
+  border-radius: $spacing-6;
+  border: $spacing-1 solid;
+  display: flex;
+  justify-content: space-between;
+  padding: $spacing-12;
+  width: 40vw;
+  &__sub-container {
+    display: flex;
+    gap: $spacing-8;
+  }
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title.MuiTypography-root {
+    color: $gray;
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-24;
+  }
+  &__message.MuiTypography-root {
+    color: $darkSilver;
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-18;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .toast {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile-min) {
+  .toast {
+    width: 80vw;
+  }
+}

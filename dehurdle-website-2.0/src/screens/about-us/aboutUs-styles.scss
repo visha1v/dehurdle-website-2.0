@@ -1,0 +1,10 @@
+@import '../../theme';
+
+@include sm {
+  .about-us {
+    &__image {
+      width: $spacing_201;
+      height: $spacing_201;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import '../../../../theme';
+
+.request-demo-form {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-20;
+    padding: $spacing-26 $spacing-250 $spacing-120;
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-52;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-48;
+    text-align: center;
+  }
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-32;
+  }
+  &__details-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-12;
+  }
+  &__details-header.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-semi-bold;
+    line-height: $spacing-36;
+  }
+  &__sub-container {
+    display: flex;
+    gap: $spacing-34;
+    justify-content: space-between;
+  }
+  &__input {
+    flex: 1;
+  }
+  &__input-container {
+    background-color: get-color($neutral, default);
+  }
+  &__input-text.MuiFormLabel-root {
+    color: get-color($neutral, 700);
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-28;
+  }
+  &__footer-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-45;
+  }
+  &__footer-text.MuiTypography-root {
+    color: get-color($green, 700);
+    font-family: $primary-font;
+    font-size: $spacing-28;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-42;
+    text-align: center;
+  }
+  &__footer-button-container {
+    text-transform: uppercase;
+    background-color: get-color($green, 500) !important;
+  }
+  &__footer-button {
+    text-transform: uppercase;
+  }
+}
+
+@include landscape-md {
+  .request-demo-form {
+    &__container {
+      padding: $spacing-26 $spacing-135 $spacing-120;
+    }
+  }
+}
+
+@include sm {
+  .request-demo-form {
+    &__container {
+      padding: $spacing-26 $spacing-20 $spacing-120;
+    }
+    &__sub-container {
+      flex-direction: column;
+      gap: $spacing-12;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+      padding-left: $spacing-16;
+      padding-right: $spacing-16;
+    }
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+    &__details-header.MuiTypography-root {
+      font-size: $spacing-20;
+      line-height: $spacing-30;
+    }
+    &__input-text.MuiFormLabel-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+    &__footer-text.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+    &__form-container {
+      gap: $spacing-16;
+    }
+  }
+}

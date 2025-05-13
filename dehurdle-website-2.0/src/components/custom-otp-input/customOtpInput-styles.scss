@@ -1,0 +1,33 @@
+@import '../../theme';
+
+.otp-input-field {
+  &__input-text {
+    border-radius: $spacing-8 !important;
+    display: flex;
+    justify-content: end;
+    .MuiOutlinedInput-input {
+      border-color: $neutralGray;
+      color: $neutralBlack;
+      font-size: $spacing-14;
+      font-weight: $font-weight-regular;
+      line-height: $spacing-22;
+      padding: $spacing-16;
+    }
+  }
+  &__error {
+    @extend .otp-input-field__input-text;
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $radish;
+    }
+  }
+}
+.MuiOtpInput-TextField {
+  border-color: unset;
+  border-radius: $spacing-8;
+  border-width: $spacing-0;
+  border: $spacing-0;
+  display: flex;
+  justify-content: center;
+  height: $spacing-52;
+  width: $spacing-78;
+}

@@ -1,0 +1,112 @@
+@import '../../../../../../theme';
+
+.user-testimonial-card {
+  &__container {
+    background: url('../../../../../../assets/images/testimonial-card-background.png');
+    background-position: center top $spacing-15;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: $spacing-30;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-48;
+    justify-content: space-between;
+    padding: $spacing-40 $spacing-64;
+    position: relative;
+  }
+
+  &__icon {
+    left: $spacing-16;
+    position: absolute;
+    top: $spacing-8;
+  }
+
+  &__sub-container {
+    display: flex;
+  }
+
+  &__testimonial.MuiTypography-root {
+    color: $vampire-black;
+    font-family: $primary-font;
+    font-size: $spacing-28;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-38;
+  }
+
+  &__designation-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+  }
+
+  &__name.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-25;
+  }
+
+  &__designation.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-16;
+    font-style: italic;
+    font-weight: $font-weight-semi-bold;
+    line-height: $spacing-17;
+  }
+}
+
+@include md {
+  .user-testimonial-card {
+    &__container {
+      background: url('../../../../../../assets/images/testimonial-card-mobile-background.png');
+      background-position: center top $spacing-8;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: $spacing-320;
+      margin-left: $spacing-48;
+      margin-right: $spacing-48;
+      padding: $spacing-40 $spacing-50;
+    }
+  }
+}
+
+@include sm {
+  .user-testimonial-card {
+    &__container {
+      height: $spacing-240;
+      gap: $spacing-40;
+      margin-left: $spacing-20;
+      margin-right: $spacing-20;
+      padding: $spacing-40 $spacing-24;
+    }
+
+    &__testimonial.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+    }
+
+    &__designation.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-20;
+    }
+
+    &__name.MuiTypography-root {
+      font-size: $spacing-20;
+      line-height: $spacing-24;
+      margin-right: $spacing-8;
+    }
+
+    &__sub-container {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-8;
+      align-items: start !important;
+    }
+
+    &__icon {
+      margin-top: $spacing-2;
+    }
+  }
+}

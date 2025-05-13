@@ -1,0 +1,92 @@
+@import '../.././../theme';
+
+.card {
+  &__container {
+    align-items: center;
+    border-radius: $spacing-16;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $spacing-32;
+    position: relative;
+    border: $spacing-1 solid get-color($neutral, 200);
+  }
+
+  &__header.MuiTypography-root {
+    font-family: $secondary-font;
+    font-size: $spacing-149;
+    font-weight: $font-weight-extra-bold;
+    left: 10%;
+    line-height: $spacing-209;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+  }
+
+  &__image {
+    height: $spacing-450;
+    width: $spacing-450;
+    object-fit: cover;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-28;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-37;
+    text-align: center;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-medium;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-32;
+    text-align: center;
+  }
+}
+
+@include landscape-md {
+  .card {
+    &__title.MuiTypography-root {
+      font-size: $spacing-36;
+      line-height: $spacing-48;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-20;
+      line-height: $spacing-32;
+    }
+  }
+}
+
+@include sm {
+  .card {
+    &__container {
+      padding: $spacing-0 $spacing-32 $spacing-66 $spacing-32;
+      border-radius: $spacing-0;
+    }
+
+    &__header.MuiTypography-root {
+      display: none;
+    }
+
+    &__image {
+      width: 100vw;
+      height: 100%;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-32;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+  }
+}

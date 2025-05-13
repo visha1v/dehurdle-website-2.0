@@ -1,0 +1,33 @@
+@import '../../../../theme';
+
+.home-description {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  &__sub-container.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-36;
+    padding: $spacing-64 $spacing-20;
+    text-align: center;
+    white-space: pre-line;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet-portrait) {
+  .home-description {
+    &__sub-container.MuiTypography-root {
+      padding: $spacing-152 $spacing-120;
+      font-size: $spacing-44;
+      line-height: $spacing-66;
+      font-family: $primary-font;
+      font-weight: $font-weight-medium;
+    }
+  }
+}

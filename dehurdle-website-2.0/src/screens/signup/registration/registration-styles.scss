@@ -1,0 +1,128 @@
+@import '../../../theme';
+
+.registration {
+  &__container {
+    align-items: center;
+    background-color: $babyPowder;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    padding: $spacing-88 $spacing-0 $spacing-272;
+  }
+  &__sub-container {
+    background-color: get-color($neutral);
+    border-radius: $spacing-24;
+    border: $spacing-1 solid get-color($neutral, 100);
+    padding: $spacing-32;
+    width: 35%;
+  }
+  &__main-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-16;
+    margin-bottom: $spacing-16;
+    width: 100%;
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 300);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-22;
+    text-align: center;
+  }
+  &__subtitle.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-36;
+    text-align: center;
+  }
+  &__input-container {
+    margin-top: $spacing-16;
+    width: 100%;
+  }
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-22;
+    text-align: center;
+  }
+  &__button-container {
+    display: flex;
+    gap: $spacing-20;
+    justify-content: center;
+  }
+  &__back-button.MuiButton-root {
+    background-color: transparent;
+    border: $spacing-1 solid get-color($green, 600);
+    width: 25%;
+    &:hover {
+      background-color: unset;
+    }
+  }
+  &__button.MuiButton-root {
+    border: none;
+    width: 25%;
+    &.MuiButton-root.Mui-disabled {
+      background-color: get-color($neutral, 100);
+      color: get-color($neutral, 400);
+    }
+  }
+  &__button-title {
+    color: get-color($green, 600);
+  }
+}
+
+@include lg {
+  .registration {
+    &__sub-container {
+      width: 45%;
+    }
+  }
+}
+
+@include md {
+  .registration {
+    &__sub-container {
+      width: 55%;
+    }
+  }
+}
+
+@include sm {
+  .registration {
+    &__container {
+      padding: $spacing-30 $spacing-20;
+    }
+    &__sub-container {
+      gap: $spacing-16;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: $spacing-32 $spacing-16 $spacing-20 $spacing-16;
+      width: unset;
+    }
+    &__main-container {
+      margin-bottom: $spacing-0;
+    }
+    &__subtitle.MuiTypography-root {
+      font-size: $spacing-20;
+      line-height: $spacing-28;
+    }
+    &__button-container {
+      gap: $spacing-16;
+      padding: $spacing-0;
+      width: 100%;
+    }
+    &__back-button.MuiButton-root,
+    &__button.MuiButton-root {
+      flex: 1;
+    }
+  }
+}

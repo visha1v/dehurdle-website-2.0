@@ -1,0 +1,83 @@
+$green: (
+  50: #f1fcfa,
+  100: #d0f7f1,
+  200: #b2ede4,
+  300: #69dfd3,
+  400: #39c8be,
+  500: #20aca4,
+  600: #178a86,
+  700: #176e6d,
+);
+
+$pink: (
+  50: #fdf2f7,
+  100: #fbe8f2,
+  200: #f3d2e4,
+  300: #f7aace,
+  400: #f175ac,
+  500: #e84c8d,
+  600: #d72b6a,
+);
+
+$neutral: (
+  default: #ffffff,
+  50: #f4f6f7,
+  100: #e2e8eb,
+  200: #c9d3d8,
+  300: #a3b3bd,
+  400: #768c9a,
+  500: #5b717f,
+  600: #4e5e6c,
+  700: #292f36,
+);
+
+$yellow: (
+  50: #fffeea,
+  100: #fff9c5,
+  200: #f3ea91,
+  300: #ffe846,
+  400: #ffd61e,
+  500: #ffb800,
+  600: #e28d00,
+);
+
+$accent: (
+  default: #fefbfc,
+  50: #fdfcec,
+);
+
+$babyPowder: #fefefa; // match this with appbar backgroundColor once accessible
+$boxShadowColor: #5d5d5d1a;
+$cardShadow: #00000030;
+$demoVideoOverlay: #00000065;
+$charcoal: #2b3f57;
+$cyclamen: #f266a033;
+$dark-gray: #5c5c5c;
+$darkSilver: #4d4d4d;
+$easternBlue52: #20aca452;
+$distant-horizon: #f0f7fb;
+$failure: #d7402b;
+$fandangoPink52: #df588952;
+$floral-white: #fcfcf2;
+$ghost-white: #f9fafb;
+$gray: #333333;
+$jasmine: #f6d47a33;
+$kingYellow: #feb804;
+$lemon: #f9f4cb;
+$neutralBlack: #1a1a1a;
+$neutralGray: #c4c4c4;
+$old-lavender: #6e6b7b;
+$paleYellow: #fdfcec;
+$radish: #ff9999;
+$skyBlue: #7cebe433;
+$snow: #fef6fa;
+$success: #178a53;
+$floral-white: #fcfcf2;
+$canaletto: #38434d;
+$lavender-blush: #fef6f6;
+$vampire-black: #080708;
+
+//Funtion to get color schemes
+@function get-color($color-name, $variation: 'default') {
+  @return map-get($map: $color-name, $key: $variation);
+}

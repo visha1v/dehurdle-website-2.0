@@ -1,0 +1,8 @@
+@import '.././../theme';
+
+.wreckers {
+  &__container {
+    overflow: scroll;
+    width: 100vw;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../theme';
+
+.text-field {
+  &__start-adornment-phone {
+    border-right: $spacing-1 solid get-color($neutral, 300);
+    color: get-color($neutral, 700);
+    margin-right: $spacing-8;
+    padding: $spacing-0 $spacing-16;
+  }
+  &__input.MuiOutlinedInput-root {
+    border-radius: $spacing-16;
+    padding-left: $spacing-0;
+    padding-right: $spacing-0;
+    .MuiOutlinedInput-input {
+      color: get-color($neutral, 700);
+      font-family: $primary-font;
+      font-size: $spacing-16;
+      font-weight: $font-weight-medium;
+      line-height: $spacing-24;
+      overflow: hidden;
+      padding: $spacing-16;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+@import '../../../../theme';
+
+// Variables
+$font-fraunces: 'Fraunces', serif;
+$font-quicksand: 'Quicksand', sans-serif;
+$color-pink: #D72B6A;
+$color-teal: #176E6D;
+$color-text: #292F36;
+$color-black: #000000;
+$color-grey-light: #ECECEC;
+
+// Breakpoints
+$tablet-breakpoint: 992px;
+$mobile-breakpoint: 480px;
+
+.counter-section {
+  background-color: white;
+  width: 100%;  
+  min-height: 800px; 
+  max-height: 800px; 
+  height: auto;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+  overflow: hidden;  
+  gap: 50px;
+  
+  .top-line {
+    font-family: $font-fraunces;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: $color-black;
+    text-align: center;
+    margin: 0;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .company-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+    .image-container {
+      background-color: $color-grey-light;
+      border-radius: 15px;
+      width: 250px;  /* Fixed width */
+      height: 90px; /* Fixed height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      svg, img {
+        max-width: 85%;
+        max-height: 85%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 15%;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  
+  p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: $color-text;
+    margin: 0;
+    font-family: $font-fraunces;
+  }
+}
+
+.counter {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: $font-fraunces;
+  
+  &.pink {
+    color: $color-pink;
+  }
+  
+  &.teal {
+    color: $color-teal;
+  }
+  
+  &-suffix {
+    font-size: 36px;
+    margin-left: 2px;
+    font-family: $font-fraunces;
+  }
+}
+
+// Mobile and Tablet Responsive Styles (for screens <= 992px)
+@media (max-width: $tablet-breakpoint) {
+  .counter-section {
+    min-height: auto;
+    max-height: none;
+    padding: 40px 20px;
+    gap: 30px;
+    
+    .top-line {
+      font-size: 32px;
+      padding: 0 20px;
+      margin-bottom: 10px;
+    }
+    
+    .company-logos {
+      flex-direction: column; // Stack logos vertically on smaller screens
+      gap: 20px;
+      
+      .image-container {
+        width: 200px; // Slightly smaller on mobile/tablet
+        height: 80px;
+      }
+    }
+  }
+  
+  .stats-container {
+    flex-direction: column; // Stack stats vertically
+    gap: 30px;
+    margin: 20px auto;
+  }
+  
+  .stat-item {
+    width: 100%;
+    margin-bottom: 20px;
+    
+    p {
+      font-size: 24px;
+    }
+  }
+  
+  .counter {
+    font-size: 36px;
+    
+    &-suffix {
+      font-size: 28px;
+    }
+  }
+}
+
+// Additional refinements for very small screens
+@media (max-width: $mobile-breakpoint) {
+  .counter-section {
+    .top-line {
+      font-size: 28px;
+    }
+    
+    .company-logos .image-container {
+      width: 180px;
+      height: 70px;
+    }
+  }
+  
+  .stat-item p {
+    font-size: 20px;
+  }
+  
+  .counter {
+    font-size: 32px;
+    
+    &-suffix {
+      font-size: 24px;
+    }
+  }
+}

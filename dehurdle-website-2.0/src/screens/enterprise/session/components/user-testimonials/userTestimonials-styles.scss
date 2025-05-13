@@ -1,0 +1,107 @@
+@import '../../../../../theme';
+
+.user-testimonials {
+  &__container {
+    padding: $spacing-80 $spacing-48;
+  }
+
+  &__sub-container {
+    display: grid;
+    gap: $spacing-24;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-52;
+    margin-bottom: $spacing-48;
+    text-align: center;
+  }
+
+  &__carousel-container {
+    display: none;
+    overflow: hidden;
+  }
+
+  &__tcs-icon {
+    height: $spacing-47;
+    width: $spacing-75;
+  }
+
+  &__deloitte-icon {
+    height: $spacing-34;
+    width: $spacing-180;
+  }
+
+  &__nothing-icon {
+    height: $spacing-57;
+    width: $spacing-219;
+  }
+
+  &__accenture-icon {
+    height: $spacing-49;
+    width: $spacing-178;
+  }
+}
+
+@include md {
+  .user-testimonials {
+    &__container {
+      padding: $spacing-60 $spacing-0;
+    }
+    &__sub-container {
+      display: none;
+    }
+
+    &__carousel-container {
+      display: block;
+    }
+  }
+}
+
+@include sm {
+  .user-testimonials {
+    &__container {
+      padding: $spacing-48 $spacing-0;
+    }
+
+    &__sub-container {
+      display: none;
+    }
+
+    &__carousel-container {
+      display: block;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+      margin-bottom: $spacing-24;
+      margin-left: $spacing-20;
+      margin-right: $spacing-20;
+    }
+
+    &__tcs-icon {
+      height: $spacing-33;
+      width: $spacing-52;
+    }
+
+    &__deloitte-icon {
+      height: $spacing-20;
+      width: $spacing-108;
+    }
+
+    &__nothing-icon {
+      height: $spacing-35;
+      width: $spacing-132;
+    }
+
+    &__accenture-icon {
+      height: $spacing-30;
+      width: $spacing-107;
+    }
+  }
+}

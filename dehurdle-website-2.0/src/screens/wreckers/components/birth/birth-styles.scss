@@ -1,0 +1,155 @@
+@import '../../../../theme';
+
+.birth {
+  &__container {
+    background-color: $canaletto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $spacing-40;
+    padding-top: $spacing-117;
+  }
+  &__sub-container-1 {
+    background-image: url('../../../../assets/images/birth-of-wrecker-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center 65%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $spacing-392;
+    position: relative;
+  }
+  &__sub-container-1-content {
+    align-self: center;
+    text-align: center;
+    width: 69%;
+  }
+  &__sub-container-1-bg-image {
+    width: 100%;
+  }
+  &__sub-container-2 {
+    position: relative;
+  }
+  &__sub-container-2-image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__sub-container-2-content {
+    left: 24%;
+    margin-bottom: $spacing-67;
+    position: absolute;
+    text-align: center;
+    top: 6%;
+    width: 55%;
+  }
+  &__sub-container-3 {
+    background-image: url('../../../../assets/images/birth-of-wrecker-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center 94%;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+    position: relative;
+    text-align: center;
+  }
+  &__sub-container-3-content {
+    align-self: center;
+    margin-top: $spacing-64;
+    width: 55%;
+  }
+  &__sub-container-3-bg-image {
+    width: 100%;
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, default);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-52;
+    text-transform: uppercase;
+  }
+  &__sub-title.MuiTypography-root {
+    color: get-color($neutral, default);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-37;
+  }
+}
+
+@include lg {
+  .birth {
+    &__sub-container-2-content {
+      width: 48%;
+    }
+  }
+}
+
+@include md {
+  .birth {
+    &__container {
+      padding: $spacing-80 $spacing-48;
+    }
+    &__sub-container-1 {
+      background-image: none;
+      padding-bottom: $spacing-61;
+    }
+    &__sub-container-1-content {
+      width: 100%;
+    }
+    &__sub-container-2 {
+      flex-direction: column;
+    }
+    &__sub-container-2-image-container {
+      justify-content: center;
+    }
+    &__sub-container-2-content {
+      position: unset;
+      width: 100%;
+    }
+    &__sub-container-3 {
+      background-image: none;
+    }
+    &__sub-container-3-content {
+      width: 100%;
+    }
+  }
+}
+
+@include sm {
+  .birth {
+    &__container {
+      padding: $spacing-54 $spacing-20;
+    }
+    &__sub-container-1 {
+      background-image: none;
+      padding-bottom: $spacing-32;
+    }
+    &__sub-container-2-content {
+      margin-bottom: $spacing-40;
+    }
+    &__sub-container-3 {
+      background-image: none;
+    }
+    &__sub-container-3-image {
+      height: $spacing-276;
+      width: $spacing-260;
+    }
+    &__sub-container-3-content {
+      margin-top: $spacing-40;
+    }
+    &__sub-container-2-image-container-image {
+      height: $spacing-251;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+    &__sub-title.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+    }
+  }
+}

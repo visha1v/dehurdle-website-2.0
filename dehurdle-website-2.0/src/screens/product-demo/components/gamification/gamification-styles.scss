@@ -1,0 +1,142 @@
+@import '../../../../theme';
+
+.gamification {
+  &__container {
+    align-items: center;
+    background-image: url('../../../../assets/images/overview-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-62 $spacing-80 $spacing-104 $spacing-80;
+  }
+
+  &__heading {
+    @include textGlowEffect;
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-50;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-70;
+    text-align: center;
+    text-transform: uppercase;
+    width: 70%;
+  }
+
+  &__sub-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $spacing-32;
+    justify-content: space-between;
+    margin-top: $spacing-50;
+  }
+
+  &__card {
+    background-color: get-color($accent);
+    border-radius: $spacing-16;
+    border: $spacing-1 solid get-color($neutral, 200);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: $spacing-32 $spacing-20 $spacing-0 $spacing-20;
+  }
+
+  &__card-title {
+    color: get-color($pink, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-30;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-40;
+    text-align: center;
+  }
+
+  &__card-description {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-25;
+    text-align: center;
+  }
+
+  &__card-image {
+    width: 100%;
+  }
+}
+
+@include landscape-md {
+  .gamification {
+    &__container {
+      background-image: url('../../../../assets/images/overview-bg-mobile.png');
+      background-size: 100% 100%;
+    }
+
+    &__card {
+      padding: $spacing-38 $spacing-24 $spacing-48 $spacing-24;
+    }
+
+    &__card-title {
+      font-size: $spacing-34;
+      line-height: $spacing-45;
+    }
+
+    &__card-description {
+      font-weight: $font-weight-bold;
+      line-height: $spacing-28;
+    }
+
+    &__heading {
+      font-size: $spacing-40;
+      line-height: $spacing-52;
+      width: unset;
+    }
+
+    &__sub-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: $spacing-32;
+      justify-content: space-between;
+      margin-top: $spacing-50;
+    }
+  }
+}
+
+@include sm {
+  .gamification {
+    &__container {
+      background-size: 100% 100%;
+      padding: $spacing-80 $spacing-20 $spacing-72 $spacing-20;
+    }
+
+    &__card {
+      padding: $spacing-26 $spacing-16 $spacing-16 $spacing-16;
+    }
+
+    &__card-title {
+      font-size: $spacing-23;
+      line-height: $spacing-32;
+    }
+
+    &__card-description {
+      font-size: $spacing-13;
+      line-height: $spacing-20;
+    }
+
+    &__heading {
+      font-size: $spacing-40;
+      line-height: $spacing-52;
+      width: unset;
+    }
+
+    &__sub-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: $spacing-32;
+      justify-content: space-between;
+      margin-top: $spacing-50;
+    }
+  }
+}

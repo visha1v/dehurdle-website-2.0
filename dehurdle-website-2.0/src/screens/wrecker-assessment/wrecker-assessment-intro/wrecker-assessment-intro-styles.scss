@@ -1,0 +1,208 @@
+@import '../../../theme/';
+
+.wrecker-assessment-intro {
+  &__container {
+    align-items: center;
+    background-color: $babyPowder;
+    display: flex;
+    gap: $spacing-72;
+    justify-content: center;
+    padding: $spacing-40 $spacing-80;
+    flex: 1;
+  }
+  &__header-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-20 $spacing-48;
+  }
+  &__logo {
+    height: $spacing-40;
+  }
+  &__image {
+    width: $spacing-418;
+    height: $spacing-302;
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-52;
+    margin-bottom: $spacing-12;
+  }
+  &__subtitle.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-37;
+    margin-bottom: $spacing-24;
+    white-space: pre-line;
+  }
+  &__sub-container {
+    background-color: get-color($neutral, 50);
+    border-radius: $spacing-10;
+    margin-bottom: $spacing-20;
+    padding: $spacing-16 $spacing-24;
+  }
+  &__instruction-list {
+    margin: $spacing-0;
+  }
+  &__instruction-title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-31;
+    margin-bottom: $spacing-8;
+  }
+  &__instruction-subtitle.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-31;
+  }
+  &__footer-title.MuiTypography-root {
+    align-items: center;
+    color: get-color($neutral, 600);
+    display: flex;
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-bold;
+    gap: $spacing-8;
+    line-height: $spacing-29;
+    margin-bottom: $spacing-20;
+  }
+  &__tnc-container {
+    align-items: center;
+    display: flex;
+    gap: $spacing-8;
+    margin-bottom: $spacing-20;
+  }
+  &__tnc-title.MuiTypography-root {
+    color: $old-lavender;
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-24;
+  }
+  &__tnc-link {
+    color: get-color($green, 600);
+    text-decoration: none;
+    margin: $spacing-0 $spacing-5;
+  }
+  &__checkbox.MuiCheckbox-root {
+    padding: $spacing-0;
+    width: $spacing-22;
+  }
+  &__checkbox-checked {
+    align-items: center;
+    background-color: get-color($green, 500);
+    border-radius: $spacing-4;
+    display: flex;
+    height: $spacing-22;
+    justify-content: center;
+    width: $spacing-22;
+  }
+  &__button-title.MuiTypography-root {
+    font-weight: $font-weight-bold;
+  }
+  &__button.MuiButton-root {
+    padding: $spacing-18 $spacing-60;
+    &.MuiButton-root.Mui-disabled {
+      background-color: get-color($neutral, 100);
+      color: get-color($neutral, 400);
+    }
+  }
+}
+
+@include md {
+  .wrecker-assessment-intro {
+    &__container {
+      background-color: get-color($accent, 50);
+      flex-direction: column;
+      gap: $spacing-24;
+      padding: $spacing-56 $spacing-48 $spacing-8 $spacing-48;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    &__header-container {
+      box-shadow: -$spacing-2 $spacing-5 $spacing-16 $spacing-0 $boxShadowColor;
+      position: relative;
+    }
+    &__image {
+      height: $spacing-177;
+      width: $spacing-246;
+    }
+    &__button.MuiButton-root {
+      width: 100%;
+    }
+  }
+}
+
+@include sm {
+  .wrecker-assessment-intro {
+    &__container {
+      padding: $spacing-32 $spacing-20 $spacing-16 $spacing-20;
+    }
+    &__header-container {
+      padding: $spacing-16;
+    }
+    &__image {
+      height: $spacing-143;
+      width: $spacing-197;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-31;
+      margin-bottom: $spacing-8;
+    }
+    &__subtitle.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+      margin-bottom: $spacing-16;
+    }
+    &__sub-container {
+      margin-bottom: $spacing-16;
+      padding: $spacing-16;
+    }
+    &__instruction-title.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-20;
+    }
+    &__instruction-subtitle.MuiTypography-root {
+      font-size: $spacing-16;
+      left: -$spacing-15;
+      line-height: $spacing-25;
+      position: relative;
+    }
+    &__footer-title.MuiTypography-root {
+      font-size: $spacing-14;
+      line-height: $spacing-21;
+      margin-bottom: $spacing-32;
+      gap: $spacing-4;
+    }
+    &__clock-icon {
+      height: $spacing-18;
+      width: $spacing-18;
+    }
+    &__tnc-container {
+      margin-bottom: $spacing-8;
+    }
+    &__tnc-title.MuiTypography-root {
+      font-size: $spacing-12;
+      line-height: $spacing-18;
+    }
+    &__checkbox.MuiCheckbox-root {
+      bottom: $spacing-8;
+      position: relative;
+      width: $spacing-18;
+    }
+    &__checkbox-checked {
+      height: $spacing-18;
+      width: $spacing-18;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import '../../../../theme';
+
+.join-dehurdle {
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-90 $spacing-0 $spacing-0 $spacing-48;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-32;
+    justify-content: center;
+    width: 45%;
+  }
+
+  &__store-icon {
+    width: $spacing-247;
+    height: $spacing-74;
+  }
+
+  &__heading.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-40;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__store {
+    display: flex;
+  }
+
+  &__image {
+    width: 50%;
+  }
+}
+
+@include lg {
+  .join-dehurdle {
+    &__container {
+      padding: $spacing-120 $spacing-0 $spacing-0 $spacing-80;
+    }
+
+    &__store-icon {
+      width: $spacing-247;
+      height: $spacing-74;
+    }
+  }
+}
+
+@include md {
+  .join-dehurdle {
+    &__container {
+      padding: $spacing-90 $spacing-48 $spacing-0 $spacing-48;
+      flex-direction: column;
+      gap: $spacing-55;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__content {
+      gap: $spacing-24;
+      width: 100%;
+    }
+
+    &__image {
+      width: 90%;
+      height: $spacing-310;
+    }
+
+    &__store {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__store-icon {
+      width: $spacing-174;
+      height: $spacing-52;
+    }
+
+    &__heading.MuiTypography-root {
+      text-align: center;
+    }
+  }
+}
+
+@include sm {
+  .join-dehurdle {
+    &__container {
+      padding: $spacing-80 $spacing-24 $spacing-0 $spacing-24;
+      flex-direction: column;
+      gap: $spacing-55;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__content {
+      gap: $spacing-24;
+    }
+
+    &__heading.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-32;
+      text-align: center;
+    }
+
+    &__store-icon {
+      width: $spacing-174;
+      height: $spacing-52;
+    }
+
+    &__store {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__image {
+      width: 100vw;
+      height: $spacing-196;
+    }
+  }
+}

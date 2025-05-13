@@ -1,0 +1,190 @@
+@import '../../../../theme';
+
+.the-wreckers {
+  &__desktop-container {
+    align-items: center;
+    display: flex;
+    gap: $spacing-32;
+    height: 100vh;
+    padding: $spacing-0 $spacing-60 !important;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-32;
+    width: 45%;
+    flex-shrink: 0;
+  }
+
+  &__text-sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-12;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-64;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-78;
+    text-align: left;
+    text-transform: uppercase;
+    width: 20%;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-37;
+    text-align: left;
+    width: 80%;
+  }
+
+  &__learn-more {
+    cursor: pointer;
+    color: get-color($green, 600);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-semi-bold;
+    line-height: $spacing-22;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__card-wrapper {
+    display: flex;
+    gap: $spacing-32;
+    justify-content: space-between;
+  }
+
+  &__card-container {
+    background-color: get-color($neutral, 50);
+    border-radius: $spacing-16;
+    border: $spacing-1 solid get-color($neutral, 200);
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-20;
+    justify-content: space-between;
+    overflow-y: hidden;
+    padding: $spacing-32 $spacing-32 $spacing-0 $spacing-32;
+    width: $spacing-350;
+  }
+
+  &__card-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+  }
+
+  &__card-title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-31;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-40;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__card-desc.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-31;
+    text-align: left;
+  }
+}
+
+@include md {
+  .the-wreckers {
+    &__container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-32;
+      justify-content: center;
+      padding: $spacing-80 $spacing-48;
+    }
+
+    &__text-container {
+      flex-shrink: unset;
+      gap: $spacing-8;
+      width: 100%;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-48;
+      line-height: $spacing-58;
+      text-align: center;
+      width: 100%;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-20;
+      line-height: $spacing-31;
+      text-align: center;
+      width: 100%;
+    }
+
+    &__card-wrapper {
+      display: grid;
+      gap: $spacing-16;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__card-container {
+      width: $spacing-300;
+    }
+
+    &__learn-more {
+      margin-left: $spacing-8;
+    }
+  }
+}
+
+@include sm {
+  .the-wreckers {
+    &__container {
+      padding: $spacing-64 $spacing-20;
+    }
+
+    &__card-container {
+      gap: $spacing-4;
+      padding: $spacing-24 $spacing-16 $spacing-0 $spacing-16;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-40;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+    }
+
+    &__card-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-16;
+    }
+
+    &__card-title.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-32;
+    }
+
+    &__card-desc.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+    }
+    &__learn-more {
+      align-self: center;
+    }
+  }
+}

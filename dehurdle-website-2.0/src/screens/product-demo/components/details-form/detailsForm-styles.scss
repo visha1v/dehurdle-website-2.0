@@ -1,0 +1,210 @@
+@import '../../../../theme';
+
+.details-form {
+  &__container {
+    align-items: center;
+    background-color: get-color($pink, 500);
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-134 $spacing-80;
+    position: relative;
+  }
+
+  &__sub-container {
+    display: flex;
+    gap: $spacing-34;
+    justify-content: space-between;
+    margin-top: $spacing-13;
+  }
+
+  &__input {
+    flex: 1;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, default);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-32;
+    text-align: center;
+  }
+
+  &__sub-title.MuiTypography-root {
+    color: get-color($neutral, default);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-36;
+  }
+
+  &__question.MuiTypography-root {
+    color: get-color($neutral, default);
+    font-family: $secondary-font;
+    font-size: $spacing-50;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-70;
+  }
+
+  &__options-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-16;
+    margin-top: $spacing-52;
+  }
+
+  &__option-title.MuiTypography-root {
+    color: get-color($green, 500);
+    font-family: $primary-font;
+    font-size: $spacing-30;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-42;
+  }
+
+  &__options-sub-container {
+    border-radius: $spacing-12;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: $spacing-30 $spacing-16;
+  }
+
+  &__input-container {
+    background-color: get-color($neutral, default);
+    border: $spacing-1 solid get-color($neutral, 300);
+  }
+
+  &__input-text.MuiFormLabel-root {
+    color: get-color($neutral, default);
+  }
+
+  &__error-text.MuiTypography-root {
+    color: get-color($neutral, 700);
+  }
+
+  &__main-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-16;
+    margin-top: $spacing-80;
+  }
+
+  &__whatsapp-icon {
+    bottom: $spacing-37;
+    height: $spacing-55;
+    position: absolute;
+    right: $spacing-55;
+    width: $spacing-55;
+  }
+}
+
+@include landscape-md {
+  .details-form {
+    &__container {
+      padding: $spacing-80 $spacing-90;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-22;
+      line-height: $spacing-30;
+    }
+
+    &__sub-title.MuiTypography-root {
+      font-size: $spacing-22;
+      line-height: $spacing-30;
+    }
+
+    &__question.MuiTypography-root {
+      font-size: $spacing-40;
+      line-height: $spacing-54;
+    }
+
+    &__options-container {
+      gap: $spacing-12;
+      margin-top: $spacing-44;
+    }
+
+    &__option-title.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-36;
+    }
+
+    &__options-sub-container {
+      padding: $spacing-22 $spacing-16;
+    }
+
+    &__main-container {
+      gap: $spacing-10;
+      margin-top: $spacing-60;
+    }
+
+    &__whatsapp-icon {
+      bottom: $spacing-26;
+      height: $spacing-40;
+      right: $spacing-40;
+      width: $spacing-40;
+    }
+  }
+}
+
+@include md {
+  .details-form {
+    &__container {
+      padding: $spacing-60;
+    }
+
+    &__whatsapp-icon {
+      bottom: $spacing-16;
+      right: $spacing-20;
+    }
+  }
+}
+
+@include sm {
+  .details-form {
+    &__container {
+      padding: $spacing-40 $spacing-22 $spacing-70 $spacing-22;
+    }
+
+    &__sub-container {
+      flex-direction: column;
+      gap: $spacing-0;
+    }
+
+    &__main-container {
+      gap: $spacing-2;
+      margin-top: $spacing-20;
+    }
+
+    &__sub-title {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+
+    &__question.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+
+    &__options-container {
+      gap: $spacing-10;
+      margin-top: $spacing-30;
+    }
+
+    &__options-sub-container {
+      padding: $spacing-16 $spacing-16;
+    }
+
+    &__option-title.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+
+    &__whatsapp-icon {
+      bottom: $spacing-16;
+      height: $spacing-24;
+      right: $spacing-20;
+      width: $spacing-24;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import '../../../../theme';
+
+.about-dehurdle {
+  &__container {
+    align-items: center;
+    display: flex;
+    gap: $spacing-86;
+    padding: $spacing-64 $spacing-48;
+  }
+
+  &__image {
+    object-fit: cover;
+    width: 50%;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-64;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-83;
+    text-transform: uppercase;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-medium;
+    letter-spacing: -$spacing-1;
+    line-height: $spacing-49;
+    white-space: pre-line;
+  }
+}
+
+@include landscape-md {
+  .about-dehurdle {
+    &__container {
+      padding: $spacing-64 $spacing-48;
+    }
+  }
+}
+
+@include md {
+  .about-dehurdle {
+    &__container {
+      flex-direction: column;
+      gap: $spacing-48;
+    }
+
+    &__image {
+      width: 70%;
+    }
+
+    &__title.MuiTypography-root {
+      text-align: center;
+    }
+
+    &__description.MuiTypography-root {
+      text-align: center;
+    }
+  }
+}
+
+@include sm {
+  .about-dehurdle {
+    &__container {
+      flex-direction: column;
+      gap: $spacing-37;
+      padding: $spacing-40 $spacing-20;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-41;
+      text-align: center;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+      text-align: center;
+    }
+  }
+}

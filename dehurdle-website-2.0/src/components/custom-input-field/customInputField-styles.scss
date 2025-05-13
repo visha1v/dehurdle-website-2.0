@@ -1,0 +1,39 @@
+@import '../../theme';
+
+.input-field {
+  display: flex !important;
+  flex-direction: column;
+  gap: $spacing-4;
+  text-align: left;
+  &__label.MuiFormLabel-root {
+    color: get-color($neutral, 700);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-24;
+    .MuiFormLabel-asterisk {
+      color: get-color($green, 600);
+    }
+  }
+  &__date-picker {
+    .MuiOutlinedInput-root {
+      border-radius: $spacing-16;
+    }
+  }
+  &__error-text.MuiTypography-root {
+    color: $failure;
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-medium;
+    height: $spacing-16;
+    padding: $spacing-0 $spacing-4;
+  }
+  &__otp-error-text.MuiTypography-root {
+    @extend .input-field__error-text;
+    align-self: center;
+    margin: $spacing-4 $spacing-0 $spacing-16;
+  }
+  .Mui-focused fieldset {
+    border: $spacing-1-5 solid get-color($neutral, 300) !important;
+  }
+}

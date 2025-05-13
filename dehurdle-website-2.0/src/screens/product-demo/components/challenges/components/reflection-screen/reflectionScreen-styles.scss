@@ -1,0 +1,175 @@
+@import '../../../../../../theme';
+
+.reflection-screen {
+  &__container {
+    background-color: get-color($accent, 50);
+    border-radius: $spacing-34;
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-0 $spacing-20 $spacing-20 $spacing-20;
+  }
+
+  &__question {
+    color: get-color($neutral, 600);
+    font-family: $secondary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-22;
+    margin-bottom: $spacing-12;
+    margin-top: $spacing-18;
+  }
+
+  &__prompt-head {
+    color: get-color($neutral, 600);
+    font-family: $secondary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+    margin-bottom: $spacing-6;
+  }
+
+  &__prompt {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-24;
+  }
+
+  &__input-box {
+    align-items: center;
+    background-color: get-color($neutral);
+    border-radius: $spacing-16;
+    border: $spacing-0-5 solid get-color($neutral, 300);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: $spacing-50;
+    margin-top: $spacing-20;
+    padding: $spacing-8;
+    position: relative;
+  }
+
+  &__input-box-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -$spacing-45;
+    margin-top: auto;
+  }
+
+  &__delete-icon {
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  &__delete-icon-active {
+    align-self: flex-end;
+    cursor: pointer;
+    stroke: $failure;
+  }
+
+  &__media-icon {
+    align-self: center;
+    height: $spacing-74;
+    margin-top: $spacing-10;
+    width: $spacing-74;
+  }
+
+  &__placeholder {
+    color: get-color($neutral, 300);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-24;
+  }
+
+  &__recorder-active {
+    animation: breathe 1s linear infinite;
+  }
+
+  &__time-container {
+    display: flex;
+  }
+
+  &__time {
+    display: flex;
+    width: $spacing-44;
+  }
+
+  &__result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@include md {
+  .reflection-screen {
+    &__container {
+      padding: $spacing-0 $spacing-10 $spacing-10 $spacing-10;
+    }
+  }
+}
+
+@include landscape-md {
+  .reflection-screen {
+    &__container {
+      padding: $spacing-0 $spacing-10 $spacing-10 $spacing-10;
+    }
+
+    &__question {
+      font-size: $spacing-14;
+      line-height: $spacing-18;
+    }
+
+    &__prompt-head {
+      font-size: $spacing-16;
+      line-height: $spacing-21;
+    }
+
+    &__prompt {
+      font-size: $spacing-12;
+      line-height: $spacing-20;
+    }
+
+    &__media-icon {
+      height: $spacing-64;
+      margin-top: $spacing-5;
+      width: $spacing-64;
+    }
+
+    &__input-box-container {
+      margin-top: auto;
+      margin-bottom: -$spacing-40;
+    }
+
+    &__input-box {
+      margin-bottom: $spacing-40;
+      margin-top: $spacing-10;
+    }
+
+    &__placeholder {
+      font-size: $spacing-14;
+      line-height: $spacing-20;
+    }
+
+    &__time {
+      display: flex;
+      width: $spacing-38;
+    }
+  }
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,77 @@
+@import '../../../theme/';
+
+.profession-status {
+  &__container {
+    align-items: center;
+    background-color: $babyPowder;
+    display: flex;
+    flex: 1;
+    height: -webkit-fill-available;
+    justify-content: center;
+    padding-bottom: $spacing-84;
+  }
+  &__sub-container {
+    align-items: center;
+    background-color: get-color($neutral);
+    border-radius: $spacing-24;
+    border: $spacing-1 solid get-color($neutral, 100);
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-40;
+    padding: $spacing-32 $spacing-118;
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-36;
+    text-align: center;
+  }
+  &__button-container {
+    display: flex;
+    gap: $spacing-12;
+  }
+  &__back-button.MuiButton-root {
+    background-color: transparent;
+    border: $spacing-1 solid get-color($green, 600);
+    &:hover {
+      background-color: unset;
+    }
+  }
+  &__button-title {
+    color: get-color($green, 600);
+  }
+}
+@include lg {
+  .profession-status {
+    &__sub-container {
+      width: 45%;
+    }
+  }
+}
+
+@include md {
+  .profession-status {
+    &__sub-container {
+      width: 55%;
+    }
+  }
+}
+
+@include sm {
+  .profession-status {
+    &__container {
+      padding: $spacing-30 $spacing-20;
+    }
+    &__sub-container {
+      gap: $spacing-20;
+      padding: $spacing-32 $spacing-16;
+      width: 100%;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+  }
+}

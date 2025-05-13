@@ -1,0 +1,45 @@
+@import '../../theme';
+
+.custom-button {
+  &__container.MuiButton-root {
+    background-color: get-color($green, 600);
+    border-radius: $spacing-16;
+    padding: $spacing-12 $spacing-32;
+    text-transform: none;
+    &:hover {
+      background-color: get-color($green, 500);
+    }
+  }
+  &__container.MuiButton-root.Mui-disabled {
+    background-color: get-color($neutral, 500);
+    color: get-color($neutral, 300);
+  }
+  &__loading.MuiButton-root.Mui-disabled {
+    background-color: get-color($green, 500);
+  }
+  &__title.MuiTypography-root {
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    line-height: $spacing-24;
+    font-weight: $font-weight-semi-bold;
+  }
+  &__title-capital {
+    text-transform: uppercase;
+  }
+  &__loading-title {
+    color: get-color($neutral);
+  }
+  &__loader {
+    animation: 1s linear infinite spinner;
+    color: get-color($neutral);
+    will-change: transform;
+  }
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

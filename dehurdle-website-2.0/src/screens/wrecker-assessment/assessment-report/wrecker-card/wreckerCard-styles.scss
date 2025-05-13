@@ -1,0 +1,131 @@
+@import '../../../../theme';
+
+.wrecker-card {
+  background-color: get-color($neutral);
+  border-bottom: $spacing-1 solid get-color($green, 100);
+  display: flex;
+  justify-content: space-between;
+  padding: $spacing-12 $spacing-16;
+  &__first-item {
+    @extend .wrecker-card;
+    background-color: get-color($green, 100);
+    border-top-left-radius: $spacing-14;
+    border-top-right-radius: $spacing-14;
+  }
+  &__last-item {
+    @extend .wrecker-card;
+    border: none;
+    border-bottom-left-radius: $spacing-14;
+    border-bottom-right-radius: $spacing-14;
+  }
+  &__left-container {
+    align-items: center;
+    display: flex;
+    gap: $spacing-13;
+  }
+  &__left-icon-container {
+    align-items: center;
+    background-color: $paleYellow;
+    border-radius: $spacing-10;
+    display: flex;
+    height: $spacing-48;
+    justify-content: center;
+    width: $spacing-48;
+  }
+  &__left-container-title.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-21;
+  }
+  &__right-container {
+    align-items: center;
+    display: flex;
+    gap: $spacing-8;
+  }
+  &__right-container-title.MuiTypography-root {
+    color: $charcoal;
+    font-family: $secondary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-21;
+  }
+  &__progress-bar {
+    background-color: get-color($pink, 300);
+    border-radius: $spacing-2;
+    flex-direction: column;
+    height: $spacing-12;
+    width: $spacing-51;
+  }
+  &__progress-bar-indicator {
+    background-color: get-color($pink, 500);
+    border-radius: $spacing-2;
+    height: 100%;
+  }
+  &__dialog {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+    height: 53vh;
+    max-width: 76vw;
+    justify-content: center;
+  }
+  &__dialog-title.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-32;
+    text-align: center;
+  }
+  &__dialog-sub-title.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-16;
+    text-align: center;
+  }
+  &__dialog-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-8;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet-portrait) {
+  .wrecker-card {
+    &__dialog-title.MuiTypography-root {
+      font-size: $spacing-24;
+      font-weight: $font-weight-bold;
+      line-height: $spacing-32;
+    }
+    &__dialog-sub-title.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+    &__dialog {
+      height: 63vh;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .wrecker-card {
+    &__dialog-title.MuiTypography-root {
+      font-size: $spacing-32;
+      font-weight: $font-weight-extra-bold;
+      line-height: $spacing-44;
+    }
+    &__dialog-sub-title.MuiTypography-root {
+      font-size: $spacing-18;
+      line-height: $spacing-25;
+    }
+    &__dialog {
+      height: 63vh;
+    }
+  }
+}

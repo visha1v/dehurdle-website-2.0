@@ -1,0 +1,53 @@
+@import '../../../theme/';
+
+.select-statement {
+  &__container {
+    background-color: get-color($neutral, default);
+    border-radius: $spacing-20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $spacing-20 $spacing-16;
+  }
+
+  &__sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-12;
+    margin-bottom: $spacing-20;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $secondary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+    margin-bottom: $spacing-10;
+  }
+
+  &__option-container {
+    align-items: center;
+    background-color: get-color($green, 50);
+    border-radius: $spacing-16;
+    border: $spacing-1 solid get-color($neutral, 200);
+    display: flex;
+    justify-content: center;
+    max-height: $spacing-112;
+    min-height: $spacing-91;
+    padding: $spacing-14 $spacing-10;
+  }
+
+  &__option-title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-semi-bold;
+    line-height: $spacing-21;
+  }
+
+  &__button.MuiButton-root {
+    height: $spacing-59;
+    width: 100%;
+  }
+}

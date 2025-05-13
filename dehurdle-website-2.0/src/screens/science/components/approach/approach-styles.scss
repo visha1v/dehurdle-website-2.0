@@ -1,0 +1,98 @@
+@import '../../.././../theme';
+
+.approach {
+  &__container {
+    background: get-color($pink, 50);
+    display: flex;
+    justify-content: center;
+    gap: $spacing-28;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-100 $spacing-0 $spacing-68 $spacing-48;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($pink, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-52;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-medium;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-50;
+    text-align: left;
+  }
+
+  &__image {
+    width: 44%;
+  }
+}
+
+@include lg {
+  .approach {
+    &__container {
+      gap: $spacing-0;
+    }
+    &__image {
+      align-self: flex-end;
+    }
+    &__content {
+      padding: $spacing-100 $spacing-0 $spacing-68 $spacing-48;
+    }
+  }
+}
+
+@include md {
+  .approach {
+    &__container {
+      flex-direction: column;
+      padding-top: $spacing-40;
+    }
+    &__image {
+      width: 100%;
+    }
+    &__content {
+      padding: $spacing-0 $spacing-24 $spacing-0 $spacing-24;
+    }
+  }
+}
+
+@include sm {
+  .approach {
+    &__container {
+      flex-direction: column;
+      padding: $spacing-40 $spacing-0 $spacing-0 $spacing-0;
+    }
+
+    &__content {
+      padding: $spacing-0 $spacing-24 $spacing-0 $spacing-24;
+      width: fit-content;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-32;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+    }
+
+    &__image {
+      width: 100vw;
+      height: 100vw * 1.03;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../../../theme/';
+
+.countdown-bar {
+  &__container {
+    background-color: get-color($neutral, 100);
+    border-radius: $spacing-24;
+    height: $spacing-4;
+  }
+  &__sub-container {
+    height: 100%;
+  }
+}

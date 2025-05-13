@@ -1,0 +1,11 @@
+@import '../../theme';
+
+.product-demo {
+  user-select: none;
+  background-color: $babyPowder;
+
+  &__main-container {
+    height: 100vh;
+    overflow: hidden;
+  }
+}

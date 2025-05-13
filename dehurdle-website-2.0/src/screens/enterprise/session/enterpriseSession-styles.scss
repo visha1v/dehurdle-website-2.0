@@ -1,0 +1,10 @@
+@import '../../../theme';
+
+@include sm {
+  .enterprise-session {
+    &__image {
+      height: $spacing-307;
+      width: $spacing-276;
+    }
+  }
+}

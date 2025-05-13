@@ -1,0 +1,85 @@
+@import '../../../../theme';
+
+.approach-steps {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-48;
+    padding: $spacing-78 $spacing-82;
+    position: relative;
+  }
+
+  &__blue-star {
+    left: 15%;
+    position: absolute;
+    top: 3%;
+  }
+
+  &__pink-star {
+    position: absolute;
+    right: 15%;
+    top: 2%;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-40;
+    z-index: 1;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-52;
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+@include md {
+  .approach-steps {
+    &__container {
+      gap: $spacing-32;
+      padding: $spacing-62 $spacing-48;
+    }
+
+    &__blue-star {
+      display: none;
+    }
+    &__pink-star {
+      display: none;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-62;
+    }
+  }
+}
+
+@include sm {
+  .approach-steps {
+    &__container {
+      padding: $spacing-62 $spacing-20;
+    }
+
+    &__blue-star {
+      display: none;
+    }
+    &__pink-star {
+      display: none;
+    }
+
+    &__card-container {
+      gap: $spacing-24;
+    }
+
+    &__title.MuiTypography-root {
+      line-height: $spacing-42;
+    }
+  }
+}

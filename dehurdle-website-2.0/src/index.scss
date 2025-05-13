@@ -1,0 +1,18 @@
+@import './theme';
+
+* {
+  &::-webkit-scrollbar {
+    -ms-overflow-style: none;
+    display: none;
+    scrollbar-width: none;
+  }
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: $spacing-0;
+  display: flex;
+  place-items: center;
+  min-width: $spacing-320;
+  min-height: 100vh;
+}

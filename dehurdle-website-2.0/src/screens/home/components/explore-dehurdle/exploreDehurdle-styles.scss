@@ -1,0 +1,74 @@
+@import '../../../../theme';
+
+.explore-dehurdle {
+  &__container {
+    border-color: get-color($neutral, 200);
+    border-radius: $spacing-12;
+    border-style: solid;
+    border-width: $spacing-1;
+    display: flex;
+    flex-direction: row;
+    margin: $spacing-80;
+    overflow: hidden;
+  }
+  &__card {
+    background-color: get-color($accent);
+    padding: $spacing-54 $spacing-40;
+    &__card-border {
+      border-right: $spacing-1 solid get-color($neutral, 200);
+    }
+  }
+  &__title.MuiTypography-root {
+    color: get-color($pink, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-28;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-38;
+    margin-top: $spacing-32;
+  }
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-medium;
+    letter-spacing: -$spacing-1;
+    line-height: $spacing-32;
+    margin-top: $spacing-8;
+  }
+  &__learn-more.MuiTypography-root {
+    color: get-color($green, 600);
+    cursor: pointer;
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-semi-bold;
+    line-height: $spacing-24;
+    margin-top: $spacing-24;
+    text-transform: uppercase;
+  }
+}
+
+@include md {
+  .explore-dehurdle {
+    &__container {
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: $spacing-80 $spacing-48;
+    }
+    &__card {
+      &__card-border {
+        border-bottom: $spacing-1 solid get-color($neutral, 200);
+        border-right: none;
+      }
+    }
+  }
+}
+
+@include sm {
+  .explore-dehurdle {
+    &__container {
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: $spacing-80 $spacing-20;
+    }
+  }
+}

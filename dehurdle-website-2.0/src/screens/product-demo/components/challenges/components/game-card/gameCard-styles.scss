@@ -1,0 +1,171 @@
+@import '../../../../../../theme';
+
+.game-card {
+  &__container {
+    align-items: center;
+    display: flex;
+    gap: $spacing-34;
+    overflow: hidden;
+    padding: $spacing-120 $spacing-80;
+  }
+
+  &__sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+  }
+
+  &__title {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-50;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-70;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: -2%;
+    line-height: $spacing-50;
+  }
+
+  &__image {
+    width: 50%;
+  }
+
+  &__game-container {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    padding: $spacing-22;
+    width: $spacing-614;
+  }
+
+  &__phone-frame {
+    background-image: url(/src/assets/images/ios.png);
+    background-size: 100% 100%;
+    display: flex;
+    height: $spacing-704;
+    position: relative;
+    width: $spacing-346;
+  }
+
+  &__game {
+    display: flex;
+    overflow: hidden;
+    padding: $spacing-13-5 $spacing-15 $spacing-14 $spacing-15;
+  }
+}
+
+@include md {
+  .game-card {
+    &__container {
+      flex-direction: row;
+      gap: $spacing-32;
+      padding: $spacing-120 $spacing-50;
+    }
+
+    &__title {
+      font-size: $spacing-40;
+      line-height: $spacing-56;
+    }
+
+    &__sub-title {
+      font-size: $spacing-30;
+      line-height: $spacing-46;
+    }
+
+    &__game-container {
+      width: $spacing-517;
+    }
+
+    &__phone-frame {
+      height: $spacing-584;
+      margin-bottom: $spacing-15;
+      width: $spacing-286;
+    }
+  }
+}
+
+@include landscape-md {
+  .game-card {
+    &__container {
+      flex-direction: column;
+      gap: $spacing-32;
+      padding: $spacing-80 $spacing-50;
+    }
+
+    &__container:nth-child(odd) {
+      flex-direction: column-reverse;
+    }
+
+    &__sub-container {
+      align-items: center;
+      width: unset;
+    }
+
+    &__sub-title {
+      font-size: $spacing-24;
+      line-height: $spacing-36;
+      text-align: center;
+    }
+
+    &__game-container {
+      width: $spacing-514;
+    }
+
+    &__phone-frame {
+      height: $spacing-606;
+      margin-bottom: $spacing-13;
+      width: $spacing-298;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+@include sm {
+  .game-card {
+    &__container {
+      flex-direction: column;
+      gap: $spacing-30;
+      padding: $spacing-40 $spacing-20;
+    }
+
+    &__sub-container {
+      align-items: center;
+    }
+
+    &__title {
+      font-size: $spacing-24;
+      line-height: $spacing-34;
+      text-align: center;
+    }
+
+    &__sub-title {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+
+    &__game-container {
+      width: 90%;
+    }
+
+    &__phone-frame {
+      margin-bottom: $spacing-12;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}

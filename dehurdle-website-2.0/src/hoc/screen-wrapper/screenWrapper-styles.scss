@@ -1,0 +1,93 @@
+@import '../../theme';
+
+.screen-wrapper {
+  align-items: center;
+  background: linear-gradient(258.56deg, $skyBlue 10.13%, $cyclamen 50.86%, $jasmine 95.83%),
+    linear-gradient(0deg, get-color($neutral), get-color($neutral));
+  display: flex;
+  justify-content: center;
+  min-height: 0vh;
+  &__container {
+    align-items: center;
+    background-color: get-color($neutral);
+    border-radius: $spacing-0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: $spacing-40;
+    justify-content: space-between;
+    margin: $spacing-0;
+    max-width: 100%;
+    min-height: 88vh;
+    padding: $spacing-48 $spacing-20;
+  }
+  &__header-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: $spacing-4;
+  }
+  &__header-title.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-32;
+    text-align: center;
+  }
+  &__header-sub-title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-24;
+    text-align: center;
+  }
+  &__footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-16;
+    width: 100%;
+  }
+  &__button {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet-portrait) {
+  .screen-wrapper {
+    min-height: 100vh;
+    &__container {
+      border-radius: $spacing-16;
+      max-width: 54%;
+      min-height: 64vh;
+      padding: $spacing-32;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .screen-wrapper {
+    &__container {
+      max-width: 40%;
+      padding: $spacing-48 $spacing-56;
+    }
+    &__header-title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-45;
+    }
+    &__header-sub-title.MuiTypography-root {
+      font-size: $spacing-18;
+      line-height: $spacing-25;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .screen-wrapper {
+    &__container {
+      max-width: 40%;
+      padding: $spacing-48 $spacing-56;
+    }
+  }
+}

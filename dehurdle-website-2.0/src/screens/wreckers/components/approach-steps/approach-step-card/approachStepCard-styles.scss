@@ -1,0 +1,103 @@
+@import '../../../../../theme';
+
+.approach-step-card {
+  &__container {
+    background-color: $lavender-blush;
+    border-radius: $spacing-16;
+    border: $spacing-1 solid get-color($neutral, 200);
+    display: flex;
+    gap: $spacing-40;
+    padding: $spacing-88 $spacing-48;
+  }
+
+  &__container.row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title-sub-container {
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-10;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($pink, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-extra-bold;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-42;
+    margin-bottom: $spacing-10;
+    text-align: left;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-36;
+    text-align: left;
+  }
+}
+
+@include md {
+  .approach-step-card {
+    &__container {
+      align-items: center;
+      flex-direction: column;
+      gap: $spacing-24;
+      justify-content: center;
+      padding: $spacing-40 $spacing-20;
+    }
+
+    &__container.row-reverse {
+      flex-direction: column;
+    }
+
+    &__description.MuiTypography-root {
+      line-height: $spacing-34;
+    }
+
+    &__icon {
+      height: $spacing-206;
+      width: $spacing-206;
+    }
+  }
+}
+
+@include sm {
+  .approach-step-card {
+    &__title-sub-container {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-0;
+    }
+
+    &__title.MuiTypography-root {
+      display: flex;
+      flex-direction: column;
+      font-size: $spacing-20;
+      line-height: $spacing-26;
+      margin-bottom: $spacing-0;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+      margin-top: $spacing-10;
+    }
+  }
+}

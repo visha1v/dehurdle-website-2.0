@@ -1,0 +1,142 @@
+@import '../../../../theme';
+
+.dehurdle-founder {
+  &__container {
+    padding-bottom: $spacing-120;
+    padding-top: $spacing-120;
+  }
+  &__section-title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-64;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-76;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__card-container {
+    background-color: get-color($accent);
+    border-radius: $spacing-16;
+    border: $spacing-1 solid get-color($neutral, 200);
+    margin: $spacing-40 $spacing-80;
+  }
+  &__sub-container {
+    display: flex;
+    gap: $spacing-40;
+    padding-left: $spacing-48;
+    padding-right: $spacing-0;
+    padding-top: $spacing-40;
+  }
+  &__sub-container-reverse {
+    border-bottom: none;
+    flex-direction: row-reverse;
+    padding-left: $spacing-0;
+    padding-right: $spacing-48;
+  }
+  &__text-container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-12;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-48;
+    text-transform: uppercase;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-38;
+  }
+  &__image {
+    width: $spacing-450;
+  }
+  &__button.MuiButton-root {
+    background-color: get-color($green, 600);
+    margin-top: $spacing-16;
+    text-transform: uppercase;
+    width: 40%;
+  }
+}
+
+@include landscape-md {
+  .dehurdle-founder {
+    &__card-container {
+      margin: $spacing-48 $spacing-20;
+    }
+  }
+}
+
+@include md {
+  .dehurdle-founder {
+    &__container {
+      padding-bottom: $spacing-80;
+      padding-top: $spacing-80;
+    }
+    &__card-container {
+      margin: $spacing-48 $spacing-20;
+    }
+    &__sub-container {
+      flex-direction: column-reverse;
+      gap: $spacing-24;
+      padding: $spacing-32 $spacing-40;
+    }
+    &__sub-container-reverse {
+      padding: $spacing-32 $spacing-40;
+    }
+    &__image {
+      align-self: center;
+      width: 60%;
+    }
+  }
+}
+
+@include sm {
+  .dehurdle-founder {
+    &__container {
+      padding-bottom: $spacing-40;
+      padding-top: $spacing-40;
+    }
+    &__section-title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+    &__card-container {
+      margin: $spacing-8 $spacing-20;
+    }
+    &__sub-container {
+      flex-direction: column-reverse;
+      padding: $spacing-32 $spacing-20;
+    }
+    &__text-container {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-8;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-32;
+    }
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+    &__image {
+      border-bottom: 1px solid get-color($neutral, 200);
+      width: 100%;
+      width: $spacing-295;
+      height: $spacing-329;
+    }
+    &__button.MuiButton-root {
+      width: 100%;
+    }
+  }
+}

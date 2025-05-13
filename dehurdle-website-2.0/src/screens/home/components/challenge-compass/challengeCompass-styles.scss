@@ -1,0 +1,178 @@
+@import '../../.././../theme';
+
+.challenge-compass {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: $spacing-80;
+    padding-top: $spacing-160;
+  }
+
+  &__card:nth-of-type(2) {
+    position: absolute;
+    top: -$spacing-30;
+  }
+  &__card:nth-of-type(3) {
+    position: absolute;
+    top: -$spacing-50;
+  }
+  &__card:nth-of-type(4) {
+    position: absolute;
+    top: -$spacing-70;
+  }
+
+  &__container {
+    height: 100%;
+    position: sticky;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: $spacing-60;
+    gap: $spacing-80;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-56;
+    text-align: left;
+    max-width: 70%;
+  }
+
+  &__card-description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-medium;
+    letter-spacing: $spacing-0-1;
+    line-height: $spacing-32;
+    text-align: left;
+  }
+
+  &__description.MuiTypography-root {
+    @extend .challenge-compass__card-description;
+    font-weight: $font-weight-semi-bold;
+    max-width: 90%;
+  }
+
+  &__card-title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-36;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-48;
+    text-align: left;
+  }
+
+  &__card-detail-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__card-detail-sub-container {
+    position: relative;
+  }
+
+  &__text-container-body-card-subtitle:not(:first-child) {
+    position: absolute;
+    top: $spacing-0;
+  }
+}
+
+@include landscape-md {
+  .challenge-compass {
+    &__wrapper {
+      flex-direction: column;
+      padding: $spacing-48;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+
+    &__container {
+      margin-top: $spacing-80;
+    }
+
+    &__text-container {
+      gap: $spacing-48;
+      width: 100%;
+    }
+
+    &__title.MuiTypography-root {
+      max-width: 100%;
+      padding: $spacing-42 $spacing-42 $spacing-0 $spacing-42;
+      text-align: center;
+    }
+
+    &__description.MuiTypography-root {
+      max-width: 100%;
+      padding: $spacing-0 $spacing-42 $spacing-0 $spacing-42;
+      text-align: center;
+    }
+
+    &__text-container-body-card {
+      width: 100%;
+      margin-bottom: $spacing-8;
+    }
+
+    &__card-detail-sub-container {
+      margin-bottom: $spacing-16;
+    }
+
+    &__card-title.MuiTypography-root {
+      text-align: center;
+      width: 100%;
+    }
+
+    &__card-description.MuiTypography-root {
+      text-align: center;
+    }
+  }
+}
+
+@include sm {
+  .challenge-compass {
+    &__wrapper {
+      flex-direction: column;
+      padding: $spacing-0;
+      justify-content: unset;
+      width: 100%;
+      height: unset;
+    }
+
+    &__container {
+      margin-top: $spacing-0;
+    }
+
+    &__text-container {
+      width: 100%;
+      gap: unset;
+    }
+
+    &__title.MuiTypography-root {
+      max-width: 100%;
+      padding: $spacing-0 $spacing-42 $spacing-0 $spacing-42;
+      text-align: center;
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+      max-width: 100%;
+      padding: $spacing-0 $spacing-42 $spacing-32 $spacing-42;
+      text-align: center;
+    }
+
+    &__text-container-body-card {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../../../theme';
+
+.report-tab {
+  background-color: get-color($neutral, 50);
+  border-radius: $spacing-8;
+  &__tab.MuiTab-root {
+    color: get-color($green, 500);
+    font-family: $primary-font;
+    font-size: $spacing-12;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-18;
+    text-transform: capitalize;
+    min-width: 50%;
+  }
+  &__tab.MuiTab-root.Mui-selected {
+    @extend .report-tab__tab;
+    align-items: center;
+    background-color: get-color($green, 500);
+    border-radius: $spacing-8;
+    color: get-color($neutral);
+    display: flex;
+    justify-content: center;
+    padding: $spacing-12 $spacing-16;
+  }
+  &__tab.MuiTypography-root {
+    background-color: get-color($green, 500);
+    border-radius: $spacing-8;
+    padding: $spacing-16 $spacing-12;
+  }
+  &__tab-indicator {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet-portrait) {
+  .report-tab {
+    &__tab.MuiTab-root {
+      font-size: $spacing-18;
+      line-height: $spacing-25;
+    }
+  }
+}

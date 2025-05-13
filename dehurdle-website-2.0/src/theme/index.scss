@@ -1,0 +1,21 @@
+@import './breakpoints';
+@import './colors';
+@import './spacing';
+@import './typography';
+@import './mixins';
+
+html,
+body {
+  height: 100%;
+  margin: $spacing-0;
+  padding: $spacing-0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-case.MuiTypography-root {
+  text-transform: uppercase;
+}

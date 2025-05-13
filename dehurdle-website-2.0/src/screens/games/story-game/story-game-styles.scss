@@ -1,0 +1,157 @@
+@import '../../../theme/';
+
+.story-game {
+  &__container {
+    background-color: get-color($green, 600);
+    border-radius: $spacing-30;
+    margin-left: $spacing-3;
+    margin-top: -$spacing-34;
+    overflow: hidden;
+    padding-top: $spacing-16;
+    width: $spacing-308-5;
+  }
+
+  &__story-container {
+    height: 22%;
+    overflow: scroll;
+    padding: $spacing-0 $spacing-20 $spacing-0 $spacing-20;
+  }
+
+  &__main-container {
+    align-items: center;
+    background-color: get-color($neutral, default);
+    border-radius: $spacing-16;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: $spacing-16 $spacing-20 $spacing-0 $spacing-20;
+    padding: $spacing-16;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-12;
+    margin-bottom: $spacing-30;
+  }
+
+  &__option-container {
+    align-items: center;
+    background-color: get-color($green, 50);
+    border: $spacing-1 solid get-color($neutral, 200);
+    border-radius: $spacing-16;
+    display: flex;
+    height: $spacing-104;
+    justify-content: center;
+    padding: $spacing-10;
+  }
+
+  &__option-title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-semi-bold;
+    line-height: $spacing-21;
+    text-align: center;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, default);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-32;
+    margin-bottom: $spacing-4;
+  }
+
+  &__story.MuiTypography-root {
+    color: get-color($neutral, default);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-24;
+  }
+
+  &__sub-title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-semi-bold;
+    line-height: $spacing-21;
+    margin-bottom: $spacing-20;
+  }
+
+  &__button.MuiButton-root {
+    height: $spacing-42;
+  }
+
+  &__stacked-card {
+    align-self: 'center';
+    border-bottom-left-radius: $spacing-8;
+    border-bottom-right-radius: $spacing-8;
+    height: $spacing-13;
+  }
+
+  &__stacked-card-one {
+    background-color: get-color($green, 300);
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  &__stacked-card-two {
+    background-color: get-color($green, 500);
+    margin: 0 auto;
+    width: 76%;
+  }
+}
+
+@include landscape-md {
+  .story-game {
+    &__container {
+      width: $spacing-268-5;
+      margin-left: $spacing-0;
+      margin-top: -$spacing-32;
+    }
+
+    &__header-container {
+      margin: $spacing-0 $spacing-20;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-14;
+      line-height: $spacing-20;
+      margin-bottom: $spacing-0;
+    }
+
+    &__story.MuiTypography-root {
+      font-size: $spacing-12;
+      line-height: $spacing-16;
+    }
+
+    &__main-container {
+      margin: $spacing-12 $spacing-14 $spacing-0 $spacing-14;
+      padding: $spacing-10;
+    }
+
+    &__sub-title.MuiTypography-root {
+      font-size: $spacing-10;
+      line-height: $spacing-14;
+      margin-bottom: $spacing-6;
+    }
+
+    &__option-container {
+      height: $spacing-92;
+      padding: $spacing-8;
+    }
+
+    &__content-container {
+      gap: $spacing-10;
+      margin-bottom: $spacing-20;
+    }
+
+    &__option-title.MuiTypography-root {
+      font-size: $spacing-12;
+      line-height: $spacing-18;
+    }
+  }
+}

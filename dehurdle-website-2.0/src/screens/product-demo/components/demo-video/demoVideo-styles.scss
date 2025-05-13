@@ -1,0 +1,64 @@
+@import '../../../../theme';
+
+.demo-video {
+  &__container {
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: $spacing-42 $spacing-0;
+    position: relative;
+    width: 100%;
+  }
+
+  &__video-container {
+    margin-left: $spacing-42;
+    margin-right: $spacing-42;
+    position: relative;
+  }
+
+  &__video {
+    border-radius: $spacing-42;
+    width: 100%;
+  }
+
+  &__overlay {
+    align-items: center;
+    background-color: $cardShadow;
+    border-radius: $spacing-42;
+    bottom: $spacing-4;
+    display: flex;
+    justify-content: center;
+    left: $spacing-0;
+    position: absolute;
+    right: $spacing-0;
+    top: $spacing-0;
+  }
+
+  &__replay-container {
+    align-items: center;
+    background-color: $demoVideoOverlay;
+    border-radius: 50%;
+    display: flex;
+    height: 8vw;
+    justify-content: center;
+    width: 8vw;
+  }
+  &__replay-icon.MuiSvgIcon-root {
+    height: 6vw;
+    width: 6vw;
+  }
+}
+
+@include sm {
+  .demo-video {
+    &__video {
+      border-radius: $spacing-14;
+    }
+
+    &__overlay {
+      border-radius: $spacing-14;
+    }
+  }
+}

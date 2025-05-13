@@ -1,0 +1,262 @@
+@import '../../theme';
+//TODO need to change css styling according to desktop-first-css
+
+.custom-app-bar {
+  &__container.MuiAppBar-root {
+    background-color: $babyPowder;
+    box-shadow: -$spacing-2 $spacing-5 $spacing-16 $spacing-0 $boxShadowColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $spacing-25 $spacing-16;
+  }
+
+  &__logo-center.MuiAppBar-root {
+    justify-content: center;
+  }
+
+  &__scrolled {
+    animation: popup 0.3s linear;
+    box-shadow: $spacing-0 $spacing-4 $spacing-10 $boxShadowColor;
+  }
+  &__logo {
+    height: $spacing-30;
+  }
+  &__exit-icon.MuiSvgIcon-root {
+    color: get-color($green, 600);
+    height: $spacing-40;
+    width: $spacing-40;
+  }
+  &__nav-items-container {
+    display: none;
+  }
+  &__menu-item.MuiButton-root {
+    border-bottom: $spacing-2 solid get-color($green, 600);
+    border-radius: $spacing-0;
+  }
+  &__drawer-button.MuiButton-root {
+    color: get-color($neutral, 700);
+    display: flex;
+    padding: $spacing-0 $spacing-16;
+    text-transform: none;
+  }
+  &__button-container {
+    background-color: get-color($neutral);
+    border-radius: $spacing-16;
+    border: $spacing-1 solid get-color($green, 600);
+    cursor: pointer;
+    height: $spacing-42;
+    position: relative;
+    width: $spacing-210;
+    &.active {
+      border: none;
+    }
+  }
+
+  &__button-text.MuiTypography-root {
+    color: get-color($green, 600);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-semi-bold;
+    left: 20%;
+    position: absolute;
+    text-transform: uppercase;
+    top: 24%;
+    
+    &.active {
+      left: 25%;
+      top: 26%;
+      color: get-color($neutral, 'default');
+    }
+  }
+
+  &__drawer-sub-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: $spacing-32;
+    flex: 1;
+  }
+  &__drawer-close.MuiIconButton-root {
+    background-color: get-color($green, 600);
+    border-radius: 50%;
+    color: get-color($neutral, default);
+  }
+  &__drawer-list-container {
+    align-content: center;
+    overflow: scroll;
+  }
+  &__drawer-list-items-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $spacing-32 !important;
+  }
+  &__drawer-list-items-dropdown {
+    margin-left: $spacing-6 !important;
+  }
+  &__drawer-list-items-text-container.MuiListItemButton-root {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  &__drawer-list-items-active.MuiListItemButton-root {
+    border-bottom: $spacing-2 solid get-color($green, 600);
+    border-radius: $spacing-0;
+  }
+  &__drawer-list-item-text {
+    .MuiTypography-root {
+      color: get-color($green, 600);
+      font-family: $primary-font;
+      font-size: $spacing-16;
+      font-weight: $font-weight-bold;
+      line-height: $spacing-24;
+      text-align: center;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  &__popover {
+    .MuiPopover-paper {
+      border-radius: $spacing-16;
+    }
+  }
+  &__popover-content {
+    background-color: get-color($accent, 50);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: $spacing-200;
+    min-width: $spacing-200;
+    padding: $spacing-24;
+  }
+  &__popover-content-drawer {
+    align-items: center;
+    border-radius: $spacing-16;
+  }
+  &__popover-item.MuiTypography-root {
+    color: get-color($green, 600);
+    cursor: pointer;
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    line-height: $spacing-24;
+    font-weight: $font-weight-bold;
+  }
+  .MuiButton-root {
+    color: get-color($green, 600);
+    font-size: $spacing-16;
+    font-weight: $font-weight-bold;
+    font-family: $primary-font;
+    line-height: $spacing-24;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.MuiDrawer-paper {
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  width: 100vw;
+}
+
+.MuiListItemButton-root {
+  padding: $spacing-0 !important;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .custom-app-bar {
+    &__container.MuiAppBar-root {
+      display: flex;
+      flex-direction: row;
+      padding: $spacing-20 $spacing-48;
+    }
+    &__logo {
+      height: $spacing-56;
+      width: $spacing-200;
+    }
+    &__nav-items-container {
+      align-items: center;
+      display: flex;
+      gap: $spacing-32;
+      text-wrap: nowrap;
+    }
+    &__menu-icon {
+      display: none !important;
+    }
+    &__drawer-container {
+      display: none;
+    }
+    &__popover-content {
+      background-color: get-color($accent, 50);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: $spacing-220;
+      min-width: $spacing-200;
+      padding: $spacing-32 $spacing-24;
+    }
+    &__popover-item.MuiTypography-root {
+      color: get-color($green, 600);
+      font-family: $primary-font;
+      font-size: $spacing-16;
+      font-weight: $font-weight-bold;
+      line-height: $spacing-24;
+    }
+  }
+}
+
+@include landscape-md {
+  .custom-app-bar {
+    &__button-container {
+      margin-bottom: $spacing-32;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-tablet-landscape) {
+  .custom-app-bar {
+    &__nav-items-container {
+      display: none;
+    }
+    &__drawer-container {
+      display: flex;
+    }
+
+    &__drawer-list-item-text {
+      .MuiTypography-root {
+        font-size: $spacing-20;
+        line-height: $spacing-28;
+      }
+    }
+
+    &__menu-icon {
+      display: flex !important;
+    }
+  }
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@include sm {
+  .custom-app-bar {
+    &__exit-icon.MuiSvgIcon-root {
+      height: $spacing-25;
+      width: $spacing-25;
+    }
+  }
+}

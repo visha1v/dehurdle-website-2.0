@@ -1,0 +1,18 @@
+export const ROUTES = {
+  ABOUT_US: '/about-us',
+  APP: '/app',
+  CONGRATULATIONS: '/congratulations',
+  CREDENTIALS: '/credentials',
+  ENTERPRISE: '/enterprise',
+  EXPLORE: '/explore',
+  HOME: '/',
+  PERSONAL_DETAILS: '/personal-details',
+  PRIVACY_POLICY: '/privacy-policy',
+  REQUEST_DEMO: '/request-demo',
+  SCIENCE: '/science',
+  SIGN_UP: '/sign-up',
+  TESTIMONIALS: '/testimonials',
+  WRECKERS: '/wreckers',
+  WRECKER_ASSESSMENT: '/wrecker-assessment',
+  WRECKER_ASSESSMENT_INTRO: '/wrecker-assessment-intro',
+};

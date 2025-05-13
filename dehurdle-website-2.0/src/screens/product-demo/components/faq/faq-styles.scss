@@ -1,0 +1,219 @@
+@import '../../../../theme';
+
+.faq {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-40;
+    padding: $spacing-100 $spacing-82;
+  }
+
+  &__card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__loader {
+    animation: spin 1s linear infinite;
+    border: $spacing-5 solid $floral-white;
+    border-radius: 50%;
+    border-top-color: get-color($green, 500);
+    height: $spacing-30;
+    width: $spacing-30;
+  }
+
+  &__title {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-50;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-70;
+    text-align: center;
+  }
+
+  &__sub-container {
+    border-radius: $spacing-26;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  &__accordion {
+    background: get-color($accent, 50);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $spacing-52 $spacing-60;
+  }
+
+  &__accordion-active {
+    @extend .faq__accordion;
+    background: $lemon;
+  }
+
+  &__accordion-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &__accordion-count {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-48;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-58;
+    margin-right: $spacing-52;
+    user-select: none;
+  }
+
+  &__accordion-title {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-38;
+    user-select: none;
+  }
+
+  &__accordion-description {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-22;
+    font-weight: $font-weight-semi-bold;
+    line-height: $spacing-31;
+    margin-top: $spacing-12;
+    user-select: none;
+  }
+
+  &__separator {
+    border-top: $spacing-1 solid get-color($neutral, 400);
+  }
+
+  &__plus-icon {
+    animation: plusAnim 0.1s ease-in-out;
+    cursor: pointer;
+    height: $spacing-40;
+    width: $spacing-40;
+  }
+
+  &__cross-icon {
+    animation: crossAnim 0.1s ease-in-out;
+    cursor: pointer;
+    min-height: $spacing-40;
+    min-width: $spacing-40;
+  }
+}
+
+@include landscape-md {
+  .faq {
+    &__container {
+      gap: $spacing-24;
+      padding: $spacing-67 $spacing-0;
+    }
+
+    &__title {
+      font-size: $spacing-32;
+      line-height: $spacing-45;
+    }
+
+    &__accordion-active {
+      background: $lemon;
+    }
+
+    &__accordion-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__accordion-count {
+      font-size: $spacing-38;
+      line-height: $spacing-45;
+    }
+
+    &__accordion-title {
+      font-size: $spacing-24;
+      line-height: $spacing-29;
+    }
+  }
+}
+
+@include sm {
+  .faq {
+    &__container {
+      padding: $spacing-50 $spacing-0;
+    }
+
+    &__title {
+      font-size: $spacing-40;
+      line-height: $spacing-56;
+    }
+
+    &__accordion {
+      padding: $spacing-28 $spacing-20;
+    }
+
+    &__accordion-active {
+      @extend .faq__accordion;
+      background: $lemon;
+    }
+
+    &__accordion-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__accordion-count {
+      font-size: $spacing-20;
+      line-height: $spacing-24;
+      margin-right: $spacing-9;
+    }
+
+    &__accordion-title {
+      font-size: $spacing-18;
+      line-height: $spacing-25;
+    }
+
+    &__accordion-description {
+      font-size: $spacing-14;
+      line-height: $spacing-21;
+    }
+
+    &__plus-icon {
+      height: $spacing-20;
+      width: $spacing-20;
+    }
+
+    &__cross-icon {
+      min-height: $spacing-20;
+      min-width: $spacing-20;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes crossAnim {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes plusAnim {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

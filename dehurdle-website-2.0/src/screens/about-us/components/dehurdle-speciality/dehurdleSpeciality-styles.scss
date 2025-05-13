@@ -1,0 +1,10 @@
+@import '../../../../theme';
+
+@include sm {
+  .dehurdle-speciality {
+    &__secondary-image {
+      width: $spacing-336;
+      height: $spacing-420;
+    }
+  }
+}

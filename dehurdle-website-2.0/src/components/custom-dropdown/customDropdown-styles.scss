@@ -1,0 +1,88 @@
+@import '../../theme';
+
+.dropdown {
+  &__button {
+    padding: $spacing-17 $spacing-32 !important;
+  }
+  &__input {
+    border-radius: $spacing-16 !important;
+    .MuiOutlinedInput-input {
+      color: get-color($neutral, 700);
+      font-family: $primary-font;
+      font-size: $spacing-16;
+      font-weight: $font-weight-medium;
+      line-height: $spacing-24;
+    }
+  }
+  &__dialog-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-18;
+  }
+  &__title.MuiTypography-root {
+    align-self: center;
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+    text-align: center;
+  }
+  &__radio-container.MuiFormGroup-root {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: $spacing-16;
+    max-height: 45vh;
+    overflow-y: auto;
+    .MuiRadio-root {
+      color: get-color($green, 600);
+      padding: $spacing-7;
+    }
+    .MuiRadio-root.Mui-checked {
+      color: get-color($green, 600);
+    }
+  }
+  &__radio-options {
+    align-self: center;
+    color: get-color($neutral, 600);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: $spacing-0 !important;
+    width: 100%;
+
+    .MuiFormControlLabel-label {
+      font-family: $primary-font;
+      font-size: $spacing-16;
+      font-weight: $font-weight-bold;
+      line-height: $spacing-24;
+    }
+  }
+  &__radio-selected-label .MuiTypography-root {
+    color: get-color($green, 600);
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet-portrait) {
+  .dropdown {
+    &__radio-options {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .dropdown {
+    &__radio-options {
+      width: 90%;
+    }
+    &__dialog-container {
+      gap: $spacing-40;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-24;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

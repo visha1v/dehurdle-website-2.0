@@ -1,0 +1,938 @@
+{
+  "dehurdle": "Dehurdle",
+  "common": {
+    "done": "Done",
+    "mins": "{{mins}} mins",
+    "next": "Next",
+    "submit": "Submit",
+    "continue": "Continue",
+    "you": "You",
+    "of": "of",
+    "yes": "Yes",
+    "no": "No",
+    "seconds": "s",
+    "replay": "Replay",
+    "try-again": "Try Again",
+    "time-remaining": "Time remaining: ",
+    "restart-game": "Restart game"
+  },
+  "footer": {
+    "header": "Get Product Updates",
+    "enter-email": "Enter your email",
+    "submit": "Submit",
+    "privacy-policy": "Privacy Policy",
+    "termsAndConditions": "Terms & Conditions",
+    "location": "Gurugram, India",
+    "email": "sujata.mishra@dehurdle.com",
+    "phone": "+91 9986103592",
+    "copyright": "© 2024, Inc. All rights reserved.",
+    "follow-us": "Follow Us",
+    "error-message": "Invalid Email",
+    "success-message": "You have successfully subscribed to Dehurdle mails."
+  },
+  "nav-items": {
+    "home": "Home",
+    "science": "Science",
+    "wreckers": "Hurdles",
+    "enterprise": "Enterprise",
+    "about-us": "About us",
+    "explore": "Explore",
+    "session": "Session",
+    "app": "App",
+    "credentials": "Credentials",
+    "testimonials": "Testimonials"
+  },
+  "screens": {
+    "account-created": {
+      "button-label": "Continue",
+      "sub-title": "Your profile details have been saved and your Dehurdle account has been created.",
+      "title": "Congrats!"
+    },
+    "sign-up": {
+      "button-label": "Sign Up",
+      "email-label": "Email ID",
+      "email-placeholder": "Enter your email",
+      "footer-title": "By signing up you Agree to our ",
+      "t-and-c": "Terms & Conditions.",
+      "sub-title": "Create your account for your Personal Coaching Journey",
+      "button-title": {
+        "continue": "Continue",
+        "back": "Back",
+        "confirm": "Confirm"
+      },
+      "profession-status": {
+        "title": "Are you a working professional?",
+        "cancel-message": "Currently, the assessment is open only for working professionals"
+      },
+      "profession": {
+        "title": "Select your profession",
+        "dropdown-title": "Select profession"
+      },
+      "registration": {
+        "title": "Profession",
+        "sub-title": "Please enter your email",
+        "description": "You will receive your report and future updates on this email."
+      },
+      "verify-otp": {
+        "title": "Enter the 4 digit OTP sent to\n{{email}}"
+      }
+    },
+    "verify-otp": {
+      "button-label": "Confirm",
+      "title": "Verify OTP",
+      "sub-title": "Please enter the 4-digit OTP that we've sent to email id ",
+      "resend-otp": "Resend OTP",
+      "resend-otp-timer": "Resend OTP in",
+      "otp-placeholder": "_",
+      "not-receive-otp": "Didn't receive OTP?  "
+    },
+    "personal-details": {
+      "button-label": "Continue",
+      "sub-title": "Let's set up your account with some basic information.",
+      "title": "We're glad you are here",
+      "dob-label": "Date of Birth",
+      "dob-placeholder": "--Select--",
+      "gender-label": "Gender",
+      "select-gender": "Select gender",
+      "gender-placeholder": "--Select--",
+      "first-name-label": "First Name",
+      "first-name-placeholder": "Enter your first name",
+      "last-name-label": "Last Name",
+      "last-name-placeholder": "Enter your last name"
+    },
+    "wrecker-assessment": {
+      "intro": {
+        "title": "COACHING ASSESSMENT",
+        "subtitle": "This coaching assessment helps you understand your hurdles so you can leap over them\nMove quickly and go with the first response that comes to your mind.",
+        "instruction": "INSTRUCTIONS :",
+        "first-instruction": "There are {{totalQuestions}} questions.",
+        "second-instruction": "Please read each question carefully and answer according to how you feel.",
+        "footer-title": "Completion time",
+        "terms-and-conditions-title": "I am 18 years of age or older and agree to the",
+        "button-label": "START",
+        "terms-and-conditions": "Terms & conditions"
+      },
+      "questions": {
+        "select-answer": "Select an answer"
+      },
+      "thank-you": {
+        "title": "THANK YOU!",
+        "subtitle": "Your progress report has been sent to your email"
+      }
+    },
+    "assessment-report": {
+      "title": "Assessment Report",
+      "score": "Score",
+      "your-score": "Your Score",
+      "thriving": "Thriving",
+      "surviving": "Surviving",
+      "wreckers": "Hurdles",
+      "assessment-date": "Assessment Date: ",
+      "tab-1": {
+        "title": "MINDSET SCORE"
+      },
+      "tab-2": {
+        "title": "HURDLES PROFILE"
+      }
+    },
+    "home": {
+      "assessment": "Assessment",
+      "request-a-demo": "Request a demo",
+      "home-assessment": {
+        "title": "Win over Hurdles",
+        "subtitle": "Your mind can either be your ally or your enemy, affecting your performance and happiness.",
+        "button-title": "TAKE ASSESSMENT"
+      },
+      "home-description": {
+        "description": "We’ve developed Dehurdle based on solid research to enhance the empowering aspects of your mindset—your Grandmaster—and quiet the limiting ones—your Hurdles.\nThis transformation supports your personal growth and executive potential, equipping you to navigate life’s challenges with clarity, confidence, and purpose."
+      },
+      "challenge-compass": {
+        "title": "DETECT, DIAGNOSE, DELIVER, TRACK",
+        "description": "Dehurdle identifies user-specific challenges and provides personalised coaching solutions, ensuring each individual gets the guidance they need to overcome their  \"Hurdles\".",
+        "cards": {
+          "card-1": {
+            "title": "Detect",
+            "description": "Take a quick 3-minute quiz to get your mindset score and hurdles profile."
+          },
+          "card-2": {
+            "title": "Diagnose",
+            "description": "Receive your personalised Hurdle Report to pinpoint what’s holding you back."
+          },
+          "card-3": {
+            "title": "Deliver",
+            "description": "Begin a tailored 24-day coaching journey designed to address your blockers and unlock your potential."
+          },
+          "card-4": {
+            "title": "Track Progress",
+            "description": "After 24 days, retake the assessment and get an updated Hurdles Report to continue your journey."
+          }
+        }
+      },
+      "explore-dehurdle": {
+        "science": {
+          "title": "Explore the Science",
+          "description": "In just three months, our Curriculum, accessible through our app, drives meaningful personal growth and executive development. Our breakthrough app tailors daily practices to your unique needs, helping you build powerful new habits that enhance clarity, resilience, and leadership effectiveness."
+        },
+        "enterprise": {
+          "title": "For Enterprise",
+          "description": "When a team concentrates solely on performance, it can inadvertently lead to prolonged stress, friction among team members. Dehurdle takes a different approach, aiming to maximise both performance and well-being while nurturing growth."
+        },
+        "button-title": "Learn more"
+      },
+      "discovery-card": {
+        "button-title": "Discover your Hurdle",
+        "desclaimer": "Are you ready to uncover your personal Hurdle?",
+        "description": "Meet the \"Hurdles\"—those persistent inner voices that create doubt, distractions, and negative patterns, holding you back from tackling life’s challenges with confidence. They are the hidden barriers standing between you and your full potential for growth and performance.",
+        "title": "Unlock the Secrets to Your Success"
+      },
+      "overview": {
+        "title": "Rebalance Your Mind for a Brighter You!",
+        "description": "Feel the difference immediately and enjoy long-term improvements in your performance, relationships, and overall outlook. Here’s what you can expect:",
+        "overview-card": {
+          "performance-title": "Boost Your Performance",
+          "performance-description": "See a noticeable improvement in your ability to focus, excel, and achieve your goals.",
+          "wellness-title": "Enhance Your Well-being",
+          "wellness-description": "Let go of overwhelm and embrace a calmer, more confident version of yourself.",
+          "connection-title": "Strengthen Your Relationships",
+          "connection-description": "Build deeper, more meaningful connections as you gain clarity and balance."
+        }
+      }
+    },
+    "wreckers": {
+      "hero-section": {
+        "title": "UNDERSTANDING HOW WE \n SELF-WRECK",
+        "sub-title": "Those relentless \"Hurdles\" are the internal voices in your mind, and they're the culprits behind the negative emotions that tend to emerge when you confront life's everyday challenges. They embody the automatic patterns in your thoughts, feelings, and responses. These patterns are the root cause of all your stress, anxiety, self-doubt, frustration, restlessness, and unhappiness. They're the silent destroyers of your performance, well-being, and relationships.",
+        "description": "It's time to recognize these patterns and reclaim control over your mind and your life.",
+        "button": {
+          "title": "TAKE COACHING ASSESSMENT"
+        }
+      },
+      "the-wreckers": {
+        "title": "The Hurdles",
+        "learn-more": "Learn More",
+        "description": "Hurdles, starts the hijacking of your life's moments and stands responsible for the majority of your setbacks.Do any of these Hurdles sound familiar to you?",
+        "overthinker": {
+          "title": "Overthinker",
+          "description": "Caught in endless analysis, overthinking paralyses action and keeps you from enjoying the present moment."
+        },
+        "procrastinator": {
+          "title": "Procrastinator",
+          "description": "Constantly delaying tasks, creating missed opportunities, and holding back personal growth."
+        },
+        "distractor": {
+          "title": "Distractor",
+          "description": "Easily sidetracked by interruptions, weakening focus and preventing goal achievement."
+        },
+        "pleaser": {
+          "title": "Pleaser",
+          "description": "Seeking external validation at the cost of self-worth and authentic happiness."
+        },
+        "pessimist": {
+          "title": "Pessimist",
+          "description": "Focusing on the negatives, draining energy, and stalling personal progress."
+        },
+        "comparer": {
+          "title": "Comparer",
+          "description": "Always comparing yourself to others, leading to feelings of inadequacy and neglecting your own strengths."
+        },
+        "fearful": {
+          "title": "Fearful",
+          "description": "Held back by fear and confined to comfort zones, unable to pursue dreams or take risks."
+        },
+        "hyper-emotional": {
+          "title": "Hyper-Emotional",
+          "description": "Overwhelmed by intense emotions, often leading to impulsive actions and difficulty maintaining balance."
+        }
+      },
+      "birth": {
+        "wreckers": {
+          "title": "The Birth of Hurdles",
+          "description1": "Hurdles don’t start as adversaries - they begin as protectors, shielding us from perceived threats during childhood. As we grow, their purpose fades, but they remain deeply embedded in our minds, shaping automatic thoughts, emotions, and reactions through neural pathways.\n \n",
+          "description2": "When activated, these Hurdles influence how we think, feel, and act - often without us realising it. Recognizing and disempowering these patterns is the key to taking back control and unlocking your full potential."
+        },
+        "intentions": {
+          "title": "The Illusion of Good Intentions",
+          "description": "Your Hurdles may trick you into believing they’re helping. For example, your dominant Hurdle might convince you that obsessing over your mistakes will push you to improve."
+        },
+        "truth": {
+          "description1": "But here’s the truth: like physical pain, negative emotions are meant to signal the need for change, not to linger. When you stay stuck in stress or frustration, your Hurdles create tunnel vision, blocking the clarity and solutions your positive mind can find.",
+          "description2": "If you feel trapped in this cycle, it’s time to break free and take control."
+        }
+      },
+      "approach-steps": {
+        "title": "OUR UNIQUE THREE STEP APPROACH",
+        "steps": {
+          "catch-your-wrecker": {
+            "title": "CATCH YOUR HURDLE",
+            "description": "When you find yourself stuck in self-doubt, procrastination, or other limiting patterns for more than a fleeting moment, you’re likely in the grip of your Hurdles. The first step is to recognize your thoughts and emotions as products of your Hurdles.",
+            "description2": "Understanding your Hurdles helps you expose their lies and puncture their limiting beliefs, allowing you to release their hold on your actions. With this awareness, you gain clarity and start reclaiming control over your thoughts, decisions, and behaviours."
+          },
+          "self-realisation": {
+            "title": "SELF REALISATION",
+            "description": "When your Hurdles begin to take over, self-realisation is the key to regaining power. Acknowledging their influence allows you to silence their negative and irrelevant thoughts, breaking free from their control.",
+            "description2": "This awareness helps you reconnect with your values and act in alignment with your ideal self. By doing so, you make deliberate, confident decisions that reflect your goals, rather than being driven by your Hurdles. You are no longer held back - you take charge of your actions and future."
+          },
+          "grandmaster": {
+            "title": "AWAKEN YOUR GRANDMASTER",
+            "description": "Your Grandmaster is the part of you that approaches challenges with clarity, confidence, and positivity. While we are all born with the ability to harness these traits, life’s responsibilities, stress, and distractions often weaken them.",
+            "description2": "The Dehurdle Challenge is designed to awaken your Grandmaster by silencing the influence of your Hurdles and activating your core strengths: Curiosity, Courage, and Empathy. These powers enable you to navigate life’s challenges with resilience, focus, and mastery. Once awakened, your Grandmaster helps you take on challenges with a renewed sense of purpose and confidence."
+          }
+        }
+      },
+      "conquer-your-wrecker": {
+        "reveal-wrecker": {
+          "title": "Reveal Your Hurdles:\nStep One in Conquering Them",
+          "description": "In the battle against adversaries, it's futile to fight an invisible or deceitful enemy. The initial and crucial step in conquering your Hurdles is to bring them into the light, to identify them, and to uncover the falsehoods and limiting beliefs they perpetuate.",
+          "summary": "You cannot defeat what you do not see. Therefore, the journey to mental fitness and self-mastery begins with the courageous act of discovering your Hurdles and unravelling their deceptions. ",
+          "button-text": "Identify your Hurdles"
+        },
+        "conquer-wreckers": {
+          "title": "Conquer Your Hurdles with Our Guided Activities",
+          "description": "Our app is designed to walk you through each step of the journey to conquer your Hurdles. Through our 3 step Approach, you'll cultivate lasting, positive habits that are poised to revolutionise your performance, enhance your well-being, and transform your relationships.",
+          "summary": "Let us be your compass on the path to growth and self-mastery.",
+          "button-text": "Learn more"
+        }
+      }
+    },
+    "about-us": {
+      "about-dehurdle": {
+        "title": "Welcome to Dehurdle",
+        "description": "Here we transform life’s challenges into stepping stones for growth.\nWe’re not just another platform—we’re your partner in personal growth and executive coaching, helping you navigate the ups and downs with clarity and confidence."
+      },
+      "hero-section": {
+        "title": "WHY DEHURDLE?",
+        "description": "In the fast-paced world of corporate leadership, clarity is often lost amidst the chaos of daily challenges. Dehurdle was designed to help corporate executives and professionals turn these challenges into opportunities for growth.\n \nDehurdle equips you with the skills and mindset to make your mind your strongest ally. By addressing internal blockers and fostering resilience, focus, and balance, Dehurdle empowers you to navigate workplace hurdles with confidence, lead with purpose, and achieve meaningful personal and professional success."
+      },
+      "dehurdle-speciality": {
+        "conquer-wreckers": {
+          "title": "What Makes Dehurdle Special?",
+          "description": "Dehurdle stands out with its unique blend of scientific research, practical solutions, cutting-edge technology, and timeless Vipassana practices—all delivered with empathy and care. Our app serves as your constant companion, guiding you to unlock your true potential while staying committed to confidentiality, ethical practices, and meaningful personal growth. Along the way, we help you keep those persistent \"Hurdles\" in check."
+        },
+        "our-philosophy": {
+          "title": "Our Philosophy",
+          "description": "Think of Dehurdle as your growth sanctuary—a space to pause, reflect, and tap into your true potential. Life is full of hurdles, and navigating them can challenge even the most driven individuals and teams. Whether you’re on a personal development journey or leading others toward greater success, Dehurdle is here to guide you. We help you transform obstacles into opportunities through personalized coaching, lighting the path to empowered leadership and lasting growth."
+        }
+      },
+      "dehurdle-founder": {
+        "title": "The Mind Behind Dehurdle",
+        "founder-one": {
+          "title": "Meet Amit",
+          "description": "A seeker of truth, two-time TEDx speaker, and INSEAD graduate, Amit has worked with prominent companies such as Times of India, Hero Moto Corp, and Ford Motor Company. His transition from the corporate world to founding Dehurdle was inspired by a personal revelation. Drawing on his experiences and insights gained at INSEAD, Amit laid the foundation for a platform dedicated to helping others overcome their hurdles and unlock their full potential.",
+          "learn-more": "Learn more about amit"
+        },
+        "founder-two": {
+          "title": "Meet Prakhar",
+          "description": "A Tedx speaker and a visionary, Prakhar's journey through the realms of leadership and mental fitness highlighted a common thread - the pursuit of mental well-being. His relentless quest for a definitive solution to mental fitness led to the creation of Dehurdle, a platform that promises peace of mind and growth."
+        }
+      },
+      "take-assessment": {
+        "button-title": "TAKE THE COACHING ASSESSMENT",
+        "title": "Ready to Leap Over?",
+        "description": "Begin your journey of transformation with Dehurdle. Take the first step by exploring your hurdle profile with our Coaching Assessment or dive deeper by downloading the Dehurdle app."
+      },
+      "join-dehurdle": {
+        "heading": "Join us on this journey to unlock resilience, clarity, and your true potential."
+      }
+    },
+    "science": {
+      "hero-section": {
+        "title": "THE INVISIBLE TUG-OF-WAR IN YOUR MIND",
+        "description": "Imagine standing at the edge of a busy crossroads, with countless thoughts rushing past like cars in every direction. One moment, you’re focused, ready to move forward. The next, you’re frozen - uncertain which path to take, distracted by the noise, and questioning every step.\n \n The \"not-so-good\" forces in this tale are what we call Hurdles. These Hurdles subtly take the lead, pulling at our thoughts and emotions, and overshadowing the positive side of ourselves - the Grandmaster."
+      },
+      "eternal-rivals": {
+        "heading": "Eternal Rivals Within:",
+        "sub-heading": "Revealing the Dance of Shadows and Light",
+        "header-content-description": "Throughout history, stories have told of two opposing forces, much like the eternal dance of shadows and light. These tales reflect our dual nature, connecting timeless wisdom to the challenges of modern life.\n \n In this narrative, the Hurdles - Over-thinker, Procrastinator, Distractor, Pleaser, Pessimist, Comparer, Fearful, and Hyper-Emotional—take centre stage. They subtly pull at our thoughts and emotions, overshadowing the Grandmaster, the part of us capable of clarity, focus, and strength. We may tell ourselves, “Why disrupt the calm when everything seems fine?” but true growth lies in confronting challenges, not avoiding them.",
+        "footer-content-heading": "Hurdles don’t stop at creating inner conflict; their influence ripples into our external world. They disrupt focus, strain relationships, and foster poor time management. Even small moments - like forgetting where you left your phone or missing a call - are signs of their hold."
+      },
+      "grandmasters": {
+        "description-one": "Activating your Grandmaster is the key to breaking free. It’s not just about ending inner conflict—it’s about restoring balance and harmony. When the Grandmaster awakens, it brings clarity, presence, and focus, helping you navigate life’s challenges with grace, purpose, and efficiency.",
+        "grand-master-card": {
+          "curiosity": "Curiosity",
+          "courage": "Courage",
+          "empathy": "Empathy"
+        }
+      },
+      "dehurdle-assessment": {
+        "title": "the Coaching assessment",
+        "quiz": {
+          "title": "How do we begin this enchanting journey of transformation?",
+          "description": "It starts with a simple yet profound tool – our innovative 3 - minute quiz. This quiz uncovers the depths of your mindset and reveals your inner world."
+        },
+        "mental-fitness-score": {
+          "description1": "The quiz doesn't just provide insights; it offers a mindset score, distinguishing between surviving and thriving. It's a score that signifies not just existing but flourishing.",
+          "description2": "At zero, you're surviving—a state where life feels overwhelming, filled with continuous worries and a sense of being lost in the hustle. On the other hand, at the highest point, a score of 100 means thriving."
+        }
+      },
+      "approach": {
+        "title": "The Scientific Approach",
+        "description": "Upon completing the Hurdle Assessment with honesty, users receive a personalised Hurdles Report that reveals their dominant Hurdle and overall score. The report indicates whether they are currently in a surviving or thriving state, setting the stage for a tailored coaching experience focused on growth, clarity, and real executive transformation."
+      },
+      "description": {
+        "text": "Our science-backed approach uses neuroplasticity to help users shift from negative thought patterns (Hurdles) to empowered traits like Curiosity, Courage, and Empathy. Through guided daily exercises, users build resilience, rewire their mindset, and track growth over time, unlocking their full potential in both personal and professional life."
+      },
+      "daily-challenges": {
+        "heading": "Learn about Daily Challenges",
+        "sub-heading": "The Dehurdle Curriculum features daily challenges that are structured to help you build resilience, clarity, and strength. Each activity is designed to support your progress, enabling you to overcome hurdles and achieve your goals.",
+        "daily-challenges": {
+          "description": "Through our 3-step approach, focused on understanding your inner patterns, identifying your dominant Hurdle, and engaging in daily challenges, we help you create lasting, positive change in your life.",
+          "button-title": "Daily Challenges"
+        },
+        "mastery-of-the-day": {
+          "button-title": "Mastery of the day",
+          "description": "A daily theme tailored to help you tackle your identified Hurdle, gradually reducing its influence and building your inner strength."
+        },
+        "dehurdle-experience": {
+          "button-title": "Dehurdle Experience",
+          "description": "The Dehurdle Curriculum consists of various daily challenges structured to unlock your full potential. Each segment is strategically designed to guide you towards resilience, happiness, and strength."
+        },
+        "reminder-of-the-day": {
+          "button-title": "Reminder of the Day",
+          "description": "Reinforces the insights and lessons gained during the Mastery of the Day. These reminders help you internalise and apply new knowledge, supporting the process of building lasting positive habits."
+        },
+        "reflection-of-the-day": {
+          "button-title": "Reflection of the Day",
+          "description": "Reflection deepens learning, allowing you to gain more from your experiences than the events themselves.\n <strong>Privacy:</strong> Your reflections are completely private and secured with 100% privacy settings."
+        }
+      }
+    },
+    "enterprise": {
+      "session": {
+        "hero-section": {
+          "title": "EVERYTHING YOUR EMPLOYEES WILL NEED TO DEHURDLE THEIR LIFE.",
+          "description": "At Dehurdle, we understand that every organisation has unique needs. That's why we offer customised solutions designed to elevate mindset across your team, enhancing overall performance, well-being, and cohesion.",
+          "disclaimer": "Ask for a personalised enterprise solution"
+        },
+        "dehurdle-working": {
+          "initial-assessment": {
+            "header": "How Does the Dehurdle App Work",
+            "title": "Coaching Assessment",
+            "description": "Employees begin with the Coaching Assessment, identifying their dominant Hurdles and giving your organization a team-wide view of mindset patterns and growth opportunities."
+          },
+          "personalized-journey": {
+            "title": "Personalized Coaching Journey",
+            "description": "Each employee embarks on a tailored coaching journey to overcome their Hurdles and build core strengths, supported by weekly guidance to maximise impact."
+          },
+          "growth-measurement": {
+            "title": "Progress Tracking",
+            "description": "Employees retake the Hurdle Assessment on a monthly basis to measure growth, giving your organization clear, ongoing insights into individual and team progress. As they evolve, their coaching journey is continuously personalized to match their development needs."
+          }
+        },
+        "enterprise-solution": {
+          "title": "Your Enterprise Solution Includes: ",
+          "title-highlight": "Personalized Coaching Journeys",
+          "description": "Keep your team motivated with tailored activities and challenges that reinforce daily learning and drive individual growth."
+        },
+        "dehurdle-difference": {
+          "first-card": {
+            "title": "THE DEHURDLE DIFFERENCE"
+          },
+          "second-card": {
+            "title": "TANGIBLE GROWTH:",
+            "description": "Measure progress at every level—individual, team, and organisation. Pre- and post-journey reports provide clear insights into measurable improvements in performance, focus, and productivity."
+          },
+          "third-card": {
+            "title": "TANGIBLE CHANGE",
+            "description": "Both employees and organisations can measure growth and closely monitor their growth journey. By comparing the Pre and Post journey of assessments, you will gain insight into all the measurements and changes experienced by employees, teams, or the organisation as a whole."
+          },
+          "fourth-card": {
+            "title": "PROVEN ROI:",
+            "description": "Dehurdle delivers exceptional returns on your investment, driving employee engagement and adoption. Our tailored coaching journeys integrate seamlessly into employees’ routines, creating lasting behavioural change and tangible results."
+          }
+        },
+        "organisations": {
+          "heading": "Transforming Organisations with Love and Impact"
+        },
+        "decision-maker-testimonials": {
+          "heading": "Decision makers testimonials",
+          "first-testimonial": {
+            "title": "Dean. INSEAD",
+            "description": "Dehurdle is one of the most personalised mental fitness app I’ve come across. With mental fitness becoming an essential need and a huge market opportunity, we plan to incorporate Dehurdle into various Executive Programs. This partnership will further elevate the program."
+          },
+          "second-testimonial": {
+            "title": "Rashmi Sharma, Sr. Director, Global Talent & Development, Coca Cola",
+            "description": "I review a number of productivity & growth solutions on a regular basis, but Dehurdle stands out as truly unique. It’s not just another app - it has the potential to bring meaningful change to our teams and beyond."
+          },
+          "third-testimonial": {
+            "title": "HR Head. NOTHING",
+            "description": "I love the app's potential. Can we make it available for download in both the UK and China?"
+          },
+          "fourth-testimonial": {
+            "title": "Co-founder. Policy Bazaar",
+            "description": "I can completely relate to the results of the Mental Fitness quiz. I see how it can profoundly impact the lives of my team at PolicyBazaar."
+          },
+          "fifth-testimonial": {
+            "title": "Co-founder. Policy Bazaar",
+            "description": "The story and concept are impressive. It's incredibly easy for my employees to engage with. Can we also make it available for download in Denmark and Singapore?"
+          }
+        },
+        "user-testimonials": {
+          "title": "USER TESTIMONIALS",
+          "tcs": {
+            "testimonial": "I observed a noticeable change in my procrastination habit after using Dehurdle. My team acknowledged the improvement in my decision-making and speedy actions.",
+            "designation": "Senior Consultant",
+            "name": ""
+          },
+          "deloitte": {
+            "testimonial": "The app has been transformative for managing my anxiety and improving focus. Its calming audio fosters reflection and balance. Highly recommended for anyone seeking mental clarity.",
+            "designation": "Senior Consultant",
+            "name": "Ishani Ghosal"
+          },
+          "nothing": {
+            "testimonial": "Firstly I didn't liked the Ul but the new Ul is really good and the new app is more powerful now. I liked the steak feature. App helped me to overcome from my wreckers.",
+            "designation": "Deputy Manager",
+            "name": "Krishna Agrawal"
+          },
+          "accenture": {
+            "testimonial": "I've become aware of many things I was unconsciously doing. It has opened up new perspectives for me.",
+            "designation": "Manager",
+            "name": ""
+          }
+        },
+        "clarity-coaching": {
+          "title": "Clarity, Coaching. Every Month",
+          "description": "Live Monthly Check-in Sessions Led by ICF-Certified Coaches",
+          "cards": {
+            "virtual-session": "Monthly 45-minute virtual session for every user",
+            "certified-coaches": "Led by experienced, ICF - certified coaches",
+            "progress": "A space to reflect on your journey, ask questions, and strengthen your progress."
+          },
+          "footer": {
+            "title": "Human + Digital – ",
+            "sub-title": "Adds a powerful layer of expert-led support to every Dehurdle journey."
+          }
+        }
+      }
+    },
+    "product-demo": {
+      "faq": { "title": "FAQs" },
+      "gamification": {
+        "title": "gamification &\nCommunity features",
+        "card": {
+          "leaderboard-title": "Leaderboard",
+          "leaderboard-description": "Track progress, challenge colleagues, and stay motivated as you climb the ranks together.",
+          "buddies-title": "Buddies",
+          "buddies-description": "Pair up with a buddy to celebrate progress, keep each other accountable, and stay on track.",
+          "feed-title": "Feed",
+          "feed-description": "See updates, blogs, top scorers, and your buddies’ achievements, and send nudges to keep each other motivated."
+        }
+      },
+      "details-modal": {
+        "title": "Please enter your email & company’s name to explore the app demo!",
+        "sub-title": "Please share your details",
+        "fields": {
+          "first-name": {
+            "label": "First name",
+            "placeholder": "Enter your first name",
+            "error": "Invalid"
+          },
+          "last-name": {
+            "label": "Last name",
+            "placeholder": "Enter your last name",
+            "error": "Invalid"
+          },
+          "email-id": {
+            "label": "Email",
+            "placeholder": "Enter your email id",
+            "error": "Invalid"
+          },
+          "company-name": {
+            "label": "Company name",
+            "placeholder": "Enter your company's name",
+            "error": "Invalid"
+          }
+        }
+      },
+      "details-form": {
+        "title": "Please enter your email & company’s name to explore the app demo!",
+        "sub-title": "Select an answer",
+        "description": "Do you believe ICF backed coaching can help you become a better version of yourself?",
+        "yes": "Yes",
+        "maybe": "Maybe",
+        "no": "No"
+      },
+      "challenges": {
+        "mastery": {
+          "title": "Mastery of the day",
+          "heading": "Mastery",
+          "description": "A science-backed coaching activity  designed to enhance awareness, bring clarity, and set a powerful tone for your day, best experienced in the morning for a focused and purposeful start.",
+          "games": {
+            "match-columns": {
+              "title": "Identify the Connections Breakpoint",
+              "column-a": {
+                "option-one": "Increased anxiety",
+                "option-two": "Lack of motivation",
+                "option-three": "Guilt from avoidance"
+              },
+              "column-b": {
+                "option-one": "Leads to self-doubt and overthinking",
+                "option-two": "Reduces focus and productivity",
+                "option-three": "Creates a cycle of procrastination"
+              }
+            },
+            "fill-in-the-blanks": {
+              "title": "Taking a few minutes to $BLANK$ every morning can set a positive tone for the day.",
+              "option-one": "Brown",
+              "option-two": "Lazy",
+              "option-three": "Fast"
+            },
+            "select-statement": {
+              "title": "What is procrastination?",
+              "option-one": "Poor time management",
+              "option-two": "Comfort-driven laziness",
+              "option-three": "Habitual procrastination"
+            }
+          }
+        },
+        "digit-dance": {
+          "title": "Brain Games",
+          "description": "Simple yet challenging, these brain games train your mind to stay fully present. By demanding intense focus, they sharpen attention, clear mental clutter, and enhance cognitive agility."
+        },
+        "meditation": {
+          "title": "Meditation of the day",
+          "heading": "Meditation",
+          "description": "A guided meditation exercise, rooted in the 5,000-year-old practice of Vipassana. It trains your mind to observe thoughts without distraction, helping you break free from mental clutter, and cultivate lasting clarity."
+        },
+        "spin-a-story": {
+          "title": "Spin-a-story",
+          "description": "Step into real-world scenarios that challenge your thinking. These interactive simulations take you through various situations, where your choices shape the outcome, revealing how your mindset influences your actions.",
+          "decision": "Decision No.",
+          "story": {
+            "title": "The Perfect Work",
+            "description": "It’s Wednesday evening, and you need to submit a creative presentation by Friday. You know you should start, but the thought of it not being “perfect” holds you back. You open your laptop, stare at the blank slides, and think, What if it’s not good enough? You decide to browse for inspiration online, but instead, you spiral into endless comparisons with others’ polished work."
+          },
+          "decisions": {
+            "decision-1": {
+              "option-1": {
+                "title": "You decide to focus on starting with small, even if imperfect steps."
+              },
+              "option-2": {
+                "title": "You research and gather the required information before starting the work."
+              }
+            },
+            "decision-2": {
+              "option-1": {
+                "title": "You focus on completing one task at a time."
+              },
+              "option-2": {
+                "title": "You set a firm end time to complete the draft, and keep revising and refining as you progress, striving for perfection."
+              }
+            },
+            "decision-3": {
+              "option-1": {
+                "title": "You brainstorm ideas and note them down keeping the brainstorming protocols in mind – no judgment and no refining the ideas as they come."
+              },
+              "option-2": {
+                "title": "You make a rough draft to ensure you collate all the data needed for the presentation."
+              }
+            },
+            "decision-4": {
+              "option-1": {
+                "title": "You spend a lot of time on every single task.",
+                "outcome": "You feel drained and disappointed because several other tasks were left incomplete.",
+                "feedback": "Taking your time to ensure you complete tasks with high quality is commendable. However, it is also important to recognize that prolonged delays can impact your productivity and ability to meet deadlines. Learn to balance the quality of your work and time effectively."
+              },
+              "option-2": {
+                "title": "You cover a large number of small tasks.",
+                "outcome": "You feel productive and motivated as completing multiple tasks gives you a sense of momentum.",
+                "feedback": "Use task batching to group similar tasks and complete them efficiently without losing focus. Learn more time management techniques to improve your work efficiencies."
+              }
+            },
+            "decision-5": {
+              "option-1": {
+                "title": "You fail to complete the draft within the time you set for yourself.",
+                "outcome": "you feel frustrated and it is possible, in the rush to complete, you overlooked important content.",
+                "feedback": "Learn to manage time and energy effectively. Develop flexibility in your workflow as it can help you adapt to tight deadlines and unexpected challenges efficiently."
+              },
+              "option-2": {
+                "title": "You stick to your plan and complete the draft within the set time.",
+                "outcome": "You feel a sense of accomplishment, which boosts your confidence in handling tight deadlines.",
+                "feedback": "Give yourself a well-deserved break after completing focused time blocks to reinforce positive habits. Stay curious and explore different time management techniques. Embrace flexibility to consistently adapt to work challenges."
+              }
+            },
+            "decision-6": {
+              "option-1": {
+                "title": "You feel confident in your knowledge. You take the time to review all the ideas and categorize them.",
+                "outcome": "The ideas are easily accessible now and you are clear on how and where to use them in the presentation.",
+                "feedback": "Use brainstorming techniques regularly, such as mind mapping or free writing, to organize and consolidate your ideas before getting started with tasks."
+              },
+              "option-2": {
+                "title": "You postpone reviewing the ideas generated and move on to the next task.",
+                "outcome": "The lingering doubts about unfinished ideas left you feeling unsettled.",
+                "feedback": "Schedule dedicated time to review and refine your ideas later to ensure a balanced and thoughtful approach. Summarize key points as you go and move forward with the task. "
+              }
+            },
+            "decision-7": {
+              "option-1": {
+                "title": "You quickly jot down key points without worrying about structure.",
+                "outcome": "You felt a sense of momentum as you saw your ideas coming together, even if they weren’t polished yet.",
+                "feedback": "Break your task into smaller, manageable chunks and set a time limit for drafting. Focus on getting ideas down first, without worrying about perfection. Once the draft is complete, schedule a separate session for revisions."
+              },
+              "option-2": {
+                "title": "You list the required data but struggle to connect it into a cohesive flow.",
+                "outcome": "You felt frustrated by the lack of organization, which made you hesitant to proceed further.",
+                "feedback": "Break the draft into smaller sections. Tackle one section at a time to reduce overwhelm and gain clarity as you progress."
+              }
+            }
+          },
+          "rules": {
+            "rule-1": "You’ll be presented with an engaging scenario to begin your journey.",
+            "rule-2": "Carefully read the situation and pick the option that feels right for you.",
+            "rule-3": "Your decision will shape the story and determine where it leads next.",
+            "rule-4": "In total, you’ll make three choices to complete your journey.",
+            "rule-5": "Based on your choices, the story will conclude with one of 8 possible endings.",
+            "rule-6": "Each ending reflects the unique path you’ve taken.",
+            "rule-7": "TIP: There’s no “right” or “wrong” choice – enjoy exploring how different decisions create new outcomes."
+          }
+        },
+        "reflection": {
+          "title": "Reflection of the day",
+          "heading": "Reflection",
+          "description": "A coaching-based question that helps you reflect on specific challenges, decisions, or insights before you sleep.",
+          "question": "Find a quiet space and settle down comfortably. Take a slow, deep breath in… hold for a moment… and exhale fully. As you exhale, relax further. Repeat this a few times. Feel the calmness.",
+          "prompt-head": "The Prompt",
+          "prompt": "For the sake of achieving my goals, I commit to intercept my Judge (of self) when she/he tries to...."
+        },
+        "shape-spotter": {
+          "title": "Shape-hunt",
+          "description": "Select all tiles with same",
+          "sub-description": "shape and color",
+          "rules": {
+            "rule-1": "Show a series of rapidly changing colored words (e.g., \"Red\" written in green).",
+            "rule-2": "The user must identify when the word’s color matches its meaning (e.g., the word \"Red\" in red).",
+            "rule-3": "The game lasts for 45 seconds, with points awarded for correct matches."
+          }
+        }
+      },
+      "game-intro": {
+        "title": "How to play:"
+      },
+      "game-outcome": {
+        "title": "Outcome:",
+        "description": "Suggested Feedback:"
+      },
+      "result": {
+        "game": {
+          "success": "Congratulations!\n You’ve completed the game",
+          "failure": "Almost there! Don’t worry, it’s all part of the journey.",
+          "button-title": "End Game"
+        },
+        "activity": {
+          "success": "Congratulations!\nYou’ve completed the activity."
+        }
+      }
+    },
+    "demo": {
+      "request-demo": "Request a demo",
+      "hero-section": {
+        "title": "LET'S CONNECT!"
+      },
+      "what-to-expect": {
+        "title": "What to expect",
+        "card1": {
+          "title": "Your Executive Development Goals",
+          "description": "A focused discussion on the challenges your executives face and how Dehurdle can help."
+        },
+        "card2": {
+          "title": "Strategic Alignment",
+          "description": "How AI-powered coaching enhances executive decision-making, adaptability, and long-term success."
+        },
+        "card3": {
+          "title": "Tracking Progress & Measuring Impact",
+          "description": "See how real-time dashboards and AI-driven insights help monitor executive growth and coaching effectiveness."
+        },
+        "card4": {
+          "title": "How Dehurdle Fits In",
+          "description": "Whether as a standalone solution or an addition to your existing executive development programs, discover how Dehurdle integrates seamlessly into your organization."
+        },
+        "card5": {
+          "title": "Who Benefits from Dehurdle?",
+          "description": "Designed for executives, senior managers, emerging leaders, and HR & L&D teams looking to enhance executive performance at scale."
+        },
+        "card6": {
+          "title": "A Walkthrough of Dehurdle ",
+          "description": "Get an inside look at our AI-driven coaching experience, real-time analytics, and personalized executive insights."
+        }
+      },
+      "fill-form": "Fill out the form, and let’s get started!",
+      "request-demo-form": {
+        "title": "Fill out the form & See Dehurdle in Action",
+        "description": "Please share your details",
+        "information": "Your Information",
+        "company": "Your Company",
+        "policy": "By requesting a demo, you agree to our [Privacy Policy].",
+        "companySizeOptions": {
+          "1_50": "1 to 50",
+          "51_200": "51 to 200",
+          "201_500": "201 to 500",
+          "501_1000": "501 to 1,000",
+          "1000_plus": "1,000+"
+        },
+        "yourQueryOptions": {
+          "demo": "I want to see a demo of Dehurdle",
+          "coaching": "I’m interested in launching an executive coaching program",
+          "partnership": "I’d like to discuss a partnership opportunity"
+        },
+        "heardFromOptions": {
+          "google": "Google Search",
+          "social": "Social Media",
+          "website": "Website",
+          "ad": "Advertisement",
+          "referral": "Referral",
+          "other": "Other"
+        },
+        "fields": {
+          "first-name": {
+            "label": "First Name",
+            "placeholder": "Enter your first name",
+            "error": "Enter a valid first name"
+          },
+          "last-name": {
+            "label": "Last Name",
+            "placeholder": "Enter your last name",
+            "error": "Enter a valid last name"
+          },
+          "work-email": {
+            "label": "Work Email",
+            "placeholder": "Enter your work email",
+            "error": "Enter a valid email"
+          },
+          "mobile-number": {
+            "label": "Mobile Number",
+            "placeholder": "Enter your mobile number",
+            "error": "Enter a valid number"
+          },
+          "company-name": {
+            "label": "Company Name",
+            "placeholder": "Enter your company name",
+            "error": "Enter a valid company name"
+          },
+          "designation": {
+            "label": "Designation",
+            "placeholder": "Enter your designation",
+            "error": "Enter a valid designation"
+          },
+          "company-size": {
+            "label": "Company Size",
+            "placeholder": "Select an option",
+            "error": "Select company size"
+          },
+          "your-query": {
+            "title": "How can we help you?",
+            "label": "Your Query",
+            "placeholder": "Select an option",
+            "error": "Select a query"
+          },
+          "how-did-you-hear": {
+            "title": "How did you hear about us?",
+            "label": "Select an option",
+            "placeholder": "Select an option",
+            "error": "Select an option"
+          }
+        }
+      }
+    }
+  },
+  "content": {
+    "ALREADY_SUBSCRIBED": {
+      "message": "You have already subscribed to Dehurdle email.",
+      "description": "User already subscribed for newsletter"
+    },
+    "DEFAULT": {
+      "message": "Something went wrong",
+      "description": "Unknown errors"
+    },
+    "INVALID_INPUT": {
+      "message": "Invalid Input",
+      "description": "Invalid Input"
+    },
+    "INVALID_OTP": {
+      "message": "Invalid OTP. Please enter the valid OTP",
+      "description": "The OTP you entered is invalid. Please try again."
+    },
+    "MAXIMUM_OTP_LIMIT": {
+      "message": "Maximum Resend OTP limit reached try again later.",
+      "description": "You have reached the maximum limit of OTP. Please try again after some time."
+    },
+    "USER_ALREADY_EXISTS_AND_VERIFIED": {
+      "message": "Already registered email",
+      "description": "User already exists and verified"
+    },
+    "USER_FOUND_EMAIL_PHONE": {
+      "message": "Already registered email",
+      "description": "User already exists with the same email and phone number"
+    },
+    "USER_FOUND_EMAIL": {
+      "message": "Already registered email",
+      "description": "User already exists with the same email"
+    },
+    "USER_FOUND_PHONE": {
+      "message": "Already registered mobile number",
+      "description": "User already exists with the same phone number"
+    },
+    "USER_NOT_FOUND": {
+      "message": "User not found, please create one",
+      "description": "User not found, please create one"
+    },
+    "USER_REGISTRATION_PENDING": {
+      "message": "User not verified",
+      "description": "User not verified, please verify your account"
+    },
+    "USER_DEACTIVATED": {
+      "message": "It seems your account has been deactivated. Please contact support.",
+      "description": "It seems your account has been deactivated. Please contact support."
+    },
+    "USER_ALREADY_EXISTS": {
+      "message": "User already exists, please sign in to continue",
+      "description": "User already exists, please sign in to continue"
+    },
+    "PROFILE_UPDATE_SUCCESS": {
+      "message": "Profile updated successfully",
+      "description": "Profile updated successfully"
+    },
+    "NOTIFICATION_UPDATE_SUCCESS": {
+      "message": "Settings updated successfully",
+      "description": "Settings updated successfully"
+    },
+    "EMAIL_SENT_SUCCESS": {
+      "message": "Email sent successfully",
+      "description": "Email sent successfully"
+    },
+    "OTP_SENT": {
+      "message": "OTP sent",
+      "description": "OTP sent / resent successfully"
+    },
+    "INVALID_PHONE": {
+      "message": "Please enter a valid 10 digit number",
+      "description": "Please enter a valid 10 digit number"
+    },
+    "ENTER_NAME": {
+      "message": "Please enter your name",
+      "description": "Please enter your name"
+    },
+    "ENTER_EMAIL": {
+      "message": "Please enter your email",
+      "description": "Please enter your email"
+    },
+    "ENTER_VALID_EMAIL": {
+      "message": "Please enter organisation email",
+      "description": "Please enter a valid email"
+    },
+    "ENTER_VALID_NAME": {
+      "message": "Please enter a valid name",
+      "description": "Please enter a valid name"
+    },
+    "SELECT_DOB": {
+      "message": "Please select your Date of Birth",
+      "description": "Please select your Date of Birth"
+    },
+    "SELECT_GENDER": {
+      "message": "Select gender",
+      "description": "Select gender"
+    },
+    "ASSESSMENT_QUESTIONS_LIMIT_EXCEEDED": {
+      "message": "Invalid response",
+      "description": "This error is shown when invalid response is submitted for assessment"
+    }
+  }
+}

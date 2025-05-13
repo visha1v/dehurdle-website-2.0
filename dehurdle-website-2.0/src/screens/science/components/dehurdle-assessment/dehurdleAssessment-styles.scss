@@ -1,0 +1,108 @@
+@import '../../../../theme';
+
+.dehurdle-assessment {
+  &__container {
+    padding: $spacing-80;
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-64;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-76;
+    margin-bottom: $spacing-64;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__sub-title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    letter-spacing: -$spacing-1;
+    line-height: $spacing-38;
+    text-align: center;
+    margin-bottom: 32px;
+    white-space: pre-line;
+  }
+  &__item-container {
+    align-items: center;
+    display: flex;
+    gap: $spacing-32;
+    justify-content: center;
+  }
+  &__content {
+    gap: $spacing-16;
+    flex-direction: column;
+    display: flex;
+  }
+  &__image {
+    height: $spacing-600;
+    width: $spacing-542;
+  }
+  &__content-title.MuiTypography-root {
+    color: get-color($pink, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-52;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-medium;
+    letter-spacing: $spacing-0-16;
+    line-height: $spacing-50;
+  }
+}
+
+@include md {
+  .dehurdle-assessment {
+    &__container {
+      padding: $spacing-40 $spacing-24;
+    }
+    &__item-container {
+      flex-direction: column;
+    }
+    &__item-container-reverse {
+      flex-direction: column-reverse;
+      margin-top: $spacing-80;
+    }
+    &__image {
+      width: $spacing-370;
+      height: $spacing-418;
+    }
+  }
+}
+
+@include sm {
+  .dehurdle-assessment {
+    &__container {
+      padding: $spacing-40 $spacing-20;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+      margin-bottom: $spacing-0;
+    }
+    &__content-title.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-32;
+      margin-bottom: $spacing-0;
+    }
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+    }
+    &__image {
+      width: $spacing-336;
+      height: $spacing-418;
+    }
+    &__item-container {
+      gap: $spacing-0;
+    }
+  }
+}

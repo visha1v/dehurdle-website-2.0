@@ -1,0 +1,105 @@
+@import '../../../theme';
+
+.discovery-card {
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-74;
+    justify-content: space-between;
+  }
+  &__card-section {
+    margin: $spacing-148 $spacing-50;
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-60;
+    margin-bottom: $spacing-12;
+    text-transform: uppercase;
+  }
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    letter-spacing: -$spacing-1;
+    line-height: $spacing-38;
+  }
+  &__desclaimer.MuiTypography-root {
+    color: get-color($pink, 500);
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-28;
+    margin-bottom: $spacing-16;
+    margin-top: $spacing-48;
+  }
+  &__button.MuiButton-root {
+    background-color: get-color($green, 600);
+  }
+  &__lottieContainer {
+    display: block;
+    margin-bottom: $spacing-36;
+    margin-top: $spacing-54;
+  }
+  &__lottieContainerMobile {
+    display: none;
+  }
+  &__button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@include md {
+  .discovery-card {
+    &__container {
+      justify-content: center;
+      padding: $spacing-0;
+    }
+    &__card-section {
+      display: flex;
+      flex-direction: column;
+      margin: $spacing-64 $spacing-20;
+    }
+
+    &__title.MuiTypography-root {
+      text-align: center;
+    }
+    &__description.MuiTypography-root {
+      text-align: center;
+    }
+    &__desclaimer.MuiTypography-root {
+      margin-bottom: $spacing-12;
+      margin-top: $spacing-0;
+      text-align: center;
+    }
+    &__lottieContainer {
+      display: none;
+    }
+    &__lottieContainerMobile {
+      align-self: center;
+      display: flex;
+      margin: $spacing-32 $spacing-0;
+    }
+    &__button-container {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@include sm {
+  .discovery-card {
+    &__card-section {
+      display: flex;
+      flex-direction: column;
+      margin: $spacing-40 $spacing-20;
+    }
+  }
+}

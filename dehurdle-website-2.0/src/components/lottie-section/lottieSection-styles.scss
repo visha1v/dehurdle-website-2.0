@@ -1,0 +1,169 @@
+@import '../../theme/';
+
+$lottie-width-small: $spacing-120;
+$lottie-width-medium: $spacing-150;
+$lottie-width-large: $spacing-160;
+$lottie-height-small: $spacing-120;
+$lottie-height-medium: $spacing-150;
+$lottie-height-large: $spacing-160;
+
+@mixin set-size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+.lottie-section {
+  &__container {
+    height: $spacing-710;
+    position: relative;
+    width: $spacing-550;
+  }
+  &__item {
+    position: absolute;
+  }
+  &__procrastinator {
+    left: 0%;
+    top: 0%;
+    transform: rotateY(180deg) rotate(8deg);
+    @include set-size($lottie-width-medium, $lottie-height-medium);
+  }
+  &__overthinker {
+    left: 42%;
+    top: 5%;
+    transform: rotateY(8deg);
+    @include set-size($lottie-width-small, $lottie-height-small);
+  }
+  &__fearful {
+    left: 20%;
+    top: 24%;
+    transform: rotateY(4.47deg);
+    @include set-size($lottie-width-large, $lottie-height-large);
+  }
+  &__distractor {
+    left: 60%;
+    top: 32%;
+    @include set-size($spacing-125, $spacing-125);
+  }
+  &__hyperEmotional {
+    left: 0%;
+    top: 50%;
+    transform: rotateY(180deg);
+    @include set-size($spacing-125, $spacing-125);
+  }
+  &__pleaser {
+    left: 35%;
+    top: 55%;
+    @include set-size($spacing-132, $spacing-132);
+  }
+  &__pessimist {
+    left: 8%;
+    top: 75%;
+    @include set-size($spacing-162, $spacing-162);
+  }
+  &__comparer {
+    right: 5%;
+    top: 70%;
+    @include set-size($spacing-174, $spacing-174);
+  }
+}
+
+@include md {
+  .lottie-section {
+    &__container {
+      height: $spacing-448;
+    }
+    &__procrastinator {
+      @include set-size($spacing-135, $spacing-135);
+    }
+    &__overthinker {
+      left: 35%;
+      top: -1%;
+      transform: rotate(8deg);
+      @include set-size($spacing-118, $spacing-118);
+    }
+    &__fearful {
+      left: 3%;
+      top: 30%;
+      @include set-size($spacing-142, $spacing-142);
+    }
+    &__distractor {
+      left: 60%;
+      top: 12%;
+      @include set-size($spacing-138, $spacing-138);
+    }
+    &__hyperEmotional {
+      left: 0%;
+      top: 70%;
+      @include set-size($spacing-128, $spacing-128);
+    }
+    &__pleaser {
+      left: 60%;
+      top: 60%;
+      @include set-size($spacing-148, $spacing-148);
+    }
+    &__pessimist {
+      left: 30%;
+      top: 30%;
+      transform: rotate(-8deg);
+      @include set-size($spacing-162, $spacing-162);
+    }
+    &__comparer {
+      left: 32%;
+      top: 68%;
+      @include set-size($spacing-112, $spacing-112);
+    }
+  }
+}
+
+@include sm {
+  .lottie-section {
+    &__container {
+      height: $spacing-340;
+      width: 90vw;
+    }
+    &__procrastinator {
+      left: 4%;
+      top: 0%;
+      transform: rotateY(180deg) rotate(8deg);
+      @include set-size($spacing-94, $spacing-94);
+    }
+    &__overthinker {
+      left: 35%;
+      top: -1%;
+      @include set-size($spacing-88, $spacing-88);
+    }
+    &__fearful {
+      left: 3%;
+      top: 30%;
+      @include set-size($spacing-100, $spacing-100);
+    }
+    &__distractor {
+      left: 66%;
+      top: 8%;
+      @include set-size($spacing-98, $spacing-98);
+    }
+    &__hyperEmotional {
+      left: 0%;
+      top: 70%;
+      transform: rotateY(180deg);
+      @include set-size($spacing-90, $spacing-90);
+    }
+    &__pleaser {
+      left: 62%;
+      top: 60%;
+      transform: rotate(-12deg);
+      @include set-size($spacing-104, $spacing-104);
+    }
+    &__pessimist {
+      left: 34%;
+      top: 28%;
+      @include set-size($spacing-113, $spacing-113);
+    }
+    &__comparer {
+      left: 32%;
+      top: 65%;
+      transform: rotate(-4deg);
+      @include set-size($spacing-108, $spacing-108);
+    }
+  }
+}

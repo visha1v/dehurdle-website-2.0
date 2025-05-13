@@ -1,0 +1,95 @@
+@import '../../../../theme';
+
+.take-assessment {
+  &__container {
+    align-items: center;
+    background-color: get-color($green, 50);
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-74;
+    justify-content: space-between;
+    padding: $spacing-54 $spacing-0;
+  }
+  &__card-section {
+    margin-right: $spacing-80;
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-60;
+    text-transform: uppercase;
+  }
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    letter-spacing: -$spacing-1;
+    line-height: $spacing-38;
+  }
+  &__button.MuiButton-root {
+    background-color: get-color($green, 600);
+    margin-top: $spacing-24;
+  }
+  &__image {
+    margin-bottom: $spacing-32;
+  }
+}
+
+@include md {
+  .take-assessment {
+    &__container {
+      padding: $spacing-80;
+    }
+    &__card-section {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-right: $spacing-0;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-40;
+      line-height: $spacing-60;
+      text-align: center;
+    }
+    &__description.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-38;
+      text-align: center;
+    }
+    &__lottie-container {
+      display: none;
+    }
+    &__image {
+      width: $spacing-296;
+      height: $spacing-296;
+    }
+  }
+}
+
+@include sm {
+  .take-assessment {
+    &__container {
+      padding: $spacing-40 $spacing-20;
+    }
+    &__card-section {
+      align-items: normal;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+    &__image {
+      align-self: center;
+      margin-bottom: $spacing-24;
+      width: $spacing-276;
+      height: $spacing-276;
+    }
+  }
+}

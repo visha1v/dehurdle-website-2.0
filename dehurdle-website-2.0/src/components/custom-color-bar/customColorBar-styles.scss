@@ -1,0 +1,107 @@
+@import '../../theme';
+
+.custom-color-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  // position: relative;
+  &__progress-container {
+    background: linear-gradient(
+      180deg,
+      get-color($green, 500) 0%,
+      #73eee9 19.93%,
+      get-color($pink, 500) 41.17%,
+      #fc9db8 63.13%,
+      #fccf79 79.7%,
+      get-color($yellow, 500) 100%
+    );
+    border-radius: $spacing-8;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+  &__max-range.MuiTypography-root {
+    align-items: center;
+    background-color: get-color($green, 500);
+    border-top-left-radius: $spacing-8;
+    border-top-right-radius: $spacing-8;
+    color: get-color($neutral);
+    display: flex;
+    font-family: $secondary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-bold;
+    justify-content: center;
+    line-height: $spacing-22;
+    padding: $spacing-14 $spacing-12;
+  }
+  &__min-range.MuiTypography-root {
+    @extend .custom-color-bar__max-range;
+    background-color: $kingYellow;
+    border-radius: $spacing-8;
+    border-bottom-left-radius: $spacing-8;
+    border-bottom-right-radius: $spacing-8;
+  }
+  &__indicator-container {
+    align-items: center;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    left: $spacing-66;
+    position: absolute;
+    height: $spacing-22;
+  }
+  &__progress-area {
+    display: flex;
+    flex: 1;
+    position: relative;
+  }
+  &__indicator-sub-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    // margin-top: -($spacing-29);
+  }
+  &__indicator-text.MuiTypography-root {
+    color: get-color($neutral);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-32;
+    position: absolute;
+  }
+  &__indicator-label.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-32;
+    margin-top: $spacing-3;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet-portrait) {
+  .custom-color-bar {
+    &__indicator-container {
+      bottom: 1%;
+      left: $spacing-65;
+    }
+    &__max-range {
+      font-size: $spacing-16;
+    }
+    &__min-range.MuiTypography-root {
+      font-size: $spacing-16;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .custom-color-bar {
+    &__indicator-container {
+      bottom: 3%;
+      left: $spacing-66;
+    }
+  }
+}

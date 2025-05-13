@@ -1,0 +1,43 @@
+@import '../../theme';
+
+.custom-dialog {
+  .MuiPaper-root.MuiDialog-paper {
+    border-radius: $spacing-16;
+    margin: $spacing-20;
+    min-width: 76vw;
+    padding: $spacing-32 $spacing-24 !important;
+    width: fit-content;
+  }
+  .MuiDialogContent-root {
+    padding: $spacing-0;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet-portrait) {
+  .custom-dialog {
+    .MuiPaper-root.MuiDialog-paper {
+      min-width: 48vw;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .custom-dialog {
+    .MuiPaper-root.MuiDialog-paper {
+      min-width: 40vw;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .custom-dialog {
+    .MuiPaper-root.MuiDialog-paper {
+      min-width: 22vw;
+      padding: $spacing-32 !important;
+    }
+  }
+}
+
+.MuiDialogContent-root {
+  padding: $spacing-4;
+}

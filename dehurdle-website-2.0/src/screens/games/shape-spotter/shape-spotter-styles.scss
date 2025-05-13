@@ -1,0 +1,177 @@
+@import '../../../theme/';
+
+.shape-spotter {
+  &__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $spacing-0 $spacing-20 $spacing-32 $spacing-20;
+  }
+
+  &__sub-container {
+    align-items: center;
+    background-color: get-color($pink, 50);
+    border-radius: $spacing-20;
+    padding: $spacing-24 $spacing-16;
+  }
+
+  &__header-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing-16;
+  }
+
+  &__header-sub-container {
+    display: flex;
+    gap: $spacing-4;
+  }
+
+  &__header-title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-weight: $font-weight-medium;
+    font-size: $spacing-14;
+    line-height: $spacing-21;
+  }
+
+  &__header-sub-title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-weight: $font-weight-bold;
+    font-size: $spacing-14;
+    line-height: $spacing-21;
+  }
+
+  &__header-description-container {
+    cursor: pointer;
+  }
+
+  &__header-description.MuiTypography-root {
+    color: get-color($green, 600);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-21;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+    text-align: center;
+  }
+
+  &__main-container {
+    align-items: center;
+    background-color: get-color($neutral, 50);
+    border-radius: $spacing-8;
+    display: flex;
+    justify-content: center;
+    padding: $spacing-8;
+  }
+
+  &__content-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: $spacing-22;
+    gap: $spacing-8;
+  }
+
+  &__content-sub-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon {
+    height: $spacing-25;
+    width: $spacing-25;
+  }
+
+  &__grid {
+    margin-top: $spacing-32;
+  }
+
+  &__row {
+    display: flex;
+    gap: $spacing-16;
+    justify-content: space-between;
+    margin: $spacing-16 $spacing-0;
+  }
+
+  &__first-row {
+    margin-top: $spacing-0;
+  }
+
+  &__last-row {
+    margin-bottom: $spacing-0;
+  }
+
+  &__game-tile {
+    align-items: center;
+    border-radius: $spacing-8;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__game-tile-inactive {
+    border: $spacing-1 solid get-color($neutral, 400);
+  }
+
+  &__game-tile-active {
+    border: $spacing-1 solid get-color($neutral, default);
+    background-color: get-color($neutral, default);
+  }
+
+  &__button.MuiButton-root {
+    align-self: flex-end;
+    height: $spacing-59;
+    width: 100%;
+  }
+}
+
+@include landscape-md {
+  .shape-spotter {
+    &__sub-container {
+      padding: $spacing-14 $spacing-12;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-14;
+      line-height: $spacing-20;
+    }
+
+    &__content-container {
+      gap: $spacing-6;
+      margin-bottom: $spacing-16;
+    }
+
+    &__header-container {
+      margin-bottom: $spacing-10;
+    }
+
+    &__header-title.MuiTypography-root {
+      font-size: $spacing-10;
+      line-height: $spacing-14;
+    }
+
+    &__header-sub-title.MuiTypography-root {
+      font-size: $spacing-10;
+      line-height: $spacing-14;
+    }
+
+    &__header-description.MuiTypography-root {
+      font-size: $spacing-10;
+      line-height: $spacing-14;
+    }
+
+    &__row {
+      gap: $spacing-8;
+      margin: $spacing-8 $spacing-0;
+    }
+  }
+}

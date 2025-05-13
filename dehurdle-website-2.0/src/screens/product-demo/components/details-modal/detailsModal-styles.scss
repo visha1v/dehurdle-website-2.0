@@ -1,0 +1,105 @@
+@import '../../../../theme';
+
+.details-modal {
+  &__container {
+    align-items: center;
+    background-color: $cardShadow;
+    bottom: $spacing-0;
+    display: flex;
+    justify-content: center;
+    left: $spacing-0;
+    padding: $spacing-80;
+    position: absolute;
+    right: $spacing-0;
+    top: $spacing-0;
+    z-index: 1300; // TODO: given to hide the header behind the modal overlay
+  }
+
+  &__sub-container {
+    align-items: center;
+    background-color: get-color($neutral);
+    border-radius: $spacing-50;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-20;
+    justify-content: center;
+    padding: $spacing-80;
+    width: 60%;
+  }
+
+  &__title {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-44;
+    text-align: center;
+  }
+
+  &__sub-title {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-48;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-5;
+    width: 100%;
+
+    &__button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@include landscape-md {
+  .details-modal {
+    &__container {
+      padding: $spacing-30;
+    }
+
+    &__sub-container {
+      padding: $spacing-50;
+    }
+
+    &__title {
+      font-size: $spacing-24;
+      line-height: $spacing-32;
+    }
+
+    &__sub-title {
+      font-size: $spacing-24;
+      line-height: $spacing-36;
+    }
+  }
+}
+
+@include sm {
+  .details-modal {
+    &__container {
+      padding: $spacing-20;
+    }
+
+    &__sub-container {
+      border-radius: $spacing-20;
+      padding: $spacing-20;
+      width: 80%;
+    }
+
+    &__title {
+      font-size: $spacing-20;
+      line-height: $spacing-28;
+    }
+
+    &__sub-title {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+  }
+}

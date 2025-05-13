@@ -1,0 +1,125 @@
+@import '../../../../theme';
+
+.what-to-expect {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-48;
+    padding: $spacing-64 $spacing-80;
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-40;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-52;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__form-text.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-42;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-40;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-24;
+  }
+  &__cards-sub-container {
+    background-color: $snow;
+    border-radius: $spacing-16;
+    border: $spacing-1 solid get-color($neutral, 200);
+    box-sizing: border-box;
+    flex: 0 0 calc((100% - 2 * #{$spacing-40}) / 3);
+    padding: $spacing-48 $spacing-32;
+  }
+  &__card-title.MuiTypography-root {
+    color: get-color($pink, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-32;
+  }
+  &__card-description.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-36;
+  }
+}
+
+@include landscape-md {
+  .what-to-expect {
+    &__container {
+      padding: $spacing-64 $spacing-48;
+    }
+    &__cards-container {
+      gap: $spacing-32;
+    }
+  }
+}
+
+@include md {
+  .what-to-expect {
+    &__container {
+      padding: $spacing-32 $spacing-20;
+    }
+    &__cards-container {
+      flex-direction: column;
+      gap: $spacing-24;
+      justify-content: flex-start;
+      display: flex;
+    }
+    &__cards-sub-container {
+      flex: 0 0 100%;
+      gap: $spacing-24;
+    }
+    &__form-text.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-36;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+  }
+}
+
+@include sm {
+  .what-to-expect {
+    &__container {
+      padding: $spacing-82 $spacing-22;
+      gap: $spacing-24;
+    }
+    ̋ &__cards-container {
+      flex-direction: column;
+      gap: $spacing-24;
+      justify-content: flex-start;
+      display: flex;
+    }
+
+    &__cards-sub-container {
+      flex: 0 0 100%;
+      gap: $spacing-24;
+    }
+    &__form-text.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-36;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-42;
+    }
+  }
+}

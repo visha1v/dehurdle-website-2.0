@@ -1,0 +1,93 @@
+@import '../../../theme/';
+
+.game-outcome {
+  &__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $spacing-0 $spacing-24 $spacing-32 $spacing-24;
+    position: relative;
+  }
+
+  &__sub-container {
+    margin-top: $spacing-24;
+  }
+
+  &__label.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+    margin-bottom: $spacing-12;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($green, 600);
+    font-family: $secondary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-22;
+  }
+
+  &__sub-title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-24;
+    margin-bottom: $spacing-18;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-24;
+    margin-bottom: $spacing-16;
+  }
+
+  &__image {
+    bottom: $spacing-90;
+    position: absolute;
+    right: $spacing-0;
+  }
+
+  &__button.MuiButton-root {
+    height: $spacing-59;
+    width: 100%;
+  }
+}
+
+@include landscape-md {
+  .game-outcome {
+    &__sub-container {
+      margin-top: $spacing-10;
+    }
+
+    &__label.MuiTypography-root {
+      font-size: $spacing-14;
+      line-height: $spacing-20;
+      margin-bottom: $spacing-4;
+    }
+
+    &__title.MuiTypography-root {
+      font-size: $spacing-14;
+      line-height: $spacing-18;
+    }
+
+    &__sub-title.MuiTypography-root {
+      font-size: $spacing-12;
+      line-height: $spacing-18;
+      margin-bottom: $spacing-8;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-12;
+      line-height: $spacing-18;
+      margin-bottom: $spacing-8;
+    }
+  }
+}

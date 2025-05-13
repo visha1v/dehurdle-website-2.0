@@ -1,0 +1,100 @@
+@import '../.././../../../theme';
+
+.grandMasterCard {
+  &__container {
+    align-items: center;
+    background-color: get-color($accent, 50);
+    border-radius: $spacing-16;
+    box-shadow: $spacing-0 $spacing-0 $spacing-44 $spacing-0 $cardShadow;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-18;
+    height: $spacing-372;
+    justify-content: center;
+    width: $spacing-302;
+    z-index: 3;
+  }
+  &__side-container {
+    align-self: start;
+    height: $spacing-312;
+    margin-top: $spacing-42;
+    width: $spacing-255;
+    z-index: 0;
+  }
+  &__left-container {
+    background-color: get-color($pink, 50);
+  }
+  &__right-container {
+    background-color: get-color($green, 50);
+  }
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-32;
+    text-align: center;
+  }
+}
+
+@include md {
+  .grandMasterCard {
+    &__container {
+      border-radius: $spacing-6;
+      gap: $spacing-8;
+      height: $spacing-242;
+      width: $spacing-224;
+    }
+    &__side-container {
+      margin-top: $spacing-24;
+      align-self: center;
+    }
+    &__left-container,
+    &__right-container {
+      height: $spacing-200;
+      width: $spacing-174;
+    }
+    &__left-image,
+    &__right-image {
+      height: $spacing-162;
+      width: $spacing-174;
+    }
+    &__center-image {
+      height: $spacing-174;
+      width: $spacing-224;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+    }
+  }
+}
+
+@include sm {
+  .grandMasterCard {
+    &__container {
+      height: $spacing-152;
+      width: $spacing-125;
+      border-radius: $spacing-6;
+      gap: $spacing-8;
+    }
+    &__left-container,
+    &__right-container {
+      height: $spacing-133;
+      width: $spacing-105;
+    }
+    &__left-image,
+    &__right-image {
+      height: $spacing-86;
+      width: $spacing-104;
+    }
+    &__center-image {
+      height: $spacing-100;
+      width: $spacing-124;
+    }
+    &__title.MuiTypography-root {
+      font-size: $spacing-10;
+      line-height: $spacing-12;
+    }
+  }
+}

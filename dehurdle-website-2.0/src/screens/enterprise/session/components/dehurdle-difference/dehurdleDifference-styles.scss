@@ -1,0 +1,29 @@
+@import '../../../../../theme';
+
+.dehurdle-difference {
+  &__container {
+    display: grid;
+    gap: $spacing-32;
+    grid-template-columns: repeat(2, 1fr);
+    margin: $spacing-80;
+  }
+}
+
+@include md {
+  .dehurdle-difference {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      margin: $spacing-60 $spacing-40;
+    }
+  }
+}
+
+@include sm {
+  .dehurdle-difference {
+    &__container {
+      gap: $spacing-24;
+      margin: $spacing-48 $spacing-20;
+    }
+  }
+}

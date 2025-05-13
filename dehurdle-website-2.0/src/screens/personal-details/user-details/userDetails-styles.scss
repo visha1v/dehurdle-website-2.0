@@ -1,0 +1,8 @@
+@import '../../../theme';
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-12;
+  margin-top: $spacing-32;
+}

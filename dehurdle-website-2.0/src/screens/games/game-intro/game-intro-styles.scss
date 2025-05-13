@@ -1,0 +1,81 @@
+@import '../../../theme/';
+
+.game-intro {
+  &__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $spacing-0 $spacing-20 $spacing-32 $spacing-20;
+    position: relative;
+  }
+
+  &__sub-container {
+    padding: $spacing-16;
+  }
+
+  &__label.MuiTypography-root {
+    color: get-color($neutral, 500);
+    font-family: $secondary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+    margin-bottom: $spacing-8;
+  }
+
+  &__rule-list {
+    margin: $spacing-0;
+    padding-left: $spacing-20;
+  }
+
+  &__rule-item {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-14;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-21;
+  }
+
+  &__image {
+    bottom: $spacing-90;
+    position: absolute;
+    right: $spacing-4;
+  }
+
+  &__button.MuiButton-root {
+    height: $spacing-59;
+    width: 100%;
+  }
+}
+
+@include landscape-md {
+  .game-intro {
+    &__sub-container {
+      padding: $spacing-8;
+      overflow: scroll;
+    }
+
+    &__label.MuiTypography-root {
+      font-size: $spacing-14;
+      line-height: $spacing-20;
+      margin-bottom: $spacing-6;
+    }
+
+    &__rule-item {
+      font-size: $spacing-12;
+      line-height: $spacing-18;
+    }
+  }
+}
+
+@include sm {
+  .game-intro {
+    &__sub-container {
+      padding: $spacing-0;
+    }
+
+    &__label.MuiTypography-root {
+      margin-bottom: $spacing-4;
+    }
+  }
+}

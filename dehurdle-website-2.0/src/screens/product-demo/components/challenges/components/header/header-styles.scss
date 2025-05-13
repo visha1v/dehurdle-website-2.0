@@ -1,0 +1,25 @@
+@import '../../../../../../theme';
+
+.header {
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-6 $spacing-4;
+  }
+
+  &__icon {
+    cursor: pointer;
+    height: $spacing-24;
+    width: $spacing-24;
+  }
+
+  &__title {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+    text-align: center;
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../../../../../theme';
+
+.carousel {
+  &__slider {
+    .slick-track {
+      align-items: center;
+      display: flex;
+      margin-bottom: $spacing-40;
+    }
+    .slick-dots {
+      position: relative;
+      margin-top: -$spacing-10;
+      bottom: $spacing-0;
+      li {
+        button {
+          width: $spacing-16;
+          height: $spacing-16;
+          border-radius: 50%;
+          border: $spacing-1-5 solid get-color($green, 400);
+          padding: $spacing-0;
+
+          &:before {
+            display: none;
+          }
+        }
+
+        &.slick-active button {
+          background: get-color($green, 400);
+          height: $spacing-22;
+          width: $spacing-22;
+        }
+      }
+    }
+  }
+}
+
+@include sm {
+  .carousel {
+    &__slider {
+      .slick-track {
+        margin-bottom: $spacing-24;
+      }
+      .slick-dots {
+        li {
+          button {
+            width: $spacing-9;
+            height: $spacing-9;
+          }
+
+          &.slick-active button {
+            width: $spacing-13;
+            height: $spacing-13;
+          }
+        }
+      }
+    }
+  }
+}

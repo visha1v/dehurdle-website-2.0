@@ -1,0 +1,131 @@
+@import '../../../theme';
+
+.assessment-questions {
+  &__container {
+    background-color: $babyPowder;
+    display: flex;
+    justify-content: center;
+    padding: $spacing-18 $spacing-0;
+    align-items: center;
+    flex: 1;
+  }
+  &__question-container {
+    background-color: get-color($neutral, default);
+    border-radius: $spacing-24;
+    border: $spacing-1 solid get-color($neutral, 100);
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-32;
+    width: 33%;
+  }
+  &__header-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing-12;
+  }
+  &__header-title.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-24;
+  }
+  &__header-subtitle.MuiTypography-root {
+    color: get-color($pink, 500);
+    font-family: $primary-font;
+    font-size: $spacing-16;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+  }
+  &__question.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-20;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-30;
+    height: $spacing-80;
+  }
+  &__options-container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-12;
+    margin: $spacing-16 $spacing-0;
+  }
+  &__option.MuiTypography-root {
+    background-color: $ghost-white;
+    border-radius: $spacing-12;
+    border: $spacing-1-5 solid get-color($neutral);
+    color: get-color($green, 500);
+    font-family: $primary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-27;
+    padding: $spacing-14 $spacing-24;
+    text-align: center;
+  }
+  &__selected-option.MuiTypography-root {
+    @extend .assessment-questions__option;
+    background-color: get-color($green, 50);
+    border-color: get-color($green, 400);
+  }
+  &__button-title.MuiTypography-root {
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+  &__button.MuiButton-root {
+    align-self: center;
+    background-color: get-color($green, 500);
+    padding: $spacing-18 $spacing-68;
+    width: 40%;
+    &.MuiButton-root.Mui-disabled {
+      background-color: get-color($neutral, 100);
+      color: get-color($neutral, 400);
+    }
+  }
+}
+
+@include lg {
+  .assessment-questions {
+    &__question-container {
+      width: 45%;
+    }
+    &__button.MuiButton-root {
+      width: 45%;
+    }
+  }
+}
+
+@include md {
+  .assessment-questions {
+    &__question-container {
+      width: 55%;
+    }
+    &__button.MuiButton-root {
+      width: 100%;
+    }
+  }
+}
+
+@include sm {
+  .assessment-questions {
+    &__container {
+      padding: $spacing-20;
+    }
+    &__question-container {
+      width: 100%;
+      padding: $spacing-32 $spacing-16;
+    }
+    &__question.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+      margin-top: $spacing-16;
+    }
+    &__option.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-24;
+      padding: $spacing-16 $spacing-24;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '../../../theme/';
+
+.game-header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-16 $spacing-20;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  &__sub-container {
+    height: $spacing-24;
+    width: $spacing-24;
+  }
+
+  &__title.MuiTypography-root {
+    color: get-color($neutral, 700);
+    font-family: $secondary-font;
+    font-size: $spacing-18;
+    font-weight: $font-weight-bold;
+    line-height: $spacing-25;
+  }
+}
+
+@include landscape-md {
+  .game-header {
+    &__container {
+      padding: $spacing-8 $spacing-0;
+    }
+
+    &__sub-container {
+      height: $spacing-22;
+      width: $spacing-22;
+    }
+
+    &__title.MuiTypography-root {
+      color: get-color($neutral, 700);
+      font-family: $secondary-font;
+      font-size: $spacing-16;
+      font-weight: $font-weight-bold;
+      line-height: $spacing-22;
+    }
+  }
+}
+
+@include sm {
+  .game-header {
+    &__title.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+    }
+
+    &__sub-container {
+      height: $spacing-20;
+      width: $spacing-20;
+    }
+  }
+}

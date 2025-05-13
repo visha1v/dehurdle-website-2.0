@@ -1,0 +1,78 @@
+@import '../../../../../../theme';
+
+.difference-card {
+  &__card-container {
+    border-radius: $spacing-16;
+    padding: $spacing-32 $spacing-26;
+  }
+
+  &__default-container {
+    align-items: center;
+    border-radius: $spacing-16;
+    display: flex;
+    padding: $spacing-76 $spacing-32;
+  }
+
+  &__icon {
+    height: $spacing-81;
+    width: $spacing-81;
+  }
+
+  &__card-title.MuiTypography-root {
+    font-family: $secondary-font;
+    font-size: $spacing-32;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-42;
+    margin-bottom: $spacing-6;
+    margin-top: $spacing-20;
+    text-align: left;
+  }
+
+  &__default-title.MuiTypography-root {
+    font-family: $secondary-font;
+    font-size: $spacing-64;
+    font-weight: $font-weight-extra-bold;
+    line-height: $spacing-76;
+    text-align: center;
+  }
+
+  &__description.MuiTypography-root {
+    color: get-color($neutral, 600);
+    font-family: $primary-font;
+    font-size: $spacing-24;
+    font-weight: $font-weight-medium;
+    line-height: $spacing-34;
+    text-align: left;
+  }
+}
+
+@include md {
+  .difference-card {
+    &__default-title.MuiTypography-root {
+      text-align: left;
+    }
+  }
+}
+
+@include sm {
+  .difference-card {
+    &__default-container {
+      padding: $spacing-32;
+    }
+
+    &__card-title.MuiTypography-root {
+      font-size: $spacing-24;
+      line-height: $spacing-32;
+    }
+
+    &__default-title.MuiTypography-root {
+      font-size: $spacing-32;
+      line-height: $spacing-38;
+    }
+
+    &__description.MuiTypography-root {
+      font-size: $spacing-16;
+      line-height: $spacing-22;
+    }
+  }
+}
