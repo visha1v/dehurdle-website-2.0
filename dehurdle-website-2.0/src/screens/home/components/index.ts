@@ -9,3 +9,4 @@ export {default as HomeLanding} from './home-landing/HomeLanding';
 export { default as Wreckers } from './wrecker-cards/Wreckers';
 export { default as DehurdleWorking } from './dehurdle-working/DehurdleWorking';
 export { default as PricingCarousel} from './plans/Plans';
+export { default as DemoSection } from './demo-section/DemoSection';

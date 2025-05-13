@@ -7,7 +7,8 @@ import {
   HomeLanding,
   Wreckers,
   DehurdleWorking,
-  PricingCarousel
+  PricingCarousel,
+  DemoSection
 } from './components';
 
 // Add error boundary to catch issues
@@ -30,6 +31,9 @@ const Home: FC = memo(() => {
       </ErrorBoundary>
       <ErrorBoundary fallback={<div>Something went wrong</div>}>
         <PricingCarousel />
+      </ErrorBoundary>
+      <ErrorBoundary fallback={<div>Something went wrong</div>}>
+        <DemoSection />
       </ErrorBoundary>
     </CustomAppWrapper>
   );

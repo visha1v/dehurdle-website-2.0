@@ -1,0 +1,163 @@
+@import '../../../../theme';
+
+// Font imports
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Quicksand:wght@300..700&display=swap');
+
+// Variables
+$font-fraunces: 'Fraunces', serif;
+$font-quicksand: 'Quicksand', sans-serif;
+$color-pink: #E84C8D;
+$color-pink-hover: #db2777;
+$color-light-pink:#F7AACE;
+$color-teal: #0d9488;
+$color-teal-hover: #0f766e;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-grey: #9ca3af;
+
+// Card colors
+$card-colors: (
+  'sea': #F1FCFA,
+  'lite': #FDFCEC,
+  'free': #FDF2F7,
+  'membership': #F1FCFA,
+  'custom': #FDFCEC
+);
+
+// Breakpoints
+$mobile-breakpoint: 480px;
+$mobile-breakpoint-plus: 481px; // Added this to fix the media query
+$tablet-breakpoint: 768px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($property: all, $duration: 0.3s) {
+  transition: $property $duration ease-in-out;
+}
+
+.demo-section{
+    width: 90%;
+    border: 1px solid $color-light-pink;
+    border-radius: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 40px; 
+    margin-bottom: 5%;
+    
+    // Desktop & Tablet - horizontal layout
+    .content {
+        font-family: $font-fraunces;
+        font-size: 64px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        color: $color-pink-hover;
+        max-width: 60%;
+        
+        p {
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .explore-button-container {
+            @include flex-center;
+            margin-top: 32px;
+            align-items: flex-start;
+            justify-content: flex-start; 
+            
+            .explore-button {
+                background-color: $color-teal;
+                text-align: center;
+                color: $color-white;
+                padding: 24px 32px;
+                border-radius: 16px;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                font-weight: 600;
+                border: none;
+                cursor: pointer;
+                @include transition(background-color);
+                font-family: $font-quicksand;
+                width: 300px;
+                
+                &:hover {
+                    background-color: $color-teal-hover;
+                }
+            }
+        }
+    }
+    
+    .executive-art {
+        max-width: 35%;
+        height: auto;
+        margin-left: 20px;
+    }
+    
+    // Tablet responsiveness - same as desktop but with adjusted font
+    @media (max-width: $tablet-breakpoint) and (min-width: $mobile-breakpoint-plus) {
+        .content {
+            font-size: 48px;
+            
+            .explore-button-container {
+                .explore-button {
+                    padding: 20px 28px;
+                    width: 260px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+    // Mobile responsiveness - completely different layout
+    @media (max-width: $mobile-breakpoint) {
+        flex-direction: column;
+        padding: 30px 20px;
+        width: 95%;
+        margin-bottom: 40px;
+        
+        // Re-order elements for mobile
+        .executive-art {
+            order: 1; // First element
+            max-width: 80%;
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            order: 2; // Second element
+            font-size: 32px;
+            max-width: 100%;
+            text-align: center;
+            
+            p {
+                margin-bottom: 15px;
+            }
+            
+            .explore-button-container {
+                order: 3; // Third element (within content)
+                margin-top: 20px;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                
+                .explore-button {
+                    padding: 16px 24px;
+                    width: 100%;
+                    max-width: 260px;
+                    font-size: 14px;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}
