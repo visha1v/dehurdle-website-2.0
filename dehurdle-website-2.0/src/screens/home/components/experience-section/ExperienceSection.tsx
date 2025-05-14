@@ -57,7 +57,7 @@ const ExperienceSection: React.FC = () => {
             const viewportPosition = (windowHeight - rect.top) / (windowHeight + sectionHeight);
             
             // Combine these factors to get a smoother progress
-            let progress = viewportPosition * 1.1; // Slowed down by factor
+            let progress = viewportPosition * 1.5; // Slowed down by factor
             
             // Clamp between 0 and 1
             progress = Math.max(0, Math.min(1, progress));
