@@ -1,0 +1,272 @@
+@import '../../../../theme';
+
+// Font imports
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Quicksand:wght@300..700&display=swap');
+
+// Variables
+$font-fraunces: 'Fraunces', serif;
+$font-quicksand: 'Quicksand', sans-serif;
+$color-pink: #D72B6A;
+$color-grey: #A3B3BD;
+$color-teal: #178A86;
+$color-dark-grey: #292F36;
+$color-medium-grey: #4E5E6C;
+$color-light-teal: #F1FCFA;
+$mobile-breakpoint: 768px;
+
+// Mixins
+@mixin centered-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Main component styles
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: $color-light-teal;
+  padding-bottom: 60px;
+  
+  .title {
+    font-family: $font-fraunces;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    margin-top: 10%;
+  }
+  
+  .subtitle {
+    font-family: $font-quicksand;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: $color-medium-grey;
+    margin-top: 0;
+    text-align: center;
+    max-width: 80%;
+    
+    @media screen and (max-width: $mobile-breakpoint) {
+      font-size: 24px;
+      max-width: 90%;
+    }
+  }
+}
+
+/* Timeline container */
+.timeline-container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px 0;
+  min-height: 600px;
+  
+  // Use this class to toggle between CSS and JS positioning
+  &:not(.js-positioned) {
+    // Fallback CSS-only positioning if JS fails
+    .timeline-line {
+      top: 120px !important; 
+      height: calc(100% - 240px) !important;
+    }
+  }
+}
+
+/* Timeline line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  // Default height until JS positions it
+  height: 80%;
+  min-height: 300px;
+  background-color: $color-grey;
+  overflow: hidden;
+  z-index: 1;
+  
+  @media screen and (max-width: $mobile-breakpoint) {
+    left: 30px;
+    transform: none;
+  }
+  
+  .timeline-progress {
+    position: absolute;
+    width: 100%;
+    background-color: $color-pink;
+    top: 0;
+    height: 0%;
+    transition: height 1s ease-out;
+  }
+}
+
+// Timeline items
+.timeline-item {
+  position: relative;
+  margin: 100px 0;
+  width: 45%;
+  padding: 0 40px;
+  
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: calc(100% - 80px);
+    margin: 30px 0 30px 80px !important;
+  }
+  
+  // Circle styling
+  .circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color-grey;
+    @include centered-flex;
+    font-family: $font-fraunces;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    transition: background-color 1s ease;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    @media screen and (max-width: $mobile-breakpoint) {
+      left: -45px !important;
+      right: auto !important;
+    }
+  }
+  
+  // Right side alignment
+  &.right {
+    margin-left: 50%;
+    padding-left: 40px;
+    text-align: left;
+    
+    .circle {
+      left: -20px;
+      right: auto;
+    }
+
+    .content {
+      .title,
+      .subtitle {
+        text-align: left;
+      }
+    }
+  }
+  
+  // Left side alignment
+  &.left {
+    margin-right: 50%;
+    padding-right: 40px;
+    text-align: right;
+    
+    .circle {
+      right: 9px; // Adjusted to match right circle positioning
+      left: auto;
+    }
+
+    .content {
+      .title, 
+      .subtitle {
+        text-align: right;
+      }
+    }
+    
+    @media screen and (max-width: $mobile-breakpoint) {
+      .content {
+        .title, 
+        .subtitle {
+          text-align: left;
+        }
+      }
+    }
+  }
+ 
+  // Content styling
+  .content {
+    padding: 20px;
+    color: #808080;
+    transition: color 0.8s ease;
+    
+    .title {
+      font-family: $font-fraunces;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: $color-grey;
+      transition: color 1s ease;
+      margin-top: 0;
+      padding: 0;
+      
+      @media screen and (max-width: $mobile-breakpoint) {
+        font-size: 24px;
+      }
+    }
+    
+    .subtitle {
+      font-family: $font-quicksand;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: $color-grey;
+      transition: color 1s ease;
+      
+      @media screen and (max-width: $mobile-breakpoint) {
+        font-size: 20px;
+      }
+    }
+  }
+  
+  // Active state
+  &.active {
+    .circle {
+      background-color: $color-pink;
+    }
+    
+    .content {
+      .title {
+        color: #000000;
+      }
+      
+      .subtitle {
+        color: $color-dark-grey;
+      }
+    }
+  }
+}
+
+// Timeline button
+.timeline-button-container {
+  margin: 2.5% 0;
+  
+  .timeline-button {
+    background-color: $color-teal;
+    color: white;
+    font-family: $font-quicksand;
+    padding: 24px 32px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    
+    &:hover {
+      background-color: darken($color-teal, 10%);
+    }
+    
+    @media screen and (max-width: $mobile-breakpoint) {
+      padding: 16px 24px;
+      font-size: 14px;
+    }
+  }
+}

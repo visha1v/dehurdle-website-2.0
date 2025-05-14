@@ -8,7 +8,8 @@ import {
   Wreckers,
   DehurdleWorking,
   PricingCarousel,
-  DemoSection
+  DemoSection,
+  ExperienceSection
 } from './components';
 
 // Add error boundary to catch issues
@@ -30,11 +31,15 @@ const Home: FC = memo(() => {
         <DehurdleWorking />
       </ErrorBoundary>
       <ErrorBoundary fallback={<div>Something went wrong</div>}>
+        <ExperienceSection />
+      </ErrorBoundary>
+      <ErrorBoundary fallback={<div>Something went wrong</div>}>
         <PricingCarousel />
       </ErrorBoundary>
       <ErrorBoundary fallback={<div>Something went wrong</div>}>
         <DemoSection />
       </ErrorBoundary>
+      
     </CustomAppWrapper>
   );
 });

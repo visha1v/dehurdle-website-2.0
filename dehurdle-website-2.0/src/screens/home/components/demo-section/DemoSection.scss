@@ -26,7 +26,7 @@ $card-colors: (
 
 // Breakpoints
 $mobile-breakpoint: 480px;
-$mobile-breakpoint-plus: 481px; // Added this to fix the media query
+$mobile-breakpoint-plus: 481px; 
 $tablet-breakpoint: 768px;
 
 @mixin flex-center {
@@ -40,7 +40,7 @@ $tablet-breakpoint: 768px;
 }
 
 .demo-section{
-    width: 90%;
+    width: 85%;
     border: 1px solid $color-light-pink;
     border-radius: 32px;
     margin-left: auto;
@@ -125,16 +125,15 @@ $tablet-breakpoint: 768px;
         width: 95%;
         margin-bottom: 40px;
         
-        // Re-order elements for mobile
         .executive-art {
-            order: 1; // First element
+            order: 1; 
             max-width: 80%;
             margin-left: 0;
             margin-bottom: 20px;
         }
         
         .content {
-            order: 2; // Second element
+            order: 2; 
             font-size: 32px;
             max-width: 100%;
             text-align: center;
@@ -144,7 +143,7 @@ $tablet-breakpoint: 768px;
             }
             
             .explore-button-container {
-                order: 3; // Third element (within content)
+                order: 3; 
                 margin-top: 20px;
                 align-items: center;
                 justify-content: center;
